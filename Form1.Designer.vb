@@ -23,6 +23,8 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.InitalScreen1 = New RentECar.InitalScreen()
+        Me.OwnerMainScreen1 = New RentECar.OwnerMainScreen()
+        Me.RiderMainScreen1 = New RentECar.RiderMainScreen()
         Me.SuspendLayout()
         '
         'InitalScreen1
@@ -33,12 +35,31 @@ Partial Class Form1
         Me.InitalScreen1.Size = New System.Drawing.Size(338, 644)
         Me.InitalScreen1.TabIndex = 0
         '
+        'OwnerMainScreen1
+        '
+        Me.OwnerMainScreen1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.OwnerMainScreen1.Location = New System.Drawing.Point(0, 0)
+        Me.OwnerMainScreen1.Name = "OwnerMainScreen1"
+        Me.OwnerMainScreen1.Size = New System.Drawing.Size(335, 642)
+        Me.OwnerMainScreen1.TabIndex = 1
+        Me.OwnerMainScreen1.Visible = False
+        '
+        'RiderMainScreen1
+        '
+        Me.RiderMainScreen1.Location = New System.Drawing.Point(0, 0)
+        Me.RiderMainScreen1.Name = "RiderMainScreen1"
+        Me.RiderMainScreen1.Size = New System.Drawing.Size(335, 642)
+        Me.RiderMainScreen1.TabIndex = 2
+        Me.RiderMainScreen1.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(332, 644)
         Me.Controls.Add(Me.InitalScreen1)
+        Me.Controls.Add(Me.OwnerMainScreen1)
+        Me.Controls.Add(Me.RiderMainScreen1)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -46,4 +67,6 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents InitalScreen1 As InitalScreen
+    Friend WithEvents OwnerMainScreen1 As OwnerMainScreen
+    Friend WithEvents RiderMainScreen1 As RiderMainScreen
 End Class
