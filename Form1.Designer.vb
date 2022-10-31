@@ -25,6 +25,8 @@ Partial Class Form1
         Me.InitalScreen1 = New RentECar.InitalScreen()
         Me.OwnerMainScreen1 = New RentECar.OwnerMainScreen()
         Me.RiderMainScreen1 = New RentECar.RiderMainScreen()
+        Me.MyCarScreen1 = New RentECar.MyCarScreen()
+        Me.ClimateControlScreen1 = New RentECar.ClimateControlScreen()
         Me.SuspendLayout()
         '
         'InitalScreen1
@@ -52,6 +54,24 @@ Partial Class Form1
         Me.RiderMainScreen1.TabIndex = 2
         Me.RiderMainScreen1.Visible = False
         '
+        'MyCarScreen1
+        '
+        Me.MyCarScreen1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.MyCarScreen1.Location = New System.Drawing.Point(0, 0)
+        Me.MyCarScreen1.Name = "MyCarScreen1"
+        Me.MyCarScreen1.Size = New System.Drawing.Size(333, 640)
+        Me.MyCarScreen1.TabIndex = 3
+        Me.MyCarScreen1.Visible = False
+        '
+        'ClimateControlScreen1
+        '
+        Me.ClimateControlScreen1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ClimateControlScreen1.Location = New System.Drawing.Point(0, 0)
+        Me.ClimateControlScreen1.Name = "ClimateControlScreen1"
+        Me.ClimateControlScreen1.Size = New System.Drawing.Size(335, 641)
+        Me.ClimateControlScreen1.TabIndex = 4
+        Me.ClimateControlScreen1.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -61,8 +81,12 @@ Partial Class Form1
         Me.Controls.Add(Me.InitalScreen1)
         Me.Controls.Add(Me.OwnerMainScreen1)
         Me.Controls.Add(Me.RiderMainScreen1)
+        Me.Controls.Add(Me.MyCarScreen1)
+        Me.Controls.Add(Me.ClimateControlScreen1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "RentECar"
         Me.ResumeLayout(False)
 
     End Sub
@@ -70,4 +94,6 @@ Partial Class Form1
     Friend WithEvents InitalScreen1 As InitalScreen
     Friend WithEvents OwnerMainScreen1 As OwnerMainScreen
     Friend WithEvents RiderMainScreen1 As RiderMainScreen
+    Friend WithEvents MyCarScreen1 As MyCarScreen
+    Friend WithEvents ClimateControlScreen1 As ClimateControlScreen
 End Class

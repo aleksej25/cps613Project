@@ -67,9 +67,100 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend Shared ReadOnly Property _257783_200() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("_257783_200", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property frontDefrost() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("frontDefrost", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property frontDefrostOn() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("frontDefrostOn", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property heatedSeatOff() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("heatedSeatOff", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property heatedSeatOn() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("heatedSeatOn", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend Shared ReadOnly Property iphone_blank() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iphone_blank", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property Mini_Car() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Mini_Car", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property rearDefrost() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("rearDefrost", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property rearDefrostOn() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("rearDefrostOn", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property smart_car_control_transportation_road_smart_cars_media_system_phone_call_music_map_self_driving_512() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("smart_car_control_transportation_road_smart_cars_media_system_phone_call_music_ma"& _ 
+                        "p_self_driving_512", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

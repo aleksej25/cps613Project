@@ -9,7 +9,5 @@
         Else
             Me.InvalidLoginLabel.Show()
         End If
-
-
     End Sub
 End Class
