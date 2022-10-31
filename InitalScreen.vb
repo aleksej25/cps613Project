@@ -1,11 +1,14 @@
 ﻿Public Class InitalScreen
-    Private Sub OwnerButton_Click(sender As Object, e As EventArgs) Handles OwnerButton.Click
-        Me.Visible = False
-        ' Now load the owners screen
-    End Sub
+    Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
+        If (UserNameBox.Text = "owner" And PasswordBox.Text = "ownerpassword") Then
+            Me.InvalidLoginLabel.Visible = False
+            Me.Visible = False
+        ElseIf (UserNameBox.Text = "rider" And PasswordBox.Text = "riderpassword") Then
+            Me.InvalidLoginLabel.Visible = False
+            Me.Visible = False
+        Else
+            Me.InvalidLoginLabel.Visible = True
+        End If
 
-    Private Sub RiderButton_Click(sender As Object, e As EventArgs) Handles RiderButton.Click
-        Me.Visible = False
-        ' Now load the users screen
     End Sub
 End Class

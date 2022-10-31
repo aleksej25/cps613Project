@@ -17,3 +17,4 @@ E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\ref\RentECar.dll
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.ProjectResources.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.InitalScreen.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.OwnerMainScreen.resources
