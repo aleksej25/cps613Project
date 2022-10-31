@@ -45,11 +45,11 @@ Partial Class InitalScreen
         'TitleLabel
         '
         Me.TitleLabel.AutoSize = True
-        Me.TitleLabel.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.TitleLabel.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.TitleLabel.ForeColor = System.Drawing.Color.White
-        Me.TitleLabel.Location = New System.Drawing.Point(39, 82)
+        Me.TitleLabel.Location = New System.Drawing.Point(36, 82)
         Me.TitleLabel.Name = "TitleLabel"
-        Me.TitleLabel.Size = New System.Drawing.Size(262, 35)
+        Me.TitleLabel.Size = New System.Drawing.Size(271, 35)
         Me.TitleLabel.TabIndex = 1
         Me.TitleLabel.Text = "Welcome to RentECar"
         '
@@ -92,11 +92,11 @@ Partial Class InitalScreen
         'InvalidLoginLabel
         '
         Me.InvalidLoginLabel.AutoSize = True
-        Me.InvalidLoginLabel.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.InvalidLoginLabel.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.InvalidLoginLabel.ForeColor = System.Drawing.Color.Red
-        Me.InvalidLoginLabel.Location = New System.Drawing.Point(39, 535)
+        Me.InvalidLoginLabel.Location = New System.Drawing.Point(28, 537)
         Me.InvalidLoginLabel.Name = "InvalidLoginLabel"
-        Me.InvalidLoginLabel.Size = New System.Drawing.Size(265, 28)
+        Me.InvalidLoginLabel.Size = New System.Drawing.Size(279, 28)
         Me.InvalidLoginLabel.TabIndex = 8
         Me.InvalidLoginLabel.Text = "Invalid Username/Password"
         Me.InvalidLoginLabel.Visible = False

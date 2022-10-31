@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aleksej\\Documents\\Ryerson\\CPS613\\cps613Project\\RentECar.vbproj",
+      "projectUniqueName": "E:\\Uni\\4th Year\\F2022\\CPS613\\Project1\\RentECar\\RentECar.vbproj",
       "projectName": "RentECar",
-      "projectPath": "C:\\Users\\Aleksej\\Documents\\Ryerson\\CPS613\\cps613Project\\RentECar.vbproj",
+      "projectPath": "E:\\Uni\\4th Year\\F2022\\CPS613\\Project1\\RentECar\\RentECar.vbproj",
       "packagesPath": "C:\\Users\\Aleksej\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aleksej\\Documents\\Ryerson\\CPS613\\cps613Project\\obj\\",
+      "outputPath": "E:\\Uni\\4th Year\\F2022\\CPS613\\Project1\\RentECar\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aleksej\\AppData\\Roaming\\NuGet\\NuGet.Config",
