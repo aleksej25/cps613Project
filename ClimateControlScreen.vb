@@ -1,4 +1,5 @@
 ﻿Imports System.Linq.Expressions
+Imports System.Reflection.Emit
 
 Public Class ClimateControlScreen
     Public frontOn As Boolean = False
@@ -7,12 +8,9 @@ Public Class ClimateControlScreen
     Public passengerSeatOn As Boolean = False
     Public passengerLeftSeatOn As Boolean = False
     Public passengerRightSeatOn As Boolean = False
-    Public Generator As System.Random = New System.Random()
-    Public tempValue As Integer
     Private Sub ClimateControlScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.tempValue = Generator.Next(16, 28)
-        Me.InsideTempLabel.Text = "Cabin Temperature is: " + tempValue.ToString + "C"
-        Me.OutsideTempLabel.Text = "Outside Temperature is: " + (tempValue + 3).ToString + "C"
+        Me.TitleLabel.Left = (Me.TitleLabel.Parent.Width \ 2) - (Me.TitleLabel.Width \ 2)
+
     End Sub
     Private Sub FrontDefrost_Click(sender As Object, e As EventArgs) Handles FrontDefrost.Click
         If Not frontOn Then
@@ -38,17 +36,7 @@ Public Class ClimateControlScreen
         End If
     End Sub
 
-    Private Sub TemperatureSlider_Scroll(sender As Object, e As EventArgs) Handles TemperatureSlider.Scroll
-        Me.SettingClimateLabel.Text = "Setting the temperature to: " + TemperatureSlider.Value.ToString() + "C"
-        If TemperatureSlider.Value.ToString() < Me.tempValue Then
-            Me.SettingClimateLabel.ForeColor = Color.Blue
-        Else
-            Me.SettingClimateLabel.ForeColor = Color.Red
-        End If
-        Me.SettingClimateLabel.Left = (Me.SettingClimateLabel.Parent.Width \ 2) - (Me.SettingClimateLabel.Width \ 2)
 
-        Me.SettingClimateLabel.Show()
-    End Sub
 
     Private Sub DriverSeat_Click(sender As Object, e As EventArgs) Handles DriverSeat.Click, PassengerSeat.Click, BackLeftPass.Click, BackRightPass.Click
         Select Case sender.Name
@@ -93,6 +81,10 @@ Public Class ClimateControlScreen
                     Me.PassBRLabel.ForeColor = Color.White
                 End If
         End Select
+    End Sub
 
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Me.Hide()
+        Form1.AirControllScreen1.Show()
     End Sub
 End Class

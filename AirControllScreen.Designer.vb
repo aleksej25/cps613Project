@@ -1,0 +1,210 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class AirControllScreen
+    Inherits System.Windows.Forms.UserControl
+
+    'UserControl overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()>
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TtileLabel = New System.Windows.Forms.Label()
+        Me.SettingClimateLabel = New System.Windows.Forms.Label()
+        Me.UpperTempLabel = New System.Windows.Forms.Label()
+        Me.LowerTempLabel = New System.Windows.Forms.Label()
+        Me.TemperatureSlider = New System.Windows.Forms.TrackBar()
+        Me.OutsideTempLabel = New System.Windows.Forms.Label()
+        Me.InsideTempLabel = New System.Windows.Forms.Label()
+        Me.FreshAirBox = New System.Windows.Forms.PictureBox()
+        Me.RecirculatingAirBox = New System.Windows.Forms.PictureBox()
+        Me.FanSpeedBar = New System.Windows.Forms.TrackBar()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TemperatureSlider, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FreshAirBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RecirculatingAirBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FanSpeedBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.RentECar.My.Resources.ProjectResources.iphone_blank
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(333, 640)
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
+        'TtileLabel
+        '
+        Me.TtileLabel.AutoSize = True
+        Me.TtileLabel.Font = New System.Drawing.Font("Sitka Heading", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.TtileLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.TtileLabel.Location = New System.Drawing.Point(58, 54)
+        Me.TtileLabel.Name = "TtileLabel"
+        Me.TtileLabel.Size = New System.Drawing.Size(216, 39)
+        Me.TtileLabel.TabIndex = 6
+        Me.TtileLabel.Text = "Air Conditioning"
+        '
+        'SettingClimateLabel
+        '
+        Me.SettingClimateLabel.AutoSize = True
+        Me.SettingClimateLabel.Font = New System.Drawing.Font("Sitka Heading", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.SettingClimateLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.SettingClimateLabel.Location = New System.Drawing.Point(40, 272)
+        Me.SettingClimateLabel.Name = "SettingClimateLabel"
+        Me.SettingClimateLabel.Size = New System.Drawing.Size(24, 28)
+        Me.SettingClimateLabel.TabIndex = 21
+        Me.SettingClimateLabel.Text = "T"
+        Me.SettingClimateLabel.Visible = False
+        '
+        'UpperTempLabel
+        '
+        Me.UpperTempLabel.AutoSize = True
+        Me.UpperTempLabel.Font = New System.Drawing.Font("Sitka Heading", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.UpperTempLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.UpperTempLabel.Location = New System.Drawing.Point(244, 238)
+        Me.UpperTempLabel.Name = "UpperTempLabel"
+        Me.UpperTempLabel.Size = New System.Drawing.Size(44, 28)
+        Me.UpperTempLabel.TabIndex = 20
+        Me.UpperTempLabel.Text = "28C"
+        '
+        'LowerTempLabel
+        '
+        Me.LowerTempLabel.AutoSize = True
+        Me.LowerTempLabel.Font = New System.Drawing.Font("Sitka Heading", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LowerTempLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.LowerTempLabel.Location = New System.Drawing.Point(41, 238)
+        Me.LowerTempLabel.Name = "LowerTempLabel"
+        Me.LowerTempLabel.Size = New System.Drawing.Size(42, 28)
+        Me.LowerTempLabel.TabIndex = 19
+        Me.LowerTempLabel.Text = "16C"
+        '
+        'TemperatureSlider
+        '
+        Me.TemperatureSlider.Location = New System.Drawing.Point(47, 205)
+        Me.TemperatureSlider.Maximum = 28
+        Me.TemperatureSlider.Minimum = 16
+        Me.TemperatureSlider.Name = "TemperatureSlider"
+        Me.TemperatureSlider.Size = New System.Drawing.Size(230, 45)
+        Me.TemperatureSlider.TabIndex = 18
+        Me.TemperatureSlider.Value = 20
+        '
+        'OutsideTempLabel
+        '
+        Me.OutsideTempLabel.AutoSize = True
+        Me.OutsideTempLabel.Font = New System.Drawing.Font("Sitka Heading", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.OutsideTempLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.OutsideTempLabel.Location = New System.Drawing.Point(40, 163)
+        Me.OutsideTempLabel.Name = "OutsideTempLabel"
+        Me.OutsideTempLabel.Size = New System.Drawing.Size(24, 28)
+        Me.OutsideTempLabel.TabIndex = 17
+        Me.OutsideTempLabel.Text = "T"
+        '
+        'InsideTempLabel
+        '
+        Me.InsideTempLabel.AutoSize = True
+        Me.InsideTempLabel.Font = New System.Drawing.Font("Sitka Heading", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.InsideTempLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.InsideTempLabel.Location = New System.Drawing.Point(40, 125)
+        Me.InsideTempLabel.Name = "InsideTempLabel"
+        Me.InsideTempLabel.Size = New System.Drawing.Size(24, 28)
+        Me.InsideTempLabel.TabIndex = 16
+        Me.InsideTempLabel.Text = "T"
+        '
+        'FreshAirBox
+        '
+        Me.FreshAirBox.Image = Global.RentECar.My.Resources.ProjectResources.freshAirOn
+        Me.FreshAirBox.Location = New System.Drawing.Point(61, 467)
+        Me.FreshAirBox.Name = "FreshAirBox"
+        Me.FreshAirBox.Size = New System.Drawing.Size(90, 90)
+        Me.FreshAirBox.TabIndex = 22
+        Me.FreshAirBox.TabStop = False
+        '
+        'RecirculatingAirBox
+        '
+        Me.RecirculatingAirBox.Image = Global.RentECar.My.Resources.ProjectResources.recirculatAirOff
+        Me.RecirculatingAirBox.Location = New System.Drawing.Point(177, 467)
+        Me.RecirculatingAirBox.Name = "RecirculatingAirBox"
+        Me.RecirculatingAirBox.Size = New System.Drawing.Size(90, 90)
+        Me.RecirculatingAirBox.TabIndex = 23
+        Me.RecirculatingAirBox.TabStop = False
+        '
+        'FanSpeedBar
+        '
+        Me.FanSpeedBar.Location = New System.Drawing.Point(47, 351)
+        Me.FanSpeedBar.Maximum = 28
+        Me.FanSpeedBar.Minimum = 16
+        Me.FanSpeedBar.Name = "FanSpeedBar"
+        Me.FanSpeedBar.Size = New System.Drawing.Size(230, 45)
+        Me.FanSpeedBar.TabIndex = 24
+        Me.FanSpeedBar.Value = 20
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.RentECar.My.Resources.ProjectResources.fanSpeed
+        Me.PictureBox2.Location = New System.Drawing.Point(87, 382)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(150, 35)
+        Me.PictureBox2.TabIndex = 25
+        Me.PictureBox2.TabStop = False
+        '
+        'AirControllScreen
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.FanSpeedBar)
+        Me.Controls.Add(Me.RecirculatingAirBox)
+        Me.Controls.Add(Me.FreshAirBox)
+        Me.Controls.Add(Me.SettingClimateLabel)
+        Me.Controls.Add(Me.UpperTempLabel)
+        Me.Controls.Add(Me.LowerTempLabel)
+        Me.Controls.Add(Me.TemperatureSlider)
+        Me.Controls.Add(Me.OutsideTempLabel)
+        Me.Controls.Add(Me.InsideTempLabel)
+        Me.Controls.Add(Me.TtileLabel)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Name = "AirControllScreen"
+        Me.Size = New System.Drawing.Size(339, 642)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TemperatureSlider, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FreshAirBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RecirculatingAirBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FanSpeedBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents TtileLabel As Label
+    Friend WithEvents SettingClimateLabel As Label
+    Friend WithEvents UpperTempLabel As Label
+    Friend WithEvents LowerTempLabel As Label
+    Friend WithEvents TemperatureSlider As TrackBar
+    Friend WithEvents OutsideTempLabel As Label
+    Friend WithEvents InsideTempLabel As Label
+    Friend WithEvents FreshAirBox As PictureBox
+    Friend WithEvents RecirculatingAirBox As PictureBox
+    Friend WithEvents FanSpeedBar As TrackBar
+    Friend WithEvents PictureBox2 As PictureBox
+End Class

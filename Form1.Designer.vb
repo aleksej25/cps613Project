@@ -27,6 +27,7 @@ Partial Class Form1
         Me.RiderMainScreen1 = New RentECar.RiderMainScreen()
         Me.MyCarScreen1 = New RentECar.MyCarScreen()
         Me.ClimateControlScreen1 = New RentECar.ClimateControlScreen()
+        Me.AirControllScreen1 = New RentECar.AirControllScreen()
         Me.SuspendLayout()
         '
         'InitalScreen1
@@ -72,6 +73,15 @@ Partial Class Form1
         Me.ClimateControlScreen1.TabIndex = 4
         Me.ClimateControlScreen1.Visible = False
         '
+        'AirControllScreen1
+        '
+        Me.AirControllScreen1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.AirControllScreen1.Location = New System.Drawing.Point(0, 0)
+        Me.AirControllScreen1.Name = "AirControllScreen1"
+        Me.AirControllScreen1.Size = New System.Drawing.Size(339, 642)
+        Me.AirControllScreen1.TabIndex = 5
+        Me.AirControllScreen1.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -83,6 +93,7 @@ Partial Class Form1
         Me.Controls.Add(Me.RiderMainScreen1)
         Me.Controls.Add(Me.MyCarScreen1)
         Me.Controls.Add(Me.ClimateControlScreen1)
+        Me.Controls.Add(Me.AirControllScreen1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
@@ -96,4 +107,5 @@ Partial Class Form1
     Friend WithEvents RiderMainScreen1 As RiderMainScreen
     Friend WithEvents MyCarScreen1 As MyCarScreen
     Friend WithEvents ClimateControlScreen1 As ClimateControlScreen
+    Friend WithEvents AirControllScreen1 As AirControllScreen
 End Class
