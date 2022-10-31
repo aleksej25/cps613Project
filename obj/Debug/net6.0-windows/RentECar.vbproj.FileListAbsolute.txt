@@ -40,6 +40,7 @@ C:\Users\Aleksej\Documents\Ryerson\CPS613\cps613Project\obj\Debug\net6.0-windows
 C:\Users\Aleksej\Documents\Ryerson\CPS613\cps613Project\obj\Debug\net6.0-windows\RentECar.RiderMainScreen.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.OwnerMainScreen.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.RiderMainScreen.resources
-E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.MyCarScreen.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.ClimateControlScreen.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.AirControllScreen.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.CarControlScreen.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.ControlECarScreen.resources

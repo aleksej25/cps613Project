@@ -36,7 +36,8 @@ Partial Class ClimateControlScreen
         Me.PassBRLabel = New System.Windows.Forms.Label()
         Me.PassFRLabel = New System.Windows.Forms.Label()
         Me.DriverLabel = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.ACBox = New System.Windows.Forms.PictureBox()
+        Me.BackBox = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FrontDefrost, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rearDefrost, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -44,7 +45,8 @@ Partial Class ClimateControlScreen
         CType(Me.PassengerSeat, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackLeftPass, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackRightPass, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ACBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -187,21 +189,31 @@ Partial Class ClimateControlScreen
         Me.DriverLabel.TabIndex = 25
         Me.DriverLabel.Text = "Driver"
         '
-        'PictureBox2
+        'ACBox
         '
-        Me.PictureBox2.Image = Global.RentECar.My.Resources.ProjectResources.ac_icon
-        Me.PictureBox2.Location = New System.Drawing.Point(111, 98)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(110, 110)
-        Me.PictureBox2.TabIndex = 26
-        Me.PictureBox2.TabStop = False
+        Me.ACBox.Image = Global.RentECar.My.Resources.ProjectResources.ac_icon
+        Me.ACBox.Location = New System.Drawing.Point(111, 98)
+        Me.ACBox.Name = "ACBox"
+        Me.ACBox.Size = New System.Drawing.Size(110, 110)
+        Me.ACBox.TabIndex = 26
+        Me.ACBox.TabStop = False
+        '
+        'BackBox
+        '
+        Me.BackBox.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
+        Me.BackBox.Location = New System.Drawing.Point(32, 25)
+        Me.BackBox.Name = "BackBox"
+        Me.BackBox.Size = New System.Drawing.Size(40, 40)
+        Me.BackBox.TabIndex = 27
+        Me.BackBox.TabStop = False
         '
         'ClimateControlScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.BackBox)
+        Me.Controls.Add(Me.ACBox)
         Me.Controls.Add(Me.DriverLabel)
         Me.Controls.Add(Me.PassFRLabel)
         Me.Controls.Add(Me.PassBRLabel)
@@ -225,7 +237,8 @@ Partial Class ClimateControlScreen
         CType(Me.PassengerSeat, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BackLeftPass, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BackRightPass, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ACBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BackBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -245,5 +258,6 @@ Partial Class ClimateControlScreen
     Friend WithEvents PassBRLabel As Label
     Friend WithEvents PassFRLabel As Label
     Friend WithEvents DriverLabel As Label
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents ACBox As PictureBox
+    Friend WithEvents BackBox As PictureBox
 End Class

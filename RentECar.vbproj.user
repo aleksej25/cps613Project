@@ -4,6 +4,9 @@
     <Compile Update="AirControllScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="CarControlScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ClimateControlScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
@@ -13,7 +16,7 @@
     <Compile Update="InitalScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="MyCarScreen.vb">
+    <Compile Update="ControlECarScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="OwnerMainScreen.vb">

@@ -34,12 +34,14 @@ Partial Class AirControllScreen
         Me.RecirculatingAirBox = New System.Windows.Forms.PictureBox()
         Me.FanSpeedBar = New System.Windows.Forms.TrackBar()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.BackBox = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TemperatureSlider, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FreshAirBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RecirculatingAirBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FanSpeedBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -56,7 +58,7 @@ Partial Class AirControllScreen
         Me.TtileLabel.AutoSize = True
         Me.TtileLabel.Font = New System.Drawing.Font("Sitka Heading", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.TtileLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.TtileLabel.Location = New System.Drawing.Point(58, 54)
+        Me.TtileLabel.Location = New System.Drawing.Point(59, 72)
         Me.TtileLabel.Name = "TtileLabel"
         Me.TtileLabel.Size = New System.Drawing.Size(216, 39)
         Me.TtileLabel.TabIndex = 6
@@ -165,11 +167,21 @@ Partial Class AirControllScreen
         Me.PictureBox2.TabIndex = 25
         Me.PictureBox2.TabStop = False
         '
+        'BackBox
+        '
+        Me.BackBox.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
+        Me.BackBox.Location = New System.Drawing.Point(35, 31)
+        Me.BackBox.Name = "BackBox"
+        Me.BackBox.Size = New System.Drawing.Size(40, 40)
+        Me.BackBox.TabIndex = 26
+        Me.BackBox.TabStop = False
+        '
         'AirControllScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.BackBox)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.FanSpeedBar)
         Me.Controls.Add(Me.RecirculatingAirBox)
@@ -190,6 +202,7 @@ Partial Class AirControllScreen
         CType(Me.RecirculatingAirBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FanSpeedBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BackBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -207,4 +220,5 @@ Partial Class AirControllScreen
     Friend WithEvents RecirculatingAirBox As PictureBox
     Friend WithEvents FanSpeedBar As TrackBar
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents BackBox As PictureBox
 End Class

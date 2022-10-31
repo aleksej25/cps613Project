@@ -83,8 +83,13 @@ Public Class ClimateControlScreen
         End Select
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles ACBox.Click
         Me.Hide()
         Form1.AirControllScreen1.Show()
+    End Sub
+
+    Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
+        Me.Hide()
+        Form1.ControlECarScreen.Show()
     End Sub
 End Class
