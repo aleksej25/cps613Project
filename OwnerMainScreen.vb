@@ -1,7 +1,7 @@
 ﻿Public Class OwnerMainScreen
     Private Sub MyCarButton_Click(sender As Object, e As EventArgs) Handles MyCarButton.Click
         Me.Hide()
-        Form1.ControlECarScreen.Show()
+        Form1.ECarControls.Show()
     End Sub
 
     Private Sub ScheduleButton_Click(sender As Object, e As EventArgs) Handles ScheduleButton.Click

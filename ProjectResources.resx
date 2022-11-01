@@ -121,8 +121,26 @@
   <data name="ac_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ac-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="audio1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\audio1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audio2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\audio2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audio3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\audio3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audioMute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\audioMute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="backArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\backArrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bluetoothOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bluetoothOff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bluetoothOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bluetoothOn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fanSpeed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\fanSpeed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -153,6 +171,12 @@
   </data>
   <data name="Mini_Car" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Mini-Car.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\radio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radioOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\radioOn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rearDefrost" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\rearDefrost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

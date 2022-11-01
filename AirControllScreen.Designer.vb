@@ -22,7 +22,6 @@ Partial Class AirControllScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TtileLabel = New System.Windows.Forms.Label()
         Me.SettingClimateLabel = New System.Windows.Forms.Label()
         Me.UpperTempLabel = New System.Windows.Forms.Label()
@@ -35,23 +34,16 @@ Partial Class AirControllScreen
         Me.FanSpeedBar = New System.Windows.Forms.TrackBar()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.BackBox = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.AirControlLabel = New System.Windows.Forms.Label()
         CType(Me.TemperatureSlider, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FreshAirBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RecirculatingAirBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FanSpeedBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.RentECar.My.Resources.ProjectResources.iphone_blank
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(333, 640)
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
         '
         'TtileLabel
         '
@@ -150,18 +142,16 @@ Partial Class AirControllScreen
         '
         'FanSpeedBar
         '
-        Me.FanSpeedBar.Location = New System.Drawing.Point(47, 351)
-        Me.FanSpeedBar.Maximum = 28
-        Me.FanSpeedBar.Minimum = 16
+        Me.FanSpeedBar.Location = New System.Drawing.Point(47, 340)
         Me.FanSpeedBar.Name = "FanSpeedBar"
         Me.FanSpeedBar.Size = New System.Drawing.Size(230, 45)
         Me.FanSpeedBar.TabIndex = 24
-        Me.FanSpeedBar.Value = 20
+        Me.FanSpeedBar.Value = 10
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.RentECar.My.Resources.ProjectResources.fanSpeed
-        Me.PictureBox2.Location = New System.Drawing.Point(87, 382)
+        Me.PictureBox2.Location = New System.Drawing.Point(87, 371)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(150, 35)
         Me.PictureBox2.TabIndex = 25
@@ -176,11 +166,33 @@ Partial Class AirControllScreen
         Me.BackBox.TabIndex = 26
         Me.BackBox.TabStop = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.RentECar.My.Resources.ProjectResources.iphone_blank
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(333, 640)
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
+        'AirControlLabel
+        '
+        Me.AirControlLabel.AutoSize = True
+        Me.AirControlLabel.Font = New System.Drawing.Font("Sitka Heading", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.AirControlLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.AirControlLabel.Location = New System.Drawing.Point(47, 410)
+        Me.AirControlLabel.Name = "AirControlLabel"
+        Me.AirControlLabel.Size = New System.Drawing.Size(24, 28)
+        Me.AirControlLabel.TabIndex = 27
+        Me.AirControlLabel.Text = "T"
+        Me.AirControlLabel.Visible = False
+        '
         'AirControllScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.AirControlLabel)
         Me.Controls.Add(Me.BackBox)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.FanSpeedBar)
@@ -196,19 +208,17 @@ Partial Class AirControllScreen
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "AirControllScreen"
         Me.Size = New System.Drawing.Size(339, 642)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TemperatureSlider, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FreshAirBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RecirculatingAirBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FanSpeedBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TtileLabel As Label
     Friend WithEvents SettingClimateLabel As Label
     Friend WithEvents UpperTempLabel As Label
@@ -221,4 +231,6 @@ Partial Class AirControllScreen
     Friend WithEvents FanSpeedBar As TrackBar
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents BackBox As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents AirControlLabel As Label
 End Class

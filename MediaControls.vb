@@ -1,0 +1,77 @@
+﻿Imports System.Threading
+
+Public Class MediaControls
+    Public bluetoothOn As Boolean = False
+    Public tempVar As Integer = 0
+    Public radioOn As Boolean = False
+    Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
+        Me.Hide()
+        Form1.ECarControls.Show()
+    End Sub
+
+    Private Sub bluetoothBox_Click(sender As Object, e As EventArgs) Handles bluetoothBox.Click
+        If Not Me.bluetoothOn Then
+            Me.ConnectingLabel.Text = "Establishing Bluetooth Connection..."
+            Me.ConnectingLabel.Left = (Me.ConnectingLabel.Parent.Width \ 2) - (Me.ConnectingLabel.Width \ 2) - 3
+            Me.ConnectionProgressBar.Value = 0
+            Me.Timer1.Start()
+        Else
+            Me.bluetoothBox.Image = My.Resources.ProjectResources.bluetoothOff
+            Me.bluetoothOn = False
+            Me.ConnectingLabel.Text = "Disconnected!"
+            Me.ConnectingLabel.ForeColor = Color.Lime
+            Me.ConnectingLabel.Left = (Me.ConnectingLabel.Parent.Width \ 2) - (Me.ConnectingLabel.Width \ 2) - 3
+            Me.ConnectingLabel.Show()
+            Me.Timer2.Start()
+        End If
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Me.ConnectingLabel.Show()
+        Me.ConnectionProgressBar.Show()
+        Me.ConnectionProgressBar.Increment(10)
+        If Me.ConnectionProgressBar.Value = 60 Then
+            Me.ConnectingLabel.Text = "Connection Established!"
+            Me.ConnectingLabel.Left = (Me.ConnectingLabel.Parent.Width \ 2) - (Me.ConnectingLabel.Width \ 2) - 3
+            Me.ConnectingLabel.ForeColor = Color.Lime
+            Me.bluetoothBox.Image = My.Resources.ProjectResources.bluetoothOn
+            Me.bluetoothOn = True
+            Me.Timer2.Start()
+            Me.Timer1.Stop()
+        End If
+    End Sub
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        Me.tempVar += 1
+        If Me.tempVar = 14 Then
+            Me.tempVar = 0
+            Me.ConnectingLabel.Hide()
+            Me.ConnectionProgressBar.Hide()
+            Me.Timer2.Stop()
+        End If
+    End Sub
+
+    Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
+        If Me.TrackBar1.Value = 0 Then
+            Me.AudioBox.Image = My.Resources.ProjectResources.audioMute
+        ElseIf Me.TrackBar1.Value >= 1 And Me.TrackBar1.Value <= 3 Then
+            Me.AudioBox.Image = My.Resources.ProjectResources.audio1
+        ElseIf Me.TrackBar1.Value > 3 And Me.TrackBar1.Value <= 6 Then
+            Me.AudioBox.Image = My.Resources.ProjectResources.audio2
+        ElseIf Me.TrackBar1.Value > 6 And Me.TrackBar1.Value <= 10 Then
+            Me.AudioBox.Image = My.Resources.ProjectResources.audio3
+        End If
+    End Sub
+
+    Private Sub RadioBox_Click(sender As Object, e As EventArgs) Handles RadioBox.Click
+        If Not Me.radioOn Then
+            Me.RadioBox.Image = My.Resources.ProjectResources.radioOn
+            Me.radioOn = True
+            Me.RadioBox.Left = 35
+        Else
+            Me.RadioBox.Image = My.Resources.ProjectResources.radio
+            Me.radioOn = False
+            Me.RadioBox.Left = 121
+        End If
+
+    End Sub
+End Class

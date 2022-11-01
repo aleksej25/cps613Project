@@ -25,10 +25,11 @@ Partial Class Form1
         Me.InitalScreen1 = New RentECar.InitalScreen()
         Me.OwnerMainScreen1 = New RentECar.OwnerMainScreen()
         Me.RiderMainScreen1 = New RentECar.RiderMainScreen()
-        Me.ControlECarScreen = New RentECar.ControlECarScreen()
+        Me.ECarControls = New RentECar.ECarControls()
         Me.ClimateControlScreen1 = New RentECar.ClimateControlScreen()
         Me.AirControllScreen1 = New RentECar.AirControllScreen()
         Me.CarControlScreen = New RentECar.CarControlScreen()
+        Me.MediaControls1 = New RentECar.MediaControls()
         Me.SuspendLayout()
         '
         'InitalScreen1
@@ -56,14 +57,14 @@ Partial Class Form1
         Me.RiderMainScreen1.TabIndex = 2
         Me.RiderMainScreen1.Visible = False
         '
-        'ControlECarScreen
+        'ECarControls
         '
-        Me.ControlECarScreen.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.ControlECarScreen.Location = New System.Drawing.Point(0, 0)
-        Me.ControlECarScreen.Name = "ControlECarScreen"
-        Me.ControlECarScreen.Size = New System.Drawing.Size(333, 640)
-        Me.ControlECarScreen.TabIndex = 3
-        Me.ControlECarScreen.Visible = False
+        Me.ECarControls.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ECarControls.Location = New System.Drawing.Point(0, 0)
+        Me.ECarControls.Name = "ECarControls"
+        Me.ECarControls.Size = New System.Drawing.Size(333, 640)
+        Me.ECarControls.TabIndex = 3
+        Me.ECarControls.Visible = False
         '
         'ClimateControlScreen1
         '
@@ -92,6 +93,15 @@ Partial Class Form1
         Me.CarControlScreen.TabIndex = 6
         Me.CarControlScreen.Visible = False
         '
+        'MediaControls1
+        '
+        Me.MediaControls1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.MediaControls1.Location = New System.Drawing.Point(0, 0)
+        Me.MediaControls1.Name = "MediaControls1"
+        Me.MediaControls1.Size = New System.Drawing.Size(336, 642)
+        Me.MediaControls1.TabIndex = 7
+        Me.MediaControls1.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -101,10 +111,11 @@ Partial Class Form1
         Me.Controls.Add(Me.InitalScreen1)
         Me.Controls.Add(Me.OwnerMainScreen1)
         Me.Controls.Add(Me.RiderMainScreen1)
-        Me.Controls.Add(Me.ControlECarScreen)
+        Me.Controls.Add(Me.ECarControls)
         Me.Controls.Add(Me.ClimateControlScreen1)
         Me.Controls.Add(Me.AirControllScreen1)
         Me.Controls.Add(Me.CarControlScreen)
+        Me.Controls.Add(Me.MediaControls1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
@@ -116,8 +127,9 @@ Partial Class Form1
     Friend WithEvents InitalScreen1 As InitalScreen
     Friend WithEvents OwnerMainScreen1 As OwnerMainScreen
     Friend WithEvents RiderMainScreen1 As RiderMainScreen
-    Friend WithEvents ControlECarScreen As ControlECarScreen
+    Friend WithEvents ECarControls As ECarControls
     Friend WithEvents ClimateControlScreen1 As ClimateControlScreen
     Friend WithEvents AirControllScreen1 As AirControllScreen
     Friend WithEvents CarControlScreen As CarControlScreen
+    Friend WithEvents MediaControls1 As MediaControls
 End Class

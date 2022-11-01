@@ -16,7 +16,7 @@
         Else
             Me.SettingClimateLabel.ForeColor = Color.Red
         End If
-        Me.SettingClimateLabel.Left = (Me.SettingClimateLabel.Parent.Width \ 2) - (Me.SettingClimateLabel.Width \ 2)
+        Me.SettingClimateLabel.Left = (Me.SettingClimateLabel.Parent.Width \ 2) - (Me.SettingClimateLabel.Width \ 2) - 3
 
         Me.SettingClimateLabel.Show()
     End Sub
@@ -35,5 +35,10 @@
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         Me.Hide()
         Form1.ClimateControlScreen1.Show()
+    End Sub
+
+    Private Sub FanSpeedBar_Scroll(sender As Object, e As EventArgs) Handles FanSpeedBar.Scroll
+        Me.AirControlLabel.Text = "Fan Speed is: " + FanSpeedBar.Value.ToString
+        Me.AirControlLabel.Show()
     End Sub
 End Class
