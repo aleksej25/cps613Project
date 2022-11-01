@@ -157,6 +157,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend Shared ReadOnly Property closeTrunk() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("closeTrunk", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend Shared ReadOnly Property fanSpeed() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("fanSpeed", resourceCulture)
@@ -260,6 +270,16 @@ Namespace My.Resources
         Friend Shared ReadOnly Property minusButton() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("minusButton", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property openTrunk() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("openTrunk", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
