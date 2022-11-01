@@ -4,6 +4,9 @@ Public Class MediaControls
     Public bluetoothOn As Boolean = False
     Public tempVar As Integer = 0
     Public radioOn As Boolean = False
+    Public radioLabelMessage As String = "Now playing "
+    Public radioStation As Double = 107.1
+    Public mouseIsDown As Boolean = False
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         Me.Hide()
         Form1.ECarControls.Show()
@@ -65,13 +68,37 @@ Public Class MediaControls
     Private Sub RadioBox_Click(sender As Object, e As EventArgs) Handles RadioBox.Click
         If Not Me.radioOn Then
             Me.RadioBox.Image = My.Resources.ProjectResources.radioOn
+            Me.radioPlayingBox.Show()
             Me.radioOn = True
             Me.RadioBox.Left = 35
+            Me.RadioStationLabel.Text = Me.radioLabelMessage + Me.radioStation.ToString
+            Me.RadioStationLabel.Location = New Point(135, 475)
+            Me.RadioStationLabel.Show()
+            Me.plusBox.Show()
+            Me.minusBox.Show()
         Else
+            Me.RadioStationLabel.Hide()
+            Me.plusBox.Hide()
+            Me.radioPlayingBox.Hide()
+            Me.minusBox.Hide()
             Me.RadioBox.Image = My.Resources.ProjectResources.radio
             Me.radioOn = False
             Me.RadioBox.Left = 121
         End If
-
     End Sub
+
+    Private Sub plusBox_Click(sender As Object, e As EventArgs) Handles plusBox.Click
+        If Me.radioStation + 0.2 <= 110 Then
+            Me.radioStation += 0.2
+            Me.RadioStationLabel.Text = Me.radioLabelMessage + Math.Round(Me.radioStation, 2).ToString
+        End If
+    End Sub
+
+    Private Sub minusBox_Click(sender As Object, e As EventArgs) Handles minusBox.Click
+        If Me.radioStation - 0.2 >= 90 Then
+            Me.radioStation -= 0.2
+            Me.RadioStationLabel.Text = Me.radioLabelMessage + Math.Round(Me.radioStation, 2).ToString
+        End If
+    End Sub
+
 End Class

@@ -146,7 +146,6 @@ Partial Class AirControllScreen
         Me.FanSpeedBar.Name = "FanSpeedBar"
         Me.FanSpeedBar.Size = New System.Drawing.Size(230, 45)
         Me.FanSpeedBar.TabIndex = 24
-        Me.FanSpeedBar.Value = 10
         '
         'PictureBox2
         '

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MediaControls
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class MediaControls
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.BackBox = New System.Windows.Forms.PictureBox()
@@ -36,12 +36,18 @@ Partial Class MediaControls
         Me.AudioBox = New System.Windows.Forms.PictureBox()
         Me.RadioBox = New System.Windows.Forms.PictureBox()
         Me.RadioStationLabel = New System.Windows.Forms.Label()
+        Me.plusBox = New System.Windows.Forms.PictureBox()
+        Me.minusBox = New System.Windows.Forms.PictureBox()
+        Me.radioPlayingBox = New System.Windows.Forms.PictureBox()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.bluetoothBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AudioBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadioBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.plusBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.minusBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.radioPlayingBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BackBox
@@ -146,13 +152,46 @@ Partial Class MediaControls
         Me.RadioStationLabel.Text = "T"
         Me.RadioStationLabel.Visible = False
         '
+        'plusBox
+        '
+        Me.plusBox.Image = Global.RentECar.My.Resources.ProjectResources.plusButton
+        Me.plusBox.Location = New System.Drawing.Point(230, 399)
+        Me.plusBox.Name = "plusBox"
+        Me.plusBox.Size = New System.Drawing.Size(65, 65)
+        Me.plusBox.TabIndex = 19
+        Me.plusBox.TabStop = False
+        Me.plusBox.Visible = False
+        '
+        'minusBox
+        '
+        Me.minusBox.Image = Global.RentECar.My.Resources.ProjectResources.minusButton
+        Me.minusBox.Location = New System.Drawing.Point(230, 516)
+        Me.minusBox.Name = "minusBox"
+        Me.minusBox.Size = New System.Drawing.Size(65, 65)
+        Me.minusBox.TabIndex = 20
+        Me.minusBox.TabStop = False
+        Me.minusBox.Visible = False
+        '
+        'radioPlayingBox
+        '
+        Me.radioPlayingBox.Image = Global.RentECar.My.Resources.ProjectResources.radioPlaying
+        Me.radioPlayingBox.Location = New System.Drawing.Point(26, 399)
+        Me.radioPlayingBox.Name = "radioPlayingBox"
+        Me.radioPlayingBox.Size = New System.Drawing.Size(65, 65)
+        Me.radioPlayingBox.TabIndex = 21
+        Me.radioPlayingBox.TabStop = False
+        Me.radioPlayingBox.Visible = False
+        '
         'MediaControls
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Controls.Add(Me.RadioStationLabel)
         Me.Controls.Add(Me.RadioBox)
+        Me.Controls.Add(Me.radioPlayingBox)
+        Me.Controls.Add(Me.minusBox)
+        Me.Controls.Add(Me.plusBox)
+        Me.Controls.Add(Me.RadioStationLabel)
         Me.Controls.Add(Me.AudioBox)
         Me.Controls.Add(Me.TrackBar1)
         Me.Controls.Add(Me.ConnectionProgressBar)
@@ -169,6 +208,9 @@ Partial Class MediaControls
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AudioBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadioBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.plusBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.minusBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.radioPlayingBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -187,4 +229,7 @@ Partial Class MediaControls
     Friend WithEvents AudioBox As PictureBox
     Friend WithEvents RadioBox As PictureBox
     Friend WithEvents RadioStationLabel As Label
+    Friend WithEvents plusBox As PictureBox
+    Friend WithEvents minusBox As PictureBox
+    Friend WithEvents radioPlayingBox As PictureBox
 End Class

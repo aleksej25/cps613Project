@@ -257,6 +257,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend Shared ReadOnly Property minusButton() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("minusButton", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property plusButton() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("plusButton", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend Shared ReadOnly Property radio() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("radio", resourceCulture)
@@ -270,6 +290,16 @@ Namespace My.Resources
         Friend Shared ReadOnly Property radioOn() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("radioOn", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property radioPlaying() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("radioPlaying", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
