@@ -7,6 +7,7 @@ Public Class MediaControls
     Public radioLabelMessage As String = "Now playing "
     Public radioStation As Double = 107.1
     Public mouseIsDown As Boolean = False
+    Public volumeAmount As Integer = 0
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         Me.Hide()
         Form1.ECarControls.Show()
@@ -54,14 +55,19 @@ Public Class MediaControls
     End Sub
 
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
+        Me.audioLevelLabel.Show()
         If Me.TrackBar1.Value = 0 Then
             Me.AudioBox.Image = My.Resources.ProjectResources.audioMute
+            Me.audioLevelLabel.Text = "Volume Level: " + Me.TrackBar1.Value.ToString()
         ElseIf Me.TrackBar1.Value >= 1 And Me.TrackBar1.Value <= 3 Then
             Me.AudioBox.Image = My.Resources.ProjectResources.audio1
+            Me.audioLevelLabel.Text = "Volume Level: " + Me.TrackBar1.Value.ToString()
         ElseIf Me.TrackBar1.Value > 3 And Me.TrackBar1.Value <= 6 Then
             Me.AudioBox.Image = My.Resources.ProjectResources.audio2
+            Me.audioLevelLabel.Text = "Volume Level: " + Me.TrackBar1.Value.ToString()
         ElseIf Me.TrackBar1.Value > 6 And Me.TrackBar1.Value <= 10 Then
             Me.AudioBox.Image = My.Resources.ProjectResources.audio3
+            Me.audioLevelLabel.Text = "Volume Level: " + Me.TrackBar1.Value.ToString()
         End If
     End Sub
 
@@ -71,7 +77,7 @@ Public Class MediaControls
             Me.radioPlayingBox.Show()
             Me.radioOn = True
             Me.RadioBox.Left = 35
-            Me.RadioStationLabel.Text = Me.radioLabelMessage + Me.radioStation.ToString
+            Me.RadioStationLabel.Text = Me.radioLabelMessage + Math.Round(Me.radioStation, 2).ToString
             Me.RadioStationLabel.Location = New Point(135, 475)
             Me.RadioStationLabel.Show()
             Me.plusBox.Show()
@@ -100,5 +106,4 @@ Public Class MediaControls
             Me.RadioStationLabel.Text = Me.radioLabelMessage + Math.Round(Me.radioStation, 2).ToString
         End If
     End Sub
-
 End Class

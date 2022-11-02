@@ -39,6 +39,7 @@ Partial Class MediaControls
         Me.plusBox = New System.Windows.Forms.PictureBox()
         Me.minusBox = New System.Windows.Forms.PictureBox()
         Me.radioPlayingBox = New System.Windows.Forms.PictureBox()
+        Me.audioLevelLabel = New System.Windows.Forms.Label()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.bluetoothBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -117,7 +118,7 @@ Partial Class MediaControls
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(63, 266)
+        Me.TrackBar1.Location = New System.Drawing.Point(63, 258)
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(206, 45)
         Me.TrackBar1.TabIndex = 15
@@ -125,7 +126,7 @@ Partial Class MediaControls
         'AudioBox
         '
         Me.AudioBox.Image = Global.RentECar.My.Resources.ProjectResources.audioMute
-        Me.AudioBox.Location = New System.Drawing.Point(121, 308)
+        Me.AudioBox.Location = New System.Drawing.Point(121, 300)
         Me.AudioBox.Name = "AudioBox"
         Me.AudioBox.Size = New System.Drawing.Size(85, 85)
         Me.AudioBox.TabIndex = 16
@@ -182,11 +183,24 @@ Partial Class MediaControls
         Me.radioPlayingBox.TabStop = False
         Me.radioPlayingBox.Visible = False
         '
+        'audioLevelLabel
+        '
+        Me.audioLevelLabel.AutoSize = True
+        Me.audioLevelLabel.Font = New System.Drawing.Font("Sitka Heading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.audioLevelLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.audioLevelLabel.Location = New System.Drawing.Point(92, 388)
+        Me.audioLevelLabel.Name = "audioLevelLabel"
+        Me.audioLevelLabel.Size = New System.Drawing.Size(114, 23)
+        Me.audioLevelLabel.TabIndex = 22
+        Me.audioLevelLabel.Text = "Volume Level: "
+        Me.audioLevelLabel.Visible = False
+        '
         'MediaControls
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.audioLevelLabel)
         Me.Controls.Add(Me.RadioBox)
         Me.Controls.Add(Me.radioPlayingBox)
         Me.Controls.Add(Me.minusBox)
@@ -232,4 +246,5 @@ Partial Class MediaControls
     Friend WithEvents plusBox As PictureBox
     Friend WithEvents minusBox As PictureBox
     Friend WithEvents radioPlayingBox As PictureBox
+    Friend WithEvents audioLevelLabel As Label
 End Class
