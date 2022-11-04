@@ -43,6 +43,8 @@ Partial Class CarControlScreen
         Me.passFTrackBar = New System.Windows.Forms.TrackBar()
         Me.passBRTrackBar = New System.Windows.Forms.TrackBar()
         Me.passBLTrackBar = New System.Windows.Forms.TrackBar()
+        Me.carBox = New System.Windows.Forms.PictureBox()
+        Me.statusLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.trunkBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,6 +60,7 @@ Partial Class CarControlScreen
         CType(Me.passFTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.passBRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.passBLTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.carBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -83,7 +86,7 @@ Partial Class CarControlScreen
         Me.TtileLabel.AutoSize = True
         Me.TtileLabel.Font = New System.Drawing.Font("Sitka Heading", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.TtileLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.TtileLabel.Location = New System.Drawing.Point(72, 65)
+        Me.TtileLabel.Location = New System.Drawing.Point(73, 74)
         Me.TtileLabel.Name = "TtileLabel"
         Me.TtileLabel.Size = New System.Drawing.Size(184, 39)
         Me.TtileLabel.TabIndex = 13
@@ -92,7 +95,7 @@ Partial Class CarControlScreen
         'trunkBox
         '
         Me.trunkBox.Image = Global.RentECar.My.Resources.ProjectResources.openTrunk
-        Me.trunkBox.Location = New System.Drawing.Point(105, 107)
+        Me.trunkBox.Location = New System.Drawing.Point(47, 131)
         Me.trunkBox.Name = "trunkBox"
         Me.trunkBox.Size = New System.Drawing.Size(110, 110)
         Me.trunkBox.TabIndex = 14
@@ -103,7 +106,7 @@ Partial Class CarControlScreen
         Me.trunkOCLabel.AutoSize = True
         Me.trunkOCLabel.Font = New System.Drawing.Font("Sitka Heading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.trunkOCLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.trunkOCLabel.Location = New System.Drawing.Point(108, 220)
+        Me.trunkOCLabel.Location = New System.Drawing.Point(47, 244)
         Me.trunkOCLabel.Name = "trunkOCLabel"
         Me.trunkOCLabel.Size = New System.Drawing.Size(104, 23)
         Me.trunkOCLabel.TabIndex = 15
@@ -112,7 +115,7 @@ Partial Class CarControlScreen
         'driveUp
         '
         Me.driveUp.Image = Global.RentECar.My.Resources.ProjectResources.windowUp
-        Me.driveUp.Location = New System.Drawing.Point(57, 296)
+        Me.driveUp.Location = New System.Drawing.Point(57, 333)
         Me.driveUp.Name = "driveUp"
         Me.driveUp.Size = New System.Drawing.Size(100, 50)
         Me.driveUp.TabIndex = 16
@@ -121,7 +124,7 @@ Partial Class CarControlScreen
         'driverDown
         '
         Me.driverDown.Image = Global.RentECar.My.Resources.ProjectResources.windowDown
-        Me.driverDown.Location = New System.Drawing.Point(57, 347)
+        Me.driverDown.Location = New System.Drawing.Point(57, 384)
         Me.driverDown.Name = "driverDown"
         Me.driverDown.Size = New System.Drawing.Size(100, 50)
         Me.driverDown.TabIndex = 17
@@ -130,7 +133,7 @@ Partial Class CarControlScreen
         'passFDown
         '
         Me.passFDown.Image = Global.RentECar.My.Resources.ProjectResources.windowDown
-        Me.passFDown.Location = New System.Drawing.Point(190, 347)
+        Me.passFDown.Location = New System.Drawing.Point(190, 384)
         Me.passFDown.Name = "passFDown"
         Me.passFDown.Size = New System.Drawing.Size(100, 50)
         Me.passFDown.TabIndex = 19
@@ -139,7 +142,7 @@ Partial Class CarControlScreen
         'passFUp
         '
         Me.passFUp.Image = Global.RentECar.My.Resources.ProjectResources.windowUp
-        Me.passFUp.Location = New System.Drawing.Point(190, 296)
+        Me.passFUp.Location = New System.Drawing.Point(190, 333)
         Me.passFUp.Name = "passFUp"
         Me.passFUp.Size = New System.Drawing.Size(100, 50)
         Me.passFUp.TabIndex = 18
@@ -148,7 +151,7 @@ Partial Class CarControlScreen
         'passBRDown
         '
         Me.passBRDown.Image = Global.RentECar.My.Resources.ProjectResources.windowDown
-        Me.passBRDown.Location = New System.Drawing.Point(57, 488)
+        Me.passBRDown.Location = New System.Drawing.Point(57, 525)
         Me.passBRDown.Name = "passBRDown"
         Me.passBRDown.Size = New System.Drawing.Size(100, 50)
         Me.passBRDown.TabIndex = 21
@@ -157,7 +160,7 @@ Partial Class CarControlScreen
         'passBRUp
         '
         Me.passBRUp.Image = Global.RentECar.My.Resources.ProjectResources.windowUp
-        Me.passBRUp.Location = New System.Drawing.Point(57, 437)
+        Me.passBRUp.Location = New System.Drawing.Point(57, 474)
         Me.passBRUp.Name = "passBRUp"
         Me.passBRUp.Size = New System.Drawing.Size(100, 50)
         Me.passBRUp.TabIndex = 20
@@ -166,7 +169,7 @@ Partial Class CarControlScreen
         'passBLDown
         '
         Me.passBLDown.Image = Global.RentECar.My.Resources.ProjectResources.windowDown
-        Me.passBLDown.Location = New System.Drawing.Point(190, 488)
+        Me.passBLDown.Location = New System.Drawing.Point(190, 525)
         Me.passBLDown.Name = "passBLDown"
         Me.passBLDown.Size = New System.Drawing.Size(100, 50)
         Me.passBLDown.TabIndex = 23
@@ -175,7 +178,7 @@ Partial Class CarControlScreen
         'passBLUp
         '
         Me.passBLUp.Image = Global.RentECar.My.Resources.ProjectResources.windowUp
-        Me.passBLUp.Location = New System.Drawing.Point(190, 437)
+        Me.passBLUp.Location = New System.Drawing.Point(190, 474)
         Me.passBLUp.Name = "passBLUp"
         Me.passBLUp.Size = New System.Drawing.Size(100, 50)
         Me.passBLUp.TabIndex = 22
@@ -186,7 +189,7 @@ Partial Class CarControlScreen
         Me.driverWLabel.AutoSize = True
         Me.driverWLabel.Font = New System.Drawing.Font("Sitka Heading", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.driverWLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.driverWLabel.Location = New System.Drawing.Point(58, 272)
+        Me.driverWLabel.Location = New System.Drawing.Point(58, 309)
         Me.driverWLabel.Name = "driverWLabel"
         Me.driverWLabel.Size = New System.Drawing.Size(54, 21)
         Me.driverWLabel.TabIndex = 24
@@ -197,7 +200,7 @@ Partial Class CarControlScreen
         Me.passengerWLabel.AutoSize = True
         Me.passengerWLabel.Font = New System.Drawing.Font("Sitka Heading", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.passengerWLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.passengerWLabel.Location = New System.Drawing.Point(190, 272)
+        Me.passengerWLabel.Location = New System.Drawing.Point(190, 309)
         Me.passengerWLabel.Name = "passengerWLabel"
         Me.passengerWLabel.Size = New System.Drawing.Size(79, 21)
         Me.passengerWLabel.TabIndex = 25
@@ -208,7 +211,7 @@ Partial Class CarControlScreen
         Me.passengerBRWLabel.AutoSize = True
         Me.passengerBRWLabel.Font = New System.Drawing.Font("Sitka Heading", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.passengerBRWLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.passengerBRWLabel.Location = New System.Drawing.Point(58, 413)
+        Me.passengerBRWLabel.Location = New System.Drawing.Point(58, 450)
         Me.passengerBRWLabel.Name = "passengerBRWLabel"
         Me.passengerBRWLabel.Size = New System.Drawing.Size(79, 21)
         Me.passengerBRWLabel.TabIndex = 26
@@ -219,7 +222,7 @@ Partial Class CarControlScreen
         Me.passengerBLWLabel.AutoSize = True
         Me.passengerBLWLabel.Font = New System.Drawing.Font("Sitka Heading", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.passengerBLWLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.passengerBLWLabel.Location = New System.Drawing.Point(190, 413)
+        Me.passengerBLWLabel.Location = New System.Drawing.Point(190, 450)
         Me.passengerBLWLabel.Name = "passengerBLWLabel"
         Me.passengerBLWLabel.Size = New System.Drawing.Size(79, 21)
         Me.passengerBLWLabel.TabIndex = 27
@@ -228,7 +231,7 @@ Partial Class CarControlScreen
         'driverTrackBar
         '
         Me.driverTrackBar.Enabled = False
-        Me.driverTrackBar.Location = New System.Drawing.Point(27, 296)
+        Me.driverTrackBar.Location = New System.Drawing.Point(27, 333)
         Me.driverTrackBar.Name = "driverTrackBar"
         Me.driverTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical
         Me.driverTrackBar.Size = New System.Drawing.Size(45, 104)
@@ -238,7 +241,7 @@ Partial Class CarControlScreen
         'passFTrackBar
         '
         Me.passFTrackBar.Enabled = False
-        Me.passFTrackBar.Location = New System.Drawing.Point(159, 296)
+        Me.passFTrackBar.Location = New System.Drawing.Point(159, 333)
         Me.passFTrackBar.Name = "passFTrackBar"
         Me.passFTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical
         Me.passFTrackBar.Size = New System.Drawing.Size(45, 104)
@@ -248,7 +251,7 @@ Partial Class CarControlScreen
         'passBRTrackBar
         '
         Me.passBRTrackBar.Enabled = False
-        Me.passBRTrackBar.Location = New System.Drawing.Point(27, 434)
+        Me.passBRTrackBar.Location = New System.Drawing.Point(27, 474)
         Me.passBRTrackBar.Name = "passBRTrackBar"
         Me.passBRTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical
         Me.passBRTrackBar.Size = New System.Drawing.Size(45, 104)
@@ -258,18 +261,40 @@ Partial Class CarControlScreen
         'passBLTrackBar
         '
         Me.passBLTrackBar.Enabled = False
-        Me.passBLTrackBar.Location = New System.Drawing.Point(163, 434)
+        Me.passBLTrackBar.Location = New System.Drawing.Point(163, 471)
         Me.passBLTrackBar.Name = "passBLTrackBar"
         Me.passBLTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical
         Me.passBLTrackBar.Size = New System.Drawing.Size(45, 104)
         Me.passBLTrackBar.TabIndex = 31
         Me.passBLTrackBar.Value = 10
         '
+        'carBox
+        '
+        Me.carBox.Image = Global.RentECar.My.Resources.ProjectResources.carDiagnostic
+        Me.carBox.Location = New System.Drawing.Point(180, 131)
+        Me.carBox.Name = "carBox"
+        Me.carBox.Size = New System.Drawing.Size(110, 110)
+        Me.carBox.TabIndex = 32
+        Me.carBox.TabStop = False
+        '
+        'statusLabel
+        '
+        Me.statusLabel.AutoSize = True
+        Me.statusLabel.Font = New System.Drawing.Font("Sitka Heading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.statusLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.statusLabel.Location = New System.Drawing.Point(180, 244)
+        Me.statusLabel.Name = "statusLabel"
+        Me.statusLabel.Size = New System.Drawing.Size(55, 23)
+        Me.statusLabel.TabIndex = 33
+        Me.statusLabel.Text = "Status"
+        '
         'CarControlScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.statusLabel)
+        Me.Controls.Add(Me.carBox)
         Me.Controls.Add(Me.passBLDown)
         Me.Controls.Add(Me.passBLUp)
         Me.Controls.Add(Me.passBLTrackBar)
@@ -308,6 +333,7 @@ Partial Class CarControlScreen
         CType(Me.passFTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.passBRTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.passBLTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.carBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -334,4 +360,6 @@ Partial Class CarControlScreen
     Friend WithEvents passFTrackBar As TrackBar
     Friend WithEvents passBRTrackBar As TrackBar
     Friend WithEvents passBLTrackBar As TrackBar
+    Friend WithEvents carBox As PictureBox
+    Friend WithEvents statusLabel As Label
 End Class

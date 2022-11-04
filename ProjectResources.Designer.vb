@@ -157,9 +157,79 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend Shared ReadOnly Property breakInWarning() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("breakInWarning", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property cameraIcon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("cameraIcon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property cameraWarning() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("cameraWarning", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property camInside() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("camInside", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property camOutside() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("camOutside", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property carDiagnostic() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("carDiagnostic", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend Shared ReadOnly Property closeTrunk() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("closeTrunk", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property collisionWarning() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("collisionWarning", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -210,6 +280,16 @@ Namespace My.Resources
         Friend Shared ReadOnly Property frontDefrostOn() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("frontDefrostOn", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property gearIcon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gearIcon", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -367,10 +447,40 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend Shared ReadOnly Property repairing() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("repairing", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property repairsIcon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("repairsIcon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend Shared ReadOnly Property smart_car_control_transportation_road_smart_cars_media_system_phone_call_music_map_self_driving_512() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("smart_car_control_transportation_road_smart_cars_media_system_phone_call_music_ma"& _ 
                         "p_self_driving_512", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property spinningGear() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("spinningGear", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

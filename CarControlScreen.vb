@@ -110,4 +110,8 @@ Public Class CarControlScreen
         Loop
     End Sub
 
+    Private Sub carBox_Click(sender As Object, e As EventArgs) Handles carBox.Click
+        Me.Hide()
+        Form1.CarDiagnosticControl1.Show()
+    End Sub
 End Class

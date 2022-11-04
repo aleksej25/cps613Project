@@ -30,6 +30,15 @@ Partial Class Form1
         Me.AirControllScreen1 = New RentECar.AirControllScreen()
         Me.CarControlScreen = New RentECar.CarControlScreen()
         Me.MediaControls1 = New RentECar.MediaControls()
+        Me.CarDiagnosticControl1 = New RentECar.carDiagnosticControl()
+        Me.CameraViewControl1 = New RentECar.cameraViewControl()
+        Me.cameraFailureBox = New System.Windows.Forms.PictureBox()
+        Me.ErrorFixScreenControl1 = New RentECar.warningsControl()
+        Me.breakInBox = New System.Windows.Forms.PictureBox()
+        Me.collisionBox = New System.Windows.Forms.PictureBox()
+        CType(Me.cameraFailureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.breakInBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.collisionBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'InitalScreen1
@@ -51,6 +60,7 @@ Partial Class Form1
         '
         'RiderMainScreen1
         '
+        Me.RiderMainScreen1.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.RiderMainScreen1.Location = New System.Drawing.Point(0, 0)
         Me.RiderMainScreen1.Name = "RiderMainScreen1"
         Me.RiderMainScreen1.Size = New System.Drawing.Size(335, 642)
@@ -102,12 +112,73 @@ Partial Class Form1
         Me.MediaControls1.TabIndex = 7
         Me.MediaControls1.Visible = False
         '
+        'CarDiagnosticControl1
+        '
+        Me.CarDiagnosticControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.CarDiagnosticControl1.Location = New System.Drawing.Point(0, 0)
+        Me.CarDiagnosticControl1.Name = "CarDiagnosticControl1"
+        Me.CarDiagnosticControl1.Size = New System.Drawing.Size(333, 641)
+        Me.CarDiagnosticControl1.TabIndex = 8
+        Me.CarDiagnosticControl1.Visible = False
+        '
+        'CameraViewControl1
+        '
+        Me.CameraViewControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.CameraViewControl1.Location = New System.Drawing.Point(0, 0)
+        Me.CameraViewControl1.Name = "CameraViewControl1"
+        Me.CameraViewControl1.Size = New System.Drawing.Size(335, 640)
+        Me.CameraViewControl1.TabIndex = 9
+        Me.CameraViewControl1.Visible = False
+        '
+        'cameraFailureBox
+        '
+        Me.cameraFailureBox.Image = Global.RentECar.My.Resources.ProjectResources.cameraWarning
+        Me.cameraFailureBox.Location = New System.Drawing.Point(21, 52)
+        Me.cameraFailureBox.Name = "cameraFailureBox"
+        Me.cameraFailureBox.Size = New System.Drawing.Size(285, 120)
+        Me.cameraFailureBox.TabIndex = 12
+        Me.cameraFailureBox.TabStop = False
+        Me.cameraFailureBox.Visible = False
+        '
+        'ErrorFixScreenControl1
+        '
+        Me.ErrorFixScreenControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ErrorFixScreenControl1.Location = New System.Drawing.Point(0, 0)
+        Me.ErrorFixScreenControl1.Name = "ErrorFixScreenControl1"
+        Me.ErrorFixScreenControl1.Size = New System.Drawing.Size(334, 642)
+        Me.ErrorFixScreenControl1.TabIndex = 13
+        Me.ErrorFixScreenControl1.Visible = False
+        '
+        'breakInBox
+        '
+        Me.breakInBox.Image = Global.RentECar.My.Resources.ProjectResources.breakInWarning
+        Me.breakInBox.Location = New System.Drawing.Point(21, 52)
+        Me.breakInBox.Name = "breakInBox"
+        Me.breakInBox.Size = New System.Drawing.Size(285, 120)
+        Me.breakInBox.TabIndex = 14
+        Me.breakInBox.TabStop = False
+        Me.breakInBox.Visible = False
+        '
+        'collisionBox
+        '
+        Me.collisionBox.Image = Global.RentECar.My.Resources.ProjectResources.collisionWarning
+        Me.collisionBox.Location = New System.Drawing.Point(21, 52)
+        Me.collisionBox.Name = "collisionBox"
+        Me.collisionBox.Size = New System.Drawing.Size(285, 120)
+        Me.collisionBox.TabIndex = 15
+        Me.collisionBox.TabStop = False
+        Me.collisionBox.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.ClientSize = New System.Drawing.Size(332, 644)
+        Me.Controls.Add(Me.collisionBox)
+        Me.Controls.Add(Me.cameraFailureBox)
+        Me.Controls.Add(Me.breakInBox)
+        Me.Controls.Add(Me.ErrorFixScreenControl1)
         Me.Controls.Add(Me.InitalScreen1)
         Me.Controls.Add(Me.OwnerMainScreen1)
         Me.Controls.Add(Me.RiderMainScreen1)
@@ -116,10 +187,15 @@ Partial Class Form1
         Me.Controls.Add(Me.AirControllScreen1)
         Me.Controls.Add(Me.CarControlScreen)
         Me.Controls.Add(Me.MediaControls1)
+        Me.Controls.Add(Me.CarDiagnosticControl1)
+        Me.Controls.Add(Me.CameraViewControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
         Me.Text = "RentECar"
+        CType(Me.cameraFailureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.breakInBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.collisionBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -132,4 +208,10 @@ Partial Class Form1
     Friend WithEvents AirControllScreen1 As AirControllScreen
     Friend WithEvents CarControlScreen As CarControlScreen
     Friend WithEvents MediaControls1 As MediaControls
+    Friend WithEvents CarDiagnosticControl1 As carDiagnosticControl
+    Friend WithEvents CameraViewControl1 As cameraViewControl
+    Friend WithEvents cameraFailureBox As PictureBox
+    Friend WithEvents ErrorFixScreenControl1 As warningsControl
+    Friend WithEvents breakInBox As PictureBox
+    Friend WithEvents collisionBox As PictureBox
 End Class

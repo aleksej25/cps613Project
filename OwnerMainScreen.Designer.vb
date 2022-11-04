@@ -22,6 +22,7 @@ Partial Class OwnerMainScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TitleLabel = New System.Windows.Forms.Label()
         Me.MyCarButton = New System.Windows.Forms.Button()
@@ -29,6 +30,7 @@ Partial Class OwnerMainScreen
         Me.ScheduleButton = New System.Windows.Forms.Button()
         Me.RatingsButton = New System.Windows.Forms.Button()
         Me.BookingsButton = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -103,6 +105,9 @@ Partial Class OwnerMainScreen
         Me.BookingsButton.Text = "Bookings"
         Me.BookingsButton.UseVisualStyleBackColor = True
         '
+        'Timer1
+        '
+        '
         'OwnerMainScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -130,4 +135,5 @@ Partial Class OwnerMainScreen
     Friend WithEvents ScheduleButton As Button
     Friend WithEvents RatingsButton As Button
     Friend WithEvents BookingsButton As Button
+    Friend WithEvents Timer1 As Timer
 End Class
