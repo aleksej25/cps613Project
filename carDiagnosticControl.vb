@@ -59,4 +59,10 @@ Public Class carDiagnosticControl
         Me.Hide()
         Form1.CameraViewControl1.Show()
     End Sub
+
+    Private Sub mapBox_Click(sender As Object, e As EventArgs) Handles mapBox.Click
+        Form1.CameraViewControl1.PictureBox1.Image = My.Resources.ProjectResources.carLocation
+        Me.Hide()
+        Form1.CameraViewControl1.Show()
+    End Sub
 End Class

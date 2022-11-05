@@ -217,6 +217,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend Shared ReadOnly Property carLocation() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("carLocation", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend Shared ReadOnly Property closeTrunk() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("closeTrunk", resourceCulture)
@@ -320,6 +330,16 @@ Namespace My.Resources
         Friend Shared ReadOnly Property iphone_blank() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("iphone_blank", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property mapIcon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("mapIcon", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

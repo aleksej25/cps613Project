@@ -33,10 +33,13 @@ Partial Class carDiagnosticControl
         Me.exteriorButton = New System.Windows.Forms.RadioButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BackBox = New System.Windows.Forms.PictureBox()
+        Me.mapBox = New System.Windows.Forms.PictureBox()
+        Me.locationLabel = New System.Windows.Forms.Label()
         CType(Me.gearsBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cameraBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.mapBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'gearsBox
@@ -130,11 +133,34 @@ Partial Class carDiagnosticControl
         Me.BackBox.TabIndex = 9
         Me.BackBox.TabStop = False
         '
+        'mapBox
+        '
+        Me.mapBox.Image = Global.RentECar.My.Resources.ProjectResources.mapIcon
+        Me.mapBox.Location = New System.Drawing.Point(36, 268)
+        Me.mapBox.Name = "mapBox"
+        Me.mapBox.Size = New System.Drawing.Size(110, 110)
+        Me.mapBox.TabIndex = 16
+        Me.mapBox.TabStop = False
+        '
+        'locationLabel
+        '
+        Me.locationLabel.AutoSize = True
+        Me.locationLabel.Font = New System.Drawing.Font("Sitka Subheading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.locationLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.locationLabel.Location = New System.Drawing.Point(27, 381)
+        Me.locationLabel.Name = "locationLabel"
+        Me.locationLabel.Size = New System.Drawing.Size(104, 23)
+        Me.locationLabel.TabIndex = 17
+        Me.locationLabel.Text = "Car Location"
+        Me.locationLabel.Visible = False
+        '
         'carDiagnosticControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.locationLabel)
+        Me.Controls.Add(Me.mapBox)
         Me.Controls.Add(Me.exteriorButton)
         Me.Controls.Add(Me.interiorButton)
         Me.Controls.Add(Me.cameraBox)
@@ -149,6 +175,7 @@ Partial Class carDiagnosticControl
         CType(Me.cameraBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.mapBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -163,4 +190,6 @@ Partial Class carDiagnosticControl
     Friend WithEvents exteriorButton As RadioButton
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents BackBox As PictureBox
+    Friend WithEvents mapBox As PictureBox
+    Friend WithEvents locationLabel As Label
 End Class

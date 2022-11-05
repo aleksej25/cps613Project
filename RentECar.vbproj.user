@@ -19,6 +19,12 @@
     <Compile Update="ClimateControlScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ControlECarScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MyCarScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="warningsControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
