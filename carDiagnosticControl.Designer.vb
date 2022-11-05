@@ -35,11 +35,14 @@ Partial Class carDiagnosticControl
         Me.BackBox = New System.Windows.Forms.PictureBox()
         Me.mapBox = New System.Windows.Forms.PictureBox()
         Me.locationLabel = New System.Windows.Forms.Label()
+        Me.summonBox = New System.Windows.Forms.PictureBox()
+        Me.summonLabel = New System.Windows.Forms.Label()
         CType(Me.gearsBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cameraBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.mapBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.summonBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'gearsBox
@@ -152,13 +155,34 @@ Partial Class carDiagnosticControl
         Me.locationLabel.Size = New System.Drawing.Size(104, 23)
         Me.locationLabel.TabIndex = 17
         Me.locationLabel.Text = "Car Location"
-        Me.locationLabel.Visible = False
+        '
+        'summonBox
+        '
+        Me.summonBox.Image = Global.RentECar.My.Resources.ProjectResources.returnHome
+        Me.summonBox.Location = New System.Drawing.Point(182, 268)
+        Me.summonBox.Name = "summonBox"
+        Me.summonBox.Size = New System.Drawing.Size(110, 110)
+        Me.summonBox.TabIndex = 18
+        Me.summonBox.TabStop = False
+        '
+        'summonLabel
+        '
+        Me.summonLabel.AutoSize = True
+        Me.summonLabel.Font = New System.Drawing.Font("Sitka Subheading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.summonLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.summonLabel.Location = New System.Drawing.Point(182, 381)
+        Me.summonLabel.Name = "summonLabel"
+        Me.summonLabel.Size = New System.Drawing.Size(123, 23)
+        Me.summonLabel.TabIndex = 19
+        Me.summonLabel.Text = "Summon Home"
         '
         'carDiagnosticControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.summonLabel)
+        Me.Controls.Add(Me.summonBox)
         Me.Controls.Add(Me.locationLabel)
         Me.Controls.Add(Me.mapBox)
         Me.Controls.Add(Me.exteriorButton)
@@ -176,6 +200,7 @@ Partial Class carDiagnosticControl
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.mapBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.summonBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -192,4 +217,6 @@ Partial Class carDiagnosticControl
     Friend WithEvents BackBox As PictureBox
     Friend WithEvents mapBox As PictureBox
     Friend WithEvents locationLabel As Label
+    Friend WithEvents summonBox As PictureBox
+    Friend WithEvents summonLabel As Label
 End Class

@@ -65,4 +65,9 @@ Public Class carDiagnosticControl
         Me.Hide()
         Form1.CameraViewControl1.Show()
     End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles summonBox.Click
+        Me.summonBox.Image = My.Resources.ProjectResources.returningHome
+        Me.summonLabel.Text = "Coming Home"
+    End Sub
 End Class
