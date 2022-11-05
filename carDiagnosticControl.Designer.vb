@@ -37,18 +37,21 @@ Partial Class carDiagnosticControl
         Me.locationLabel = New System.Windows.Forms.Label()
         Me.summonBox = New System.Windows.Forms.PictureBox()
         Me.summonLabel = New System.Windows.Forms.Label()
+        Me.kickOutBox = New System.Windows.Forms.PictureBox()
+        Me.kickOutLabel = New System.Windows.Forms.Label()
         CType(Me.gearsBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.cameraBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.mapBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.summonBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.kickOutBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'gearsBox
         '
         Me.gearsBox.Image = Global.RentECar.My.Resources.ProjectResources.repairsIcon
-        Me.gearsBox.Location = New System.Drawing.Point(36, 90)
+        Me.gearsBox.Location = New System.Drawing.Point(41, 96)
         Me.gearsBox.Name = "gearsBox"
         Me.gearsBox.Size = New System.Drawing.Size(110, 110)
         Me.gearsBox.TabIndex = 10
@@ -59,7 +62,7 @@ Partial Class carDiagnosticControl
         Me.diagnosticLabel.AutoSize = True
         Me.diagnosticLabel.Font = New System.Drawing.Font("Sitka Subheading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.diagnosticLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.diagnosticLabel.Location = New System.Drawing.Point(27, 205)
+        Me.diagnosticLabel.Location = New System.Drawing.Point(27, 209)
         Me.diagnosticLabel.Name = "diagnosticLabel"
         Me.diagnosticLabel.Size = New System.Drawing.Size(124, 23)
         Me.diagnosticLabel.TabIndex = 11
@@ -73,7 +76,7 @@ Partial Class carDiagnosticControl
         Me.diagnosticReport.AutoSize = True
         Me.diagnosticReport.Font = New System.Drawing.Font("Sitka Subheading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.diagnosticReport.ForeColor = System.Drawing.Color.Transparent
-        Me.diagnosticReport.Location = New System.Drawing.Point(27, 228)
+        Me.diagnosticReport.Location = New System.Drawing.Point(27, 232)
         Me.diagnosticReport.Name = "diagnosticReport"
         Me.diagnosticReport.Size = New System.Drawing.Size(20, 23)
         Me.diagnosticReport.TabIndex = 12
@@ -86,7 +89,7 @@ Partial Class carDiagnosticControl
         'cameraBox
         '
         Me.cameraBox.Image = Global.RentECar.My.Resources.ProjectResources.cameraIcon
-        Me.cameraBox.Location = New System.Drawing.Point(182, 90)
+        Me.cameraBox.Location = New System.Drawing.Point(182, 96)
         Me.cameraBox.Name = "cameraBox"
         Me.cameraBox.Size = New System.Drawing.Size(110, 110)
         Me.cameraBox.TabIndex = 13
@@ -97,7 +100,7 @@ Partial Class carDiagnosticControl
         Me.interiorButton.AutoSize = True
         Me.interiorButton.Font = New System.Drawing.Font("Sitka Heading", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.interiorButton.ForeColor = System.Drawing.Color.Transparent
-        Me.interiorButton.Location = New System.Drawing.Point(196, 203)
+        Me.interiorButton.Location = New System.Drawing.Point(196, 207)
         Me.interiorButton.Name = "interiorButton"
         Me.interiorButton.Size = New System.Drawing.Size(81, 25)
         Me.interiorButton.TabIndex = 14
@@ -110,7 +113,7 @@ Partial Class carDiagnosticControl
         Me.exteriorButton.AutoSize = True
         Me.exteriorButton.Font = New System.Drawing.Font("Sitka Heading", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.exteriorButton.ForeColor = System.Drawing.Color.Transparent
-        Me.exteriorButton.Location = New System.Drawing.Point(196, 228)
+        Me.exteriorButton.Location = New System.Drawing.Point(196, 232)
         Me.exteriorButton.Name = "exteriorButton"
         Me.exteriorButton.Size = New System.Drawing.Size(84, 25)
         Me.exteriorButton.TabIndex = 15
@@ -139,7 +142,7 @@ Partial Class carDiagnosticControl
         'mapBox
         '
         Me.mapBox.Image = Global.RentECar.My.Resources.ProjectResources.mapIcon
-        Me.mapBox.Location = New System.Drawing.Point(36, 268)
+        Me.mapBox.Location = New System.Drawing.Point(41, 272)
         Me.mapBox.Name = "mapBox"
         Me.mapBox.Size = New System.Drawing.Size(110, 110)
         Me.mapBox.TabIndex = 16
@@ -150,7 +153,7 @@ Partial Class carDiagnosticControl
         Me.locationLabel.AutoSize = True
         Me.locationLabel.Font = New System.Drawing.Font("Sitka Subheading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.locationLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.locationLabel.Location = New System.Drawing.Point(27, 381)
+        Me.locationLabel.Location = New System.Drawing.Point(41, 385)
         Me.locationLabel.Name = "locationLabel"
         Me.locationLabel.Size = New System.Drawing.Size(104, 23)
         Me.locationLabel.TabIndex = 17
@@ -159,7 +162,7 @@ Partial Class carDiagnosticControl
         'summonBox
         '
         Me.summonBox.Image = Global.RentECar.My.Resources.ProjectResources.returnHome
-        Me.summonBox.Location = New System.Drawing.Point(182, 268)
+        Me.summonBox.Location = New System.Drawing.Point(182, 272)
         Me.summonBox.Name = "summonBox"
         Me.summonBox.Size = New System.Drawing.Size(110, 110)
         Me.summonBox.TabIndex = 18
@@ -170,17 +173,39 @@ Partial Class carDiagnosticControl
         Me.summonLabel.AutoSize = True
         Me.summonLabel.Font = New System.Drawing.Font("Sitka Subheading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.summonLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.summonLabel.Location = New System.Drawing.Point(182, 381)
+        Me.summonLabel.Location = New System.Drawing.Point(182, 385)
         Me.summonLabel.Name = "summonLabel"
         Me.summonLabel.Size = New System.Drawing.Size(123, 23)
         Me.summonLabel.TabIndex = 19
         Me.summonLabel.Text = "Summon Home"
+        '
+        'kickOutBox
+        '
+        Me.kickOutBox.Image = Global.RentECar.My.Resources.ProjectResources.kickOut
+        Me.kickOutBox.Location = New System.Drawing.Point(111, 433)
+        Me.kickOutBox.Name = "kickOutBox"
+        Me.kickOutBox.Size = New System.Drawing.Size(110, 110)
+        Me.kickOutBox.TabIndex = 20
+        Me.kickOutBox.TabStop = False
+        '
+        'kickOutLabel
+        '
+        Me.kickOutLabel.AutoSize = True
+        Me.kickOutLabel.Font = New System.Drawing.Font("Sitka Subheading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.kickOutLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.kickOutLabel.Location = New System.Drawing.Point(107, 546)
+        Me.kickOutLabel.Name = "kickOutLabel"
+        Me.kickOutLabel.Size = New System.Drawing.Size(117, 23)
+        Me.kickOutLabel.TabIndex = 21
+        Me.kickOutLabel.Text = "Kick Out Rider"
         '
         'carDiagnosticControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.kickOutLabel)
+        Me.Controls.Add(Me.kickOutBox)
         Me.Controls.Add(Me.summonLabel)
         Me.Controls.Add(Me.summonBox)
         Me.Controls.Add(Me.locationLabel)
@@ -201,6 +226,7 @@ Partial Class carDiagnosticControl
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.mapBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.summonBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.kickOutBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -219,4 +245,6 @@ Partial Class carDiagnosticControl
     Friend WithEvents locationLabel As Label
     Friend WithEvents summonBox As PictureBox
     Friend WithEvents summonLabel As Label
+    Friend WithEvents kickOutBox As PictureBox
+    Friend WithEvents kickOutLabel As Label
 End Class

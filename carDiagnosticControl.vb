@@ -1,4 +1,5 @@
-﻿Imports System.Threading
+﻿Imports System.Reflection.Emit
+Imports System.Threading
 
 Public Class carDiagnosticControl
     Public ticker As Integer = 0
@@ -69,5 +70,12 @@ Public Class carDiagnosticControl
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles summonBox.Click
         Me.summonBox.Image = My.Resources.ProjectResources.returningHome
         Me.summonLabel.Text = "Coming Home"
+    End Sub
+
+    Private Sub kickOutBox_Click(sender As Object, e As EventArgs) Handles kickOutBox.Click
+        Me.kickOutBox.Image = My.Resources.ProjectResources.kickOutComplete
+        Me.kickOutLabel.Text = "Successfully Kicked Out Rider"
+        Me.kickOutLabel.Left = (Me.kickOutLabel.Parent.Width \ 2) - (Me.kickOutLabel.Width \ 2)
+
     End Sub
 End Class
