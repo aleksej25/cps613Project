@@ -29,16 +29,14 @@ Partial Class AirControllScreen
         Me.TemperatureSlider = New System.Windows.Forms.TrackBar()
         Me.OutsideTempLabel = New System.Windows.Forms.Label()
         Me.InsideTempLabel = New System.Windows.Forms.Label()
-        Me.FreshAirBox = New System.Windows.Forms.PictureBox()
-        Me.RecirculatingAirBox = New System.Windows.Forms.PictureBox()
         Me.FanSpeedBar = New System.Windows.Forms.TrackBar()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.BackBox = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.AirControlLabel = New System.Windows.Forms.Label()
+        Me.FreshAirBox = New System.Windows.Forms.Button()
+        Me.RecirculatingAirBox = New System.Windows.Forms.Button()
         CType(Me.TemperatureSlider, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FreshAirBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RecirculatingAirBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FanSpeedBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,24 +120,6 @@ Partial Class AirControllScreen
         Me.InsideTempLabel.TabIndex = 16
         Me.InsideTempLabel.Text = "T"
         '
-        'FreshAirBox
-        '
-        Me.FreshAirBox.Image = Global.RentECar.My.Resources.ProjectResources.freshAirOn
-        Me.FreshAirBox.Location = New System.Drawing.Point(61, 467)
-        Me.FreshAirBox.Name = "FreshAirBox"
-        Me.FreshAirBox.Size = New System.Drawing.Size(90, 90)
-        Me.FreshAirBox.TabIndex = 22
-        Me.FreshAirBox.TabStop = False
-        '
-        'RecirculatingAirBox
-        '
-        Me.RecirculatingAirBox.Image = Global.RentECar.My.Resources.ProjectResources.recirculatAirOff
-        Me.RecirculatingAirBox.Location = New System.Drawing.Point(177, 467)
-        Me.RecirculatingAirBox.Name = "RecirculatingAirBox"
-        Me.RecirculatingAirBox.Size = New System.Drawing.Size(90, 90)
-        Me.RecirculatingAirBox.TabIndex = 23
-        Me.RecirculatingAirBox.TabStop = False
-        '
         'FanSpeedBar
         '
         Me.FanSpeedBar.Location = New System.Drawing.Point(47, 340)
@@ -186,17 +166,37 @@ Partial Class AirControllScreen
         Me.AirControlLabel.Text = "T"
         Me.AirControlLabel.Visible = False
         '
+        'FreshAirBox
+        '
+        Me.FreshAirBox.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.FreshAirBox.Image = Global.RentECar.My.Resources.ProjectResources.freshAirOn
+        Me.FreshAirBox.Location = New System.Drawing.Point(47, 467)
+        Me.FreshAirBox.Name = "FreshAirBox"
+        Me.FreshAirBox.Size = New System.Drawing.Size(100, 90)
+        Me.FreshAirBox.TabIndex = 28
+        Me.FreshAirBox.UseVisualStyleBackColor = False
+        '
+        'RecirculatingAirBox
+        '
+        Me.RecirculatingAirBox.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.RecirculatingAirBox.Image = Global.RentECar.My.Resources.ProjectResources.recirculatAirOff
+        Me.RecirculatingAirBox.Location = New System.Drawing.Point(177, 467)
+        Me.RecirculatingAirBox.Name = "RecirculatingAirBox"
+        Me.RecirculatingAirBox.Size = New System.Drawing.Size(100, 90)
+        Me.RecirculatingAirBox.TabIndex = 29
+        Me.RecirculatingAirBox.UseVisualStyleBackColor = False
+        '
         'AirControllScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.RecirculatingAirBox)
+        Me.Controls.Add(Me.FreshAirBox)
         Me.Controls.Add(Me.AirControlLabel)
         Me.Controls.Add(Me.BackBox)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.FanSpeedBar)
-        Me.Controls.Add(Me.RecirculatingAirBox)
-        Me.Controls.Add(Me.FreshAirBox)
         Me.Controls.Add(Me.SettingClimateLabel)
         Me.Controls.Add(Me.UpperTempLabel)
         Me.Controls.Add(Me.LowerTempLabel)
@@ -208,8 +208,6 @@ Partial Class AirControllScreen
         Me.Name = "AirControllScreen"
         Me.Size = New System.Drawing.Size(339, 642)
         CType(Me.TemperatureSlider, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FreshAirBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RecirculatingAirBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FanSpeedBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).EndInit()
@@ -225,11 +223,11 @@ Partial Class AirControllScreen
     Friend WithEvents TemperatureSlider As TrackBar
     Friend WithEvents OutsideTempLabel As Label
     Friend WithEvents InsideTempLabel As Label
-    Friend WithEvents FreshAirBox As PictureBox
-    Friend WithEvents RecirculatingAirBox As PictureBox
     Friend WithEvents FanSpeedBar As TrackBar
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents BackBox As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents AirControlLabel As Label
+    Friend WithEvents FreshAirBox As Button
+    Friend WithEvents RecirculatingAirBox As Button
 End Class

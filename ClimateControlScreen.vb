@@ -10,7 +10,6 @@ Public Class ClimateControlScreen
     Public passengerRightSeatOn As Boolean = False
     Private Sub ClimateControlScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.TitleLabel.Left = (Me.TitleLabel.Parent.Width \ 2) - (Me.TitleLabel.Width \ 2)
-
     End Sub
     Private Sub FrontDefrost_Click(sender As Object, e As EventArgs) Handles FrontDefrost.Click
         If Not frontOn Then
@@ -35,8 +34,6 @@ Public Class ClimateControlScreen
             Me.rearOn = False
         End If
     End Sub
-
-
 
     Private Sub DriverSeat_Click(sender As Object, e As EventArgs) Handles DriverSeat.Click, PassengerSeat.Click, BackLeftPass.Click, BackRightPass.Click
         Select Case sender.Name
@@ -83,7 +80,7 @@ Public Class ClimateControlScreen
         End Select
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles ACBox.Click
+    Private Sub ACBox_Click(sender As Object, e As EventArgs) Handles ACBox.Click
         Me.Hide()
         Form1.AirControllScreen1.Show()
     End Sub

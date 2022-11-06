@@ -23,39 +23,25 @@ Partial Class carDiagnosticControl
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.gearsBox = New System.Windows.Forms.PictureBox()
         Me.diagnosticLabel = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.diagnosticReport = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.cameraBox = New System.Windows.Forms.PictureBox()
         Me.interiorButton = New System.Windows.Forms.RadioButton()
         Me.exteriorButton = New System.Windows.Forms.RadioButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BackBox = New System.Windows.Forms.PictureBox()
-        Me.mapBox = New System.Windows.Forms.PictureBox()
         Me.locationLabel = New System.Windows.Forms.Label()
-        Me.summonBox = New System.Windows.Forms.PictureBox()
         Me.summonLabel = New System.Windows.Forms.Label()
-        Me.kickOutBox = New System.Windows.Forms.PictureBox()
         Me.kickOutLabel = New System.Windows.Forms.Label()
-        CType(Me.gearsBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cameraBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gearsBox = New System.Windows.Forms.Button()
+        Me.cameraBox = New System.Windows.Forms.Button()
+        Me.mapBox = New System.Windows.Forms.Button()
+        Me.summonBox = New System.Windows.Forms.Button()
+        Me.kickOutBox = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.mapBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.summonBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.kickOutBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'gearsBox
-        '
-        Me.gearsBox.Image = Global.RentECar.My.Resources.ProjectResources.repairsIcon
-        Me.gearsBox.Location = New System.Drawing.Point(41, 96)
-        Me.gearsBox.Name = "gearsBox"
-        Me.gearsBox.Size = New System.Drawing.Size(110, 110)
-        Me.gearsBox.TabIndex = 10
-        Me.gearsBox.TabStop = False
         '
         'diagnosticLabel
         '
@@ -85,15 +71,6 @@ Partial Class carDiagnosticControl
         '
         'Timer2
         '
-        '
-        'cameraBox
-        '
-        Me.cameraBox.Image = Global.RentECar.My.Resources.ProjectResources.cameraIcon
-        Me.cameraBox.Location = New System.Drawing.Point(182, 96)
-        Me.cameraBox.Name = "cameraBox"
-        Me.cameraBox.Size = New System.Drawing.Size(110, 110)
-        Me.cameraBox.TabIndex = 13
-        Me.cameraBox.TabStop = False
         '
         'interiorButton
         '
@@ -139,54 +116,27 @@ Partial Class carDiagnosticControl
         Me.BackBox.TabIndex = 9
         Me.BackBox.TabStop = False
         '
-        'mapBox
-        '
-        Me.mapBox.Image = Global.RentECar.My.Resources.ProjectResources.mapIcon
-        Me.mapBox.Location = New System.Drawing.Point(41, 272)
-        Me.mapBox.Name = "mapBox"
-        Me.mapBox.Size = New System.Drawing.Size(110, 110)
-        Me.mapBox.TabIndex = 16
-        Me.mapBox.TabStop = False
-        '
         'locationLabel
         '
         Me.locationLabel.AutoSize = True
         Me.locationLabel.Font = New System.Drawing.Font("Sitka Subheading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.locationLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.locationLabel.Location = New System.Drawing.Point(41, 385)
+        Me.locationLabel.Location = New System.Drawing.Point(43, 389)
         Me.locationLabel.Name = "locationLabel"
         Me.locationLabel.Size = New System.Drawing.Size(104, 23)
         Me.locationLabel.TabIndex = 17
         Me.locationLabel.Text = "Car Location"
-        '
-        'summonBox
-        '
-        Me.summonBox.Image = Global.RentECar.My.Resources.ProjectResources.returnHome
-        Me.summonBox.Location = New System.Drawing.Point(182, 272)
-        Me.summonBox.Name = "summonBox"
-        Me.summonBox.Size = New System.Drawing.Size(110, 110)
-        Me.summonBox.TabIndex = 18
-        Me.summonBox.TabStop = False
         '
         'summonLabel
         '
         Me.summonLabel.AutoSize = True
         Me.summonLabel.Font = New System.Drawing.Font("Sitka Subheading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.summonLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.summonLabel.Location = New System.Drawing.Point(182, 385)
+        Me.summonLabel.Location = New System.Drawing.Point(179, 389)
         Me.summonLabel.Name = "summonLabel"
         Me.summonLabel.Size = New System.Drawing.Size(123, 23)
         Me.summonLabel.TabIndex = 19
         Me.summonLabel.Text = "Summon Home"
-        '
-        'kickOutBox
-        '
-        Me.kickOutBox.Image = Global.RentECar.My.Resources.ProjectResources.kickOut
-        Me.kickOutBox.Location = New System.Drawing.Point(111, 433)
-        Me.kickOutBox.Name = "kickOutBox"
-        Me.kickOutBox.Size = New System.Drawing.Size(110, 110)
-        Me.kickOutBox.TabIndex = 20
-        Me.kickOutBox.TabStop = False
         '
         'kickOutLabel
         '
@@ -199,52 +149,97 @@ Partial Class carDiagnosticControl
         Me.kickOutLabel.TabIndex = 21
         Me.kickOutLabel.Text = "Kick Out Rider"
         '
+        'gearsBox
+        '
+        Me.gearsBox.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.gearsBox.Image = Global.RentECar.My.Resources.ProjectResources.repairsIcon
+        Me.gearsBox.Location = New System.Drawing.Point(36, 91)
+        Me.gearsBox.Name = "gearsBox"
+        Me.gearsBox.Size = New System.Drawing.Size(115, 115)
+        Me.gearsBox.TabIndex = 22
+        Me.gearsBox.UseVisualStyleBackColor = False
+        '
+        'cameraBox
+        '
+        Me.cameraBox.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.cameraBox.Image = Global.RentECar.My.Resources.ProjectResources.cameraIcon
+        Me.cameraBox.Location = New System.Drawing.Point(182, 91)
+        Me.cameraBox.Name = "cameraBox"
+        Me.cameraBox.Size = New System.Drawing.Size(115, 115)
+        Me.cameraBox.TabIndex = 23
+        Me.cameraBox.UseVisualStyleBackColor = False
+        '
+        'mapBox
+        '
+        Me.mapBox.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.mapBox.Image = Global.RentECar.My.Resources.ProjectResources.mapIcon
+        Me.mapBox.Location = New System.Drawing.Point(36, 271)
+        Me.mapBox.Name = "mapBox"
+        Me.mapBox.Size = New System.Drawing.Size(115, 115)
+        Me.mapBox.TabIndex = 24
+        Me.mapBox.UseVisualStyleBackColor = False
+        '
+        'summonBox
+        '
+        Me.summonBox.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.summonBox.Image = Global.RentECar.My.Resources.ProjectResources.returnHome
+        Me.summonBox.Location = New System.Drawing.Point(182, 271)
+        Me.summonBox.Name = "summonBox"
+        Me.summonBox.Size = New System.Drawing.Size(115, 115)
+        Me.summonBox.TabIndex = 25
+        Me.summonBox.UseVisualStyleBackColor = False
+        '
+        'kickOutBox
+        '
+        Me.kickOutBox.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.kickOutBox.Image = Global.RentECar.My.Resources.ProjectResources.kickOut
+        Me.kickOutBox.Location = New System.Drawing.Point(107, 428)
+        Me.kickOutBox.Name = "kickOutBox"
+        Me.kickOutBox.Size = New System.Drawing.Size(115, 115)
+        Me.kickOutBox.TabIndex = 26
+        Me.kickOutBox.UseVisualStyleBackColor = False
+        '
         'carDiagnosticControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Controls.Add(Me.kickOutLabel)
         Me.Controls.Add(Me.kickOutBox)
-        Me.Controls.Add(Me.summonLabel)
         Me.Controls.Add(Me.summonBox)
-        Me.Controls.Add(Me.locationLabel)
         Me.Controls.Add(Me.mapBox)
+        Me.Controls.Add(Me.cameraBox)
+        Me.Controls.Add(Me.gearsBox)
+        Me.Controls.Add(Me.kickOutLabel)
+        Me.Controls.Add(Me.summonLabel)
+        Me.Controls.Add(Me.locationLabel)
         Me.Controls.Add(Me.exteriorButton)
         Me.Controls.Add(Me.interiorButton)
-        Me.Controls.Add(Me.cameraBox)
         Me.Controls.Add(Me.diagnosticReport)
         Me.Controls.Add(Me.diagnosticLabel)
-        Me.Controls.Add(Me.gearsBox)
         Me.Controls.Add(Me.BackBox)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "carDiagnosticControl"
         Me.Size = New System.Drawing.Size(333, 641)
-        CType(Me.gearsBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.cameraBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.mapBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.summonBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.kickOutBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents gearsBox As PictureBox
     Friend WithEvents diagnosticLabel As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents diagnosticReport As Label
     Friend WithEvents Timer2 As Timer
-    Friend WithEvents cameraBox As PictureBox
     Friend WithEvents interiorButton As RadioButton
     Friend WithEvents exteriorButton As RadioButton
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents BackBox As PictureBox
-    Friend WithEvents mapBox As PictureBox
     Friend WithEvents locationLabel As Label
-    Friend WithEvents summonBox As PictureBox
     Friend WithEvents summonLabel As Label
-    Friend WithEvents kickOutBox As PictureBox
     Friend WithEvents kickOutLabel As Label
+    Friend WithEvents gearsBox As Button
+    Friend WithEvents cameraBox As Button
+    Friend WithEvents mapBox As Button
+    Friend WithEvents summonBox As Button
+    Friend WithEvents kickOutBox As Button
 End Class

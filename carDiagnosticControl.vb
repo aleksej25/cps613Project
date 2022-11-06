@@ -13,7 +13,7 @@ Public Class carDiagnosticControl
 
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         Me.Hide()
-        Form1.CarControlScreen.Show()
+        Form1.ECarControls.Show()
     End Sub
 
     Private Sub gearsBox_Click(sender As Object, e As EventArgs) Handles gearsBox.Click
@@ -67,7 +67,7 @@ Public Class carDiagnosticControl
         Form1.CameraViewControl1.Show()
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles summonBox.Click
+    Private Sub summonBox_Click(sender As Object, e As EventArgs) Handles summonBox.Click
         Me.summonBox.Image = My.Resources.ProjectResources.returningHome
         Me.summonLabel.Text = "Coming Home"
     End Sub
@@ -78,4 +78,5 @@ Public Class carDiagnosticControl
         Me.kickOutLabel.Left = (Me.kickOutLabel.Parent.Width \ 2) - (Me.kickOutLabel.Width \ 2)
 
     End Sub
+
 End Class

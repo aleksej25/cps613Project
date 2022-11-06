@@ -25,7 +25,6 @@ Partial Class MediaControls
         Me.components = New System.ComponentModel.Container()
         Me.BackBox = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.bluetoothBox = New System.Windows.Forms.PictureBox()
         Me.TtileLabel = New System.Windows.Forms.Label()
         Me.ConnectingLabel = New System.Windows.Forms.Label()
         Me.ConnectionProgressBar = New System.Windows.Forms.ProgressBar()
@@ -34,18 +33,19 @@ Partial Class MediaControls
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.AudioBox = New System.Windows.Forms.PictureBox()
-        Me.RadioBox = New System.Windows.Forms.PictureBox()
         Me.RadioStationLabel = New System.Windows.Forms.Label()
         Me.plusBox = New System.Windows.Forms.PictureBox()
         Me.minusBox = New System.Windows.Forms.PictureBox()
         Me.radioPlayingBox = New System.Windows.Forms.PictureBox()
         Me.audioLevelLabel = New System.Windows.Forms.Label()
+        Me.bluetoothBox = New System.Windows.Forms.Button()
+        Me.RadioBox = New System.Windows.Forms.Button()
+        Me.zeroLabel = New System.Windows.Forms.Label()
+        Me.tenLabel = New System.Windows.Forms.Label()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.bluetoothBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AudioBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RadioBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.plusBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.minusBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.radioPlayingBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,15 +68,6 @@ Partial Class MediaControls
         Me.PictureBox1.Size = New System.Drawing.Size(333, 640)
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
-        '
-        'bluetoothBox
-        '
-        Me.bluetoothBox.Image = Global.RentECar.My.Resources.ProjectResources.bluetoothOff
-        Me.bluetoothBox.Location = New System.Drawing.Point(121, 110)
-        Me.bluetoothBox.Name = "bluetoothBox"
-        Me.bluetoothBox.Size = New System.Drawing.Size(85, 85)
-        Me.bluetoothBox.TabIndex = 10
-        Me.bluetoothBox.TabStop = False
         '
         'TtileLabel
         '
@@ -132,15 +123,6 @@ Partial Class MediaControls
         Me.AudioBox.TabIndex = 16
         Me.AudioBox.TabStop = False
         '
-        'RadioBox
-        '
-        Me.RadioBox.Image = Global.RentECar.My.Resources.ProjectResources.radio
-        Me.RadioBox.Location = New System.Drawing.Point(121, 441)
-        Me.RadioBox.Name = "RadioBox"
-        Me.RadioBox.Size = New System.Drawing.Size(85, 85)
-        Me.RadioBox.TabIndex = 17
-        Me.RadioBox.TabStop = False
-        '
         'RadioStationLabel
         '
         Me.RadioStationLabel.AutoSize = True
@@ -190,18 +172,62 @@ Partial Class MediaControls
         Me.audioLevelLabel.ForeColor = System.Drawing.Color.Transparent
         Me.audioLevelLabel.Location = New System.Drawing.Point(92, 388)
         Me.audioLevelLabel.Name = "audioLevelLabel"
-        Me.audioLevelLabel.Size = New System.Drawing.Size(114, 23)
+        Me.audioLevelLabel.Size = New System.Drawing.Size(20, 23)
         Me.audioLevelLabel.TabIndex = 22
-        Me.audioLevelLabel.Text = "Volume Level: "
-        Me.audioLevelLabel.Visible = False
+        Me.audioLevelLabel.Text = "T"
+        '
+        'bluetoothBox
+        '
+        Me.bluetoothBox.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.bluetoothBox.Image = Global.RentECar.My.Resources.ProjectResources.bluetoothOff
+        Me.bluetoothBox.Location = New System.Drawing.Point(121, 102)
+        Me.bluetoothBox.Name = "bluetoothBox"
+        Me.bluetoothBox.Size = New System.Drawing.Size(90, 90)
+        Me.bluetoothBox.TabIndex = 23
+        Me.bluetoothBox.UseVisualStyleBackColor = False
+        '
+        'RadioBox
+        '
+        Me.RadioBox.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.RadioBox.Image = Global.RentECar.My.Resources.ProjectResources.radio
+        Me.RadioBox.Location = New System.Drawing.Point(116, 441)
+        Me.RadioBox.Name = "RadioBox"
+        Me.RadioBox.Size = New System.Drawing.Size(99, 105)
+        Me.RadioBox.TabIndex = 24
+        Me.RadioBox.UseVisualStyleBackColor = False
+        '
+        'zeroLabel
+        '
+        Me.zeroLabel.AutoSize = True
+        Me.zeroLabel.Font = New System.Drawing.Font("Sitka Heading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.zeroLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.zeroLabel.Location = New System.Drawing.Point(67, 292)
+        Me.zeroLabel.Name = "zeroLabel"
+        Me.zeroLabel.Size = New System.Drawing.Size(19, 23)
+        Me.zeroLabel.TabIndex = 25
+        Me.zeroLabel.Text = "0"
+        '
+        'tenLabel
+        '
+        Me.tenLabel.AutoSize = True
+        Me.tenLabel.Font = New System.Drawing.Font("Sitka Heading", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.tenLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.tenLabel.Location = New System.Drawing.Point(250, 292)
+        Me.tenLabel.Name = "tenLabel"
+        Me.tenLabel.Size = New System.Drawing.Size(26, 23)
+        Me.tenLabel.TabIndex = 26
+        Me.tenLabel.Text = "10"
         '
         'MediaControls
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Controls.Add(Me.audioLevelLabel)
+        Me.Controls.Add(Me.tenLabel)
+        Me.Controls.Add(Me.zeroLabel)
         Me.Controls.Add(Me.RadioBox)
+        Me.Controls.Add(Me.bluetoothBox)
+        Me.Controls.Add(Me.audioLevelLabel)
         Me.Controls.Add(Me.radioPlayingBox)
         Me.Controls.Add(Me.minusBox)
         Me.Controls.Add(Me.plusBox)
@@ -212,16 +238,13 @@ Partial Class MediaControls
         Me.Controls.Add(Me.ConnectingLabel)
         Me.Controls.Add(Me.BackBox)
         Me.Controls.Add(Me.TtileLabel)
-        Me.Controls.Add(Me.bluetoothBox)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "MediaControls"
         Me.Size = New System.Drawing.Size(336, 642)
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.bluetoothBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AudioBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RadioBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.plusBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.minusBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.radioPlayingBox, System.ComponentModel.ISupportInitialize).EndInit()
@@ -232,7 +255,6 @@ Partial Class MediaControls
 
     Friend WithEvents BackBox As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents bluetoothBox As PictureBox
     Friend WithEvents TtileLabel As Label
     Friend WithEvents ConnectingLabel As Label
     Friend WithEvents ConnectionProgressBar As ProgressBar
@@ -241,10 +263,13 @@ Partial Class MediaControls
     Friend WithEvents Timer2 As Timer
     Friend WithEvents TrackBar1 As TrackBar
     Friend WithEvents AudioBox As PictureBox
-    Friend WithEvents RadioBox As PictureBox
     Friend WithEvents RadioStationLabel As Label
     Friend WithEvents plusBox As PictureBox
     Friend WithEvents minusBox As PictureBox
     Friend WithEvents radioPlayingBox As PictureBox
     Friend WithEvents audioLevelLabel As Label
+    Friend WithEvents bluetoothBox As Button
+    Friend WithEvents RadioBox As Button
+    Friend WithEvents zeroLabel As Label
+    Friend WithEvents tenLabel As Label
 End Class

@@ -8,6 +8,10 @@ Public Class MediaControls
     Public radioStation As Double = 107.1
     Public mouseIsDown As Boolean = False
     Public volumeAmount As Integer = 0
+
+    Private Sub mediaControls_load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.audioLevelLabel.Text = "Volume Level: " + Me.volumeAmount.ToString
+    End Sub
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         Me.Hide()
         Form1.ECarControls.Show()
