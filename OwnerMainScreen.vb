@@ -24,9 +24,9 @@
         Me.timerStatus += 1
         If Me.timerStatus = 45 Then
             Form1.cameraFailureBox.Show()
-        ElseIf Me.timerStatus = 545 Then
+        ElseIf Me.timerStatus = 450 Then
             Form1.breakInBox.Show()
-        ElseIf Me.timerStatus = 1045 Then
+        ElseIf Me.timerStatus = 860 Then
             Form1.collisionBox.Show()
             Me.Timer1.Stop()
         End If
