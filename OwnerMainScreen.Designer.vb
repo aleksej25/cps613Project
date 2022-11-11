@@ -92,7 +92,7 @@ Partial Class OwnerMainScreen
         Me.RatingsButton.Name = "RatingsButton"
         Me.RatingsButton.Size = New System.Drawing.Size(134, 42)
         Me.RatingsButton.TabIndex = 6
-        Me.RatingsButton.Text = "Ratings History"
+        Me.RatingsButton.Text = "Ratings"
         Me.RatingsButton.UseVisualStyleBackColor = True
         '
         'BookingsButton

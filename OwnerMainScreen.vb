@@ -16,7 +16,8 @@
     End Sub
 
     Private Sub RatingsButton_Click(sender As Object, e As EventArgs) Handles RatingsButton.Click
-
+        Me.Hide()
+        Form1.RatingsControl1.Show()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -30,4 +31,5 @@
             Me.Timer1.Stop()
         End If
     End Sub
+
 End Class

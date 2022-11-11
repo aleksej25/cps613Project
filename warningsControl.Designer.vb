@@ -23,7 +23,6 @@ Partial Class warningsControl
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.BackBox = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TitleLabel = New System.Windows.Forms.Label()
         Me.errorLabel = New System.Windows.Forms.Label()
@@ -35,19 +34,10 @@ Partial Class warningsControl
         Me.notifyPoliceButton = New System.Windows.Forms.Button()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.insuranceButton = New System.Windows.Forms.Button()
-        CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.notifyBothButton = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.repairingBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'BackBox
-        '
-        Me.BackBox.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
-        Me.BackBox.Location = New System.Drawing.Point(36, 32)
-        Me.BackBox.Name = "BackBox"
-        Me.BackBox.Size = New System.Drawing.Size(40, 40)
-        Me.BackBox.TabIndex = 9
-        Me.BackBox.TabStop = False
         '
         'PictureBox1
         '
@@ -65,9 +55,9 @@ Partial Class warningsControl
         Me.TitleLabel.ForeColor = System.Drawing.Color.White
         Me.TitleLabel.Location = New System.Drawing.Point(102, 74)
         Me.TitleLabel.Name = "TitleLabel"
-        Me.TitleLabel.Size = New System.Drawing.Size(129, 35)
+        Me.TitleLabel.Size = New System.Drawing.Size(117, 35)
         Me.TitleLabel.TabIndex = 10
-        Me.TitleLabel.Text = "Warnings"
+        Me.TitleLabel.Text = "Warning"
         '
         'errorLabel
         '
@@ -128,7 +118,7 @@ Partial Class warningsControl
         'notifyPoliceButton
         '
         Me.notifyPoliceButton.Font = New System.Drawing.Font("Sitka Small", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.notifyPoliceButton.Location = New System.Drawing.Point(91, 464)
+        Me.notifyPoliceButton.Location = New System.Drawing.Point(92, 464)
         Me.notifyPoliceButton.Name = "notifyPoliceButton"
         Me.notifyPoliceButton.Size = New System.Drawing.Size(152, 43)
         Me.notifyPoliceButton.TabIndex = 16
@@ -142,7 +132,7 @@ Partial Class warningsControl
         'insuranceButton
         '
         Me.insuranceButton.Font = New System.Drawing.Font("Sitka Small", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.insuranceButton.Location = New System.Drawing.Point(83, 513)
+        Me.insuranceButton.Location = New System.Drawing.Point(84, 464)
         Me.insuranceButton.Name = "insuranceButton"
         Me.insuranceButton.Size = New System.Drawing.Size(166, 43)
         Me.insuranceButton.TabIndex = 17
@@ -150,11 +140,23 @@ Partial Class warningsControl
         Me.insuranceButton.UseVisualStyleBackColor = True
         Me.insuranceButton.Visible = False
         '
-        'errorFixScreenControl
+        'notifyBothButton
+        '
+        Me.notifyBothButton.Font = New System.Drawing.Font("Sitka Small", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.notifyBothButton.Location = New System.Drawing.Point(84, 513)
+        Me.notifyBothButton.Name = "notifyBothButton"
+        Me.notifyBothButton.Size = New System.Drawing.Size(166, 43)
+        Me.notifyBothButton.TabIndex = 18
+        Me.notifyBothButton.Text = "Notify Both"
+        Me.notifyBothButton.UseVisualStyleBackColor = True
+        Me.notifyBothButton.Visible = False
+        '
+        'warningsControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.notifyBothButton)
         Me.Controls.Add(Me.insuranceButton)
         Me.Controls.Add(Me.notifyPoliceButton)
         Me.Controls.Add(Me.repairingBox)
@@ -163,19 +165,15 @@ Partial Class warningsControl
         Me.Controls.Add(Me.errorDescLabel)
         Me.Controls.Add(Me.errorLabel)
         Me.Controls.Add(Me.TitleLabel)
-        Me.Controls.Add(Me.BackBox)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Name = "errorFixScreenControl"
+        Me.Name = "warningsControl"
         Me.Size = New System.Drawing.Size(334, 642)
-        CType(Me.BackBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.repairingBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents BackBox As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TitleLabel As Label
     Friend WithEvents errorLabel As Label
@@ -187,4 +185,5 @@ Partial Class warningsControl
     Friend WithEvents notifyPoliceButton As Button
     Friend WithEvents Timer2 As Timer
     Friend WithEvents insuranceButton As Button
+    Friend WithEvents notifyBothButton As Button
 End Class

@@ -36,6 +36,7 @@ Partial Class Form1
         Me.breakInBox = New System.Windows.Forms.PictureBox()
         Me.collisionBox = New System.Windows.Forms.PictureBox()
         Me.WindowControl1 = New RentECar.windowControl()
+        Me.RatingsControl1 = New RentECar.ratingsControl()
         CType(Me.cameraFailureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.breakInBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.collisionBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -169,6 +170,15 @@ Partial Class Form1
         Me.WindowControl1.TabIndex = 16
         Me.WindowControl1.Visible = False
         '
+        'RatingsControl1
+        '
+        Me.RatingsControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.RatingsControl1.Location = New System.Drawing.Point(0, 0)
+        Me.RatingsControl1.Name = "RatingsControl1"
+        Me.RatingsControl1.Size = New System.Drawing.Size(336, 642)
+        Me.RatingsControl1.TabIndex = 17
+        Me.RatingsControl1.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -189,6 +199,7 @@ Partial Class Form1
         Me.Controls.Add(Me.CarDiagnosticControl1)
         Me.Controls.Add(Me.CameraViewControl1)
         Me.Controls.Add(Me.WindowControl1)
+        Me.Controls.Add(Me.RatingsControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
@@ -214,4 +225,5 @@ Partial Class Form1
     Friend WithEvents breakInBox As PictureBox
     Friend WithEvents collisionBox As PictureBox
     Friend WithEvents WindowControl1 As windowControl
+    Friend WithEvents RatingsControl1 As ratingsControl
 End Class

@@ -39,7 +39,9 @@
         Me.ErrorFixScreenControl1.fixButton.Hide()
         Me.ErrorFixScreenControl1.ignoreButton.Hide()
         Me.ErrorFixScreenControl1.notifyPoliceButton.Show()
+        Me.ErrorFixScreenControl1.notifyPoliceButton.Location = New System.Drawing.Point(92, 415)
         Me.ErrorFixScreenControl1.insuranceButton.Show()
+        Me.ErrorFixScreenControl1.notifyBothButton.Show()
         Me.ErrorFixScreenControl1.Show()
     End Sub
 End Class

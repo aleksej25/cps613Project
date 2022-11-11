@@ -51,4 +51,15 @@ Public Class warningsControl
         Me.timerTick = 0
         Me.Timer2.Start()
     End Sub
+
+    Private Sub notifyBothButton_Click(sender As Object, e As EventArgs) Handles notifyBothButton.Click
+        Me.errorDescLabel.Text = "Insurance and Police" + vbNewLine + "Have Been Notified!"
+        Me.errorDescLabel.Font = New Font("Sitka Text", 16, FontStyle.Bold)
+        Me.errorDescLabel.ForeColor = Color.Red
+        Me.errorDescLabel.Left = (Me.errorLabel.Parent.Width \ 2) - (Me.errorLabel.Width \ 2) - 13
+        Me.timerTick = 0
+        Me.Timer2.Start()
+    End Sub
+
+
 End Class
