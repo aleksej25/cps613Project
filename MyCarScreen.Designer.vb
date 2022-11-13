@@ -53,7 +53,7 @@ Partial Class MyCarScreen
         '
         'ClimateControlBox
         '
-        Me.ClimateControlBox.Image = Global.RentECar.My.Resources.ProjectResources._257783_200
+        Me.ClimateControlBox.Image = Global.RentECar.My.Resources.ProjectResources.tempIcon
         Me.ClimateControlBox.Location = New System.Drawing.Point(108, 288)
         Me.ClimateControlBox.Name = "ClimateControlBox"
         Me.ClimateControlBox.Size = New System.Drawing.Size(120, 120)

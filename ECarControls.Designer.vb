@@ -133,7 +133,7 @@ Partial Class ECarControls
         'climateControlButton
         '
         Me.climateControlButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.climateControlButton.Image = Global.RentECar.My.Resources.ProjectResources._257783_200
+        Me.climateControlButton.Image = Global.RentECar.My.Resources.ProjectResources.tempIcon
         Me.climateControlButton.Location = New System.Drawing.Point(168, 430)
         Me.climateControlButton.Name = "climateControlButton"
         Me.climateControlButton.Size = New System.Drawing.Size(120, 120)
