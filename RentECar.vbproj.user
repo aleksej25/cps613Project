@@ -7,7 +7,13 @@
     <Compile Update="BookingsControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="calendarControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="cameraViewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CarControlScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="carDiagnosticControl.vb">
@@ -16,10 +22,85 @@
     <Compile Update="ClimateControlScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ControlECarScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\AirControllScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\BookingsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\calendarControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\cameraViewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\CarControlScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\carDiagnosticControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\ClimateControlScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\ControlECarScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\ECarControls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="cps613Project\generalControlScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\InitalScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\MediaControls.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\MyCarScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\OwnerMainScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\ratingsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\RiderMainScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\scheduleControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\schedulerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\warningsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cps613Project\windowControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="generalControlScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="MyCarScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ratingsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="scheduleControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="schedulerControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="warningsControl.vb">

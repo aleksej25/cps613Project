@@ -37,6 +37,9 @@ Partial Class Form1
         Me.collisionBox = New System.Windows.Forms.PictureBox()
         Me.WindowControl1 = New RentECar.windowControl()
         Me.RatingsControl1 = New RentECar.ratingsControl()
+        Me.CalendarControl1 = New RentECar.calendarControl()
+        Me.ScheduleControl1 = New RentECar.scheduleControl()
+        Me.SchedulerControl1 = New RentECar.schedulerControl()
         CType(Me.cameraFailureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.breakInBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.collisionBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -179,6 +182,31 @@ Partial Class Form1
         Me.RatingsControl1.TabIndex = 17
         Me.RatingsControl1.Visible = False
         '
+        'CalendarControl1
+        '
+        Me.CalendarControl1.Location = New System.Drawing.Point(0, 0)
+        Me.CalendarControl1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.CalendarControl1.Name = "CalendarControl1"
+        Me.CalendarControl1.Size = New System.Drawing.Size(327, 640)
+        Me.CalendarControl1.TabIndex = 18
+        '
+        'ScheduleControl1
+        '
+        Me.ScheduleControl1.Location = New System.Drawing.Point(0, 0)
+        Me.ScheduleControl1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ScheduleControl1.Name = "ScheduleControl1"
+        Me.ScheduleControl1.Size = New System.Drawing.Size(345, 657)
+        Me.ScheduleControl1.TabIndex = 19
+        '
+        'SchedulerControl1
+        '
+        Me.SchedulerControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.SchedulerControl1.Location = New System.Drawing.Point(0, 0)
+        Me.SchedulerControl1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.SchedulerControl1.Name = "SchedulerControl1"
+        Me.SchedulerControl1.Size = New System.Drawing.Size(329, 636)
+        Me.SchedulerControl1.TabIndex = 20
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -200,6 +228,9 @@ Partial Class Form1
         Me.Controls.Add(Me.CameraViewControl1)
         Me.Controls.Add(Me.WindowControl1)
         Me.Controls.Add(Me.RatingsControl1)
+        Me.Controls.Add(Me.CalendarControl1)
+        Me.Controls.Add(Me.ScheduleControl1)
+        Me.Controls.Add(Me.SchedulerControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
@@ -226,4 +257,7 @@ Partial Class Form1
     Friend WithEvents collisionBox As PictureBox
     Friend WithEvents WindowControl1 As windowControl
     Friend WithEvents RatingsControl1 As ratingsControl
+    Friend WithEvents CalendarControl1 As calendarControl
+    Friend WithEvents ScheduleControl1 As scheduleControl
+    Friend WithEvents SchedulerControl1 As schedulerControl
 End Class
