@@ -45,7 +45,7 @@ Partial Class BookTripScreen
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.RentECar.My.Resources.ProjectResources.iphone_blank
-        Me.PictureBox1.Location = New System.Drawing.Point(-1, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(340, 639)
         Me.PictureBox1.TabIndex = 0

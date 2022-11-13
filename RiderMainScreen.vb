@@ -1,4 +1,6 @@
 ﻿Public Class RiderMainScreen
+    'Rider Main Screen'
+
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
         Me.Hide()
         Form1.InitalScreen1.Show()

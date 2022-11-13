@@ -1,4 +1,7 @@
 ﻿Public Class Form1
+
+    'Form 1 Added variables'
+
     Public Shared CarBooked As Boolean = False
     Public Shared riderAccess As Boolean
     Public Shared riderBooking As New Booking

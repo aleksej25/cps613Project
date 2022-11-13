@@ -38,7 +38,7 @@ Partial Class RiderMainScreen
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.RentECar.My.Resources.ProjectResources.iphone_blank
-        Me.PictureBox1.Location = New System.Drawing.Point(5, 3)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(333, 640)
         Me.PictureBox1.TabIndex = 8

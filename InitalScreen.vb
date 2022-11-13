@@ -1,4 +1,5 @@
 ﻿Public Class InitalScreen
+    'Initial Screen'
     Private Sub LoginButton_Click(sender As Object, e As EventArgs) Handles LoginButton.Click
         If UserNameBox.Text = "owner" And PasswordBox.Text = "ownerpassword" Then
             Me.Hide()

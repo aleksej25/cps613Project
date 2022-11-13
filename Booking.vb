@@ -1,4 +1,5 @@
 ﻿Public Class Booking
+    'Booking Class'
 
     Public Shared RiderName As String
     Public Shared FromLocation As String
