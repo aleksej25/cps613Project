@@ -11,8 +11,14 @@
     End Sub
 
     Private Sub BackBox_Click(sender As Object, e As EventArgs) Handles BackBox.Click
-        Me.Hide()
-        Form1.OwnerMainScreen1.Show()
+        If Form1.riderAccess = True Then
+            Me.Hide()
+            Form1.CurrentTripControl1.BringToFront()
+            Form1.CurrentTripControl1.Show()
+        Else
+            Me.Hide()
+            Form1.OwnerMainScreen1.Show()
+        End If
     End Sub
 
     Private Sub trunkBox_Click(sender As Object, e As EventArgs) Handles trunkButton.Click

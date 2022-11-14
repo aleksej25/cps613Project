@@ -26,9 +26,17 @@
         PeopleComboBox.Items.Add(3)
         PeopleComboBox.Items.Add(4)
 
+        StartTimeBox.Items.Add("11:00AM")
+        StartTimeBox.Items.Add("12:00PM")
+        StartTimeBox.Items.Add("1:00PM")
+        StartTimeBox.Items.Add("2:00PM")
         StartTimeBox.Items.Add("3:00PM")
         StartTimeBox.Items.Add("4:00PM")
 
+        EndTimeBox.Items.Add("11:00AM")
+        EndTimeBox.Items.Add("12:00PM")
+        EndTimeBox.Items.Add("1:00PM")
+        EndTimeBox.Items.Add("2:00PM")
         EndTimeBox.Items.Add("3:00PM")
         EndTimeBox.Items.Add("4:00PM")
         EndTimeBox.Items.Add("5:00PM")
@@ -42,9 +50,9 @@
 
     Private Sub NowRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles NowRadioButton.CheckedChanged
         FromTimeLabel.Hide()
-        EndTimeLabel.Hide()
+        EndTimeLabel.Show()
         StartTimeBox.Hide()
-        EndTimeBox.Hide()
+        EndTimeBox.Show()
     End Sub
 
     Private Sub LaterRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles LaterRadioButton.CheckedChanged
@@ -60,8 +68,8 @@
         Form1.riderBooking.NumberOfPeople = Integer.Parse(PeopleComboBox.Text)
 
         If NowRadioButton.Checked = True Then
-            Form1.riderBooking.FromTime = "2:00PM"
-            Form1.riderBooking.ToTime = "3:00PM"
+            Form1.riderBooking.FromTime = "10:00AM"
+            Form1.riderBooking.ToTime = EndTimeBox.Text
             Form1.riderBooking.BookingStatus = True
             Form1.CarBooked = True
             Form1.RiderMainScreen1.bookCheck()
@@ -76,7 +84,10 @@
             Form1.RiderMainScreen1.bookCheck()
         End If
 
+        Form1.CurrentTripControl1.Book()
         Me.Hide()
-        Form1.RiderMainScreen1.Show()
+        Form1.CurrentTripControl1.BringToFront()
+        Form1.CurrentTripControl1.Show()
+
     End Sub
 End Class

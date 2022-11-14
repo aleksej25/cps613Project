@@ -40,6 +40,8 @@ Partial Class Form1
         Me.BookTripScreen1 = New RentECar.BookTripScreen()
         Me.CalendarControl1 = New RentECar.calendarControl()
         Me.SchedulerControl1 = New RentECar.schedulerControl()
+        Me.RiderRatingsControl1 = New RentECar.riderRatingsControl()
+        Me.CurrentTripControl1 = New RentECar.CurrentTripControl()
         CType(Me.cameraFailureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.breakInBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.collisionBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -207,6 +209,22 @@ Partial Class Form1
         Me.SchedulerControl1.Size = New System.Drawing.Size(329, 636)
         Me.SchedulerControl1.TabIndex = 21
         '
+        'RiderRatingsControl1
+        '
+        Me.RiderRatingsControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.RiderRatingsControl1.Location = New System.Drawing.Point(-2, -1)
+        Me.RiderRatingsControl1.Name = "RiderRatingsControl1"
+        Me.RiderRatingsControl1.Size = New System.Drawing.Size(339, 642)
+        Me.RiderRatingsControl1.TabIndex = 22
+        '
+        'CurrentTripControl1
+        '
+        Me.CurrentTripControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.CurrentTripControl1.Location = New System.Drawing.Point(-2, 0)
+        Me.CurrentTripControl1.Name = "CurrentTripControl1"
+        Me.CurrentTripControl1.Size = New System.Drawing.Size(339, 642)
+        Me.CurrentTripControl1.TabIndex = 23
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -231,6 +249,8 @@ Partial Class Form1
         Me.Controls.Add(Me.CalendarControl1)
         Me.Controls.Add(Me.BookTripScreen1)
         Me.Controls.Add(Me.SchedulerControl1)
+        Me.Controls.Add(Me.RiderRatingsControl1)
+        Me.Controls.Add(Me.CurrentTripControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
@@ -260,4 +280,6 @@ Partial Class Form1
     Friend WithEvents BookTripScreen1 As BookTripScreen
     Friend WithEvents CalendarControl1 As calendarControl
     Friend WithEvents SchedulerControl1 As schedulerControl
+    Friend WithEvents RiderRatingsControl1 As riderRatingsControl
+    Friend WithEvents CurrentTripControl1 As CurrentTripControl
 End Class
