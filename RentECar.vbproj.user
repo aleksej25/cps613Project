@@ -7,10 +7,25 @@
     <Compile Update="BookingsControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="CarControlScreen.vb">
+    <Compile Update="BookTripScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="cameraViewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="carDiagnosticControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ClimateControlScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MyCarScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ratingsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="warningsControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Form1.vb">
@@ -31,5 +46,13 @@
     <Compile Update="RiderMainScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="windowControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="ProjectResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

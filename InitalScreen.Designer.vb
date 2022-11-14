@@ -81,7 +81,7 @@ Partial Class InitalScreen
         '
         'LoginButton
         '
-        Me.LoginButton.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LoginButton.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.LoginButton.Location = New System.Drawing.Point(109, 470)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.Size = New System.Drawing.Size(111, 51)

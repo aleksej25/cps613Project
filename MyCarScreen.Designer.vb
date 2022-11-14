@@ -44,7 +44,7 @@ Partial Class MyCarScreen
         '
         'MediaControlBox
         '
-        Me.MediaControlBox.Image = Global.RentECar.My.Resources.ProjectResources.smart_car_control_transportation_road_smart_cars_media_system_phone_call_music_map_self_driving_512
+        Me.MediaControlBox.Image = Global.RentECar.My.Resources.ProjectResources.carMultiMedia
         Me.MediaControlBox.Location = New System.Drawing.Point(108, 446)
         Me.MediaControlBox.Name = "MediaControlBox"
         Me.MediaControlBox.Size = New System.Drawing.Size(120, 120)
@@ -53,7 +53,7 @@ Partial Class MyCarScreen
         '
         'ClimateControlBox
         '
-        Me.ClimateControlBox.Image = Global.RentECar.My.Resources.ProjectResources._257783_200
+        Me.ClimateControlBox.Image = Global.RentECar.My.Resources.ProjectResources.tempIcon
         Me.ClimateControlBox.Location = New System.Drawing.Point(108, 288)
         Me.ClimateControlBox.Name = "ClimateControlBox"
         Me.ClimateControlBox.Size = New System.Drawing.Size(120, 120)

@@ -42,7 +42,45 @@ E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.RiderMainScreen.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.ClimateControlScreen.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.AirControllScreen.resources
-E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.CarControlScreen.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.BookingsControl.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.ECarControls.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.MediaControls.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.carDiagnosticControl.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.cameraViewControl.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.warningsControl.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.MyCarScreen.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.windowControl.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.ratingsControl.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\bin\Debug\net6.0-windows\RentECar.exe
+C:\Users\theol\Desktop\Projects\repos\cps613Project\bin\Debug\net6.0-windows\RentECar.deps.json
+C:\Users\theol\Desktop\Projects\repos\cps613Project\bin\Debug\net6.0-windows\RentECar.runtimeconfig.json
+C:\Users\theol\Desktop\Projects\repos\cps613Project\bin\Debug\net6.0-windows\RentECar.dll
+C:\Users\theol\Desktop\Projects\repos\cps613Project\bin\Debug\net6.0-windows\RentECar.pdb
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.vbproj.AssemblyReference.cache
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.AirControllScreen.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.BookingsControl.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.BookTripScreen.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.cameraViewControl.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.carDiagnosticControl.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.ClimateControlScreen.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.ECarControls.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.Form1.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.InitalScreen.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.MediaControls.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.MyCarScreen.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.OwnerMainScreen.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.ProjectResources.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.ratingsControl.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.RiderMainScreen.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.warningsControl.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.windowControl.resources
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.vbproj.GenerateResource.cache
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.AssemblyInfoInputs.cache
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.AssemblyInfo.vb
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.vbproj.CoreCompileInputs.cache
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.dll
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\refint\RentECar.dll
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.pdb
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.genruntimeconfig.cache
+C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\ref\RentECar.dll
