@@ -183,7 +183,7 @@ Partial Class schedulerControl
         Me.GroupBox1.Controls.Add(Me.RadioButton5)
         Me.GroupBox1.Controls.Add(Me.RadioButton6)
         Me.GroupBox1.Controls.Add(Me.RadioButton7)
-        Me.GroupBox1.Location = New System.Drawing.Point(54, 208)
+        Me.GroupBox1.Location = New System.Drawing.Point(32, 189)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -325,7 +325,7 @@ Partial Class schedulerControl
         Me.GroupBox2.Controls.Add(Me.RadioButton10)
         Me.GroupBox2.Controls.Add(Me.RadioButton12)
         Me.GroupBox2.Controls.Add(Me.RadioButton11)
-        Me.GroupBox2.Location = New System.Drawing.Point(193, 199)
+        Me.GroupBox2.Location = New System.Drawing.Point(155, 189)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -347,7 +347,7 @@ Partial Class schedulerControl
         Me.Controls.Add(Me.PictureBox2)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "schedulerControl"
-        Me.Size = New System.Drawing.Size(373, 636)
+        Me.Size = New System.Drawing.Size(329, 636)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
