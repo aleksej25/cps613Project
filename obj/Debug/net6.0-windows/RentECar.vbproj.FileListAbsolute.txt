@@ -42,7 +42,6 @@ E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.RiderMainScreen.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.ClimateControlScreen.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.AirControllScreen.resources
-E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.BookingsControl.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.ECarControls.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.MediaControls.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.carDiagnosticControl.resources
@@ -84,3 +83,6 @@ C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\ref
 C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.pdb
 C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\RentECar.genruntimeconfig.cache
 C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\ref\RentECar.dll
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.BookTripScreen.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.calendarControl.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.schedulerControl.resources

@@ -64,19 +64,21 @@ Partial Class InitalScreen
         '
         'UserNameBox
         '
+        Me.UserNameBox.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.UserNameBox.Location = New System.Drawing.Point(89, 383)
         Me.UserNameBox.Name = "UserNameBox"
         Me.UserNameBox.PlaceholderText = "Username"
-        Me.UserNameBox.Size = New System.Drawing.Size(156, 23)
+        Me.UserNameBox.Size = New System.Drawing.Size(156, 24)
         Me.UserNameBox.TabIndex = 5
         '
         'PasswordBox
         '
+        Me.PasswordBox.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.PasswordBox.Location = New System.Drawing.Point(89, 427)
         Me.PasswordBox.Name = "PasswordBox"
         Me.PasswordBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.PasswordBox.PlaceholderText = "Password"
-        Me.PasswordBox.Size = New System.Drawing.Size(156, 23)
+        Me.PasswordBox.Size = New System.Drawing.Size(156, 24)
         Me.PasswordBox.TabIndex = 6
         '
         'LoginButton

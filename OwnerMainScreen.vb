@@ -9,6 +9,8 @@
     End Sub
 
     Private Sub ScheduleButton_Click(sender As Object, e As EventArgs) Handles ScheduleButton.Click
+        Me.Hide()
+        Form1.CalendarControl1.Show()
     End Sub
 
     Private Sub BookingsButton_Click(sender As Object, e As EventArgs) Handles BookingsButton.Click
