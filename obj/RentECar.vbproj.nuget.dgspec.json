@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Uni\\4th Year\\F2022\\CPS613\\Project1\\RentECar\\RentECar.vbproj": {}
+    "C:\\Users\\theol\\Desktop\\Projects\\repos\\cps613Project\\RentECar.vbproj": {}
   },
   "projects": {
-    "E:\\Uni\\4th Year\\F2022\\CPS613\\Project1\\RentECar\\RentECar.vbproj": {
+    "C:\\Users\\theol\\Desktop\\Projects\\repos\\cps613Project\\RentECar.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Uni\\4th Year\\F2022\\CPS613\\Project1\\RentECar\\RentECar.vbproj",
+        "projectUniqueName": "C:\\Users\\theol\\Desktop\\Projects\\repos\\cps613Project\\RentECar.vbproj",
         "projectName": "RentECar",
-        "projectPath": "E:\\Uni\\4th Year\\F2022\\CPS613\\Project1\\RentECar\\RentECar.vbproj",
-        "packagesPath": "C:\\Users\\Aleksej\\.nuget\\packages\\",
-        "outputPath": "E:\\Uni\\4th Year\\F2022\\CPS613\\Project1\\RentECar\\obj\\",
+        "projectPath": "C:\\Users\\theol\\Desktop\\Projects\\repos\\cps613Project\\RentECar.vbproj",
+        "packagesPath": "C:\\Users\\theol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\theol\\Desktop\\Projects\\repos\\cps613Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aleksej\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\theol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

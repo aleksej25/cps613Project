@@ -1,4 +1,11 @@
 ﻿Public Class Form1
+
+    'Form 1 Added variables'
+
+    Public Shared CarBooked As Boolean = False
+    Public Shared riderAccess As Boolean
+    Public Shared riderBooking As New Booking
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
     End Sub

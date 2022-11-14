@@ -7,6 +7,9 @@
     <Compile Update="BookingsControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="BookTripScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="cameraViewControl.vb">
       <SubType>UserControl</SubType>
     </Compile>

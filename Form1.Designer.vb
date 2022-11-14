@@ -37,6 +37,7 @@ Partial Class Form1
         Me.collisionBox = New System.Windows.Forms.PictureBox()
         Me.WindowControl1 = New RentECar.windowControl()
         Me.RatingsControl1 = New RentECar.ratingsControl()
+        Me.BookTripScreen1 = New RentECar.BookTripScreen()
         CType(Me.cameraFailureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.breakInBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.collisionBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -179,6 +180,14 @@ Partial Class Form1
         Me.RatingsControl1.TabIndex = 17
         Me.RatingsControl1.Visible = False
         '
+        'BookTripScreen1
+        '
+        Me.BookTripScreen1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.BookTripScreen1.Location = New System.Drawing.Point(0, 0)
+        Me.BookTripScreen1.Name = "BookTripScreen1"
+        Me.BookTripScreen1.Size = New System.Drawing.Size(339, 642)
+        Me.BookTripScreen1.TabIndex = 18
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -200,6 +209,7 @@ Partial Class Form1
         Me.Controls.Add(Me.CameraViewControl1)
         Me.Controls.Add(Me.WindowControl1)
         Me.Controls.Add(Me.RatingsControl1)
+        Me.Controls.Add(Me.BookTripScreen1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
@@ -226,4 +236,5 @@ Partial Class Form1
     Friend WithEvents collisionBox As PictureBox
     Friend WithEvents WindowControl1 As windowControl
     Friend WithEvents RatingsControl1 As ratingsControl
+    Friend WithEvents BookTripScreen1 As BookTripScreen
 End Class
