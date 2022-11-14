@@ -6,7 +6,7 @@
         Form1.OwnerMainScreen1.Show()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles addButton.Click
         Me.Hide()
         Form1.SchedulerControl1.BringToFront()
         Form1.SchedulerControl1.Show()
@@ -2355,13 +2355,38 @@
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles removeButton.Click
+
+        Dim counter As Integer = 0
+
+        For Each label As Control In Me.Controls
+
+            If label.BackColor = Color.Blue Then
+                counter = counter + 1
+            End If
+
+
+        Next
+
+        If counter = 0 And negativeClicked = False Then
+            MessageBox.Show("Error. Nothing to Remove.", "Information", MessageBoxButtons.OK)
+            Exit Sub
+        End If
+
+        If counter = 0 And negativeClicked = True Then
+            Me.addButton.Show()
+        End If
+
         If negativeClicked = False Then
             negativeClicked = True
-            Button1.Hide()
+            Me.deleteModeLabel.Show()
+            Me.removeButton.Image = My.Resources.ProjectResources.smallMinusOn
+            Me.addButton.Hide()
         ElseIf negativeClicked = True Then
+            Me.removeButton.Image = My.Resources.ProjectResources.smallMinus
             negativeClicked = False
-            Button1.Show()
+            Me.addButton.Show()
+            Me.deleteModeLabel.Hide()
         End If
 
     End Sub

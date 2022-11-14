@@ -557,6 +557,46 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend Shared ReadOnly Property riderRating() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("riderRating", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property smallMinus() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("smallMinus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property smallMinusOn() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("smallMinusOn", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend Shared ReadOnly Property smallPlus() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("smallPlus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend Shared ReadOnly Property spinningGear() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("spinningGear", resourceCulture)
