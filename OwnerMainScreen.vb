@@ -25,13 +25,13 @@
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Me.timerStatus += 1
-        If Me.timerStatus = 125 Then
+        If Me.timerStatus = 100 Then
             Form1.cameraFailureBox.Show()
-            'ElseIf Me.timerStatus = 450 Then
-            '    Form1.breakInBox.Show()
-            'ElseIf Me.timerStatus = 860 Then
-            '    Form1.collisionBox.Show()
-            '    Me.Timer1.Stop()
+        ElseIf Me.timerStatus = 550 Then
+            Form1.breakInBox.Show()
+        ElseIf Me.timerStatus = 960 Then
+            Form1.collisionBox.Show()
+            Me.Timer1.Stop()
         End If
     End Sub
 
