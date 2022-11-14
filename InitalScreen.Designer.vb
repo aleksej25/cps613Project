@@ -25,10 +25,9 @@ Partial Class InitalScreen
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TitleLabel = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.UserNameBox = New System.Windows.Forms.TextBox()
-        Me.PasswordBox = New System.Windows.Forms.TextBox()
-        Me.LoginButton = New System.Windows.Forms.Button()
-        Me.InvalidLoginLabel = New System.Windows.Forms.Label()
+        Me.riderButton = New System.Windows.Forms.Button()
+        Me.ownerButton = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -62,56 +61,46 @@ Partial Class InitalScreen
         Me.PictureBox2.TabIndex = 4
         Me.PictureBox2.TabStop = False
         '
-        'UserNameBox
+        'riderButton
         '
-        Me.UserNameBox.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.UserNameBox.Location = New System.Drawing.Point(89, 383)
-        Me.UserNameBox.Name = "UserNameBox"
-        Me.UserNameBox.PlaceholderText = "Username"
-        Me.UserNameBox.Size = New System.Drawing.Size(156, 24)
-        Me.UserNameBox.TabIndex = 5
+        Me.riderButton.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.riderButton.Location = New System.Drawing.Point(110, 504)
+        Me.riderButton.Name = "riderButton"
+        Me.riderButton.Size = New System.Drawing.Size(111, 51)
+        Me.riderButton.TabIndex = 7
+        Me.riderButton.Text = "Rider"
+        Me.riderButton.UseVisualStyleBackColor = True
         '
-        'PasswordBox
+        'ownerButton
         '
-        Me.PasswordBox.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.PasswordBox.Location = New System.Drawing.Point(89, 427)
-        Me.PasswordBox.Name = "PasswordBox"
-        Me.PasswordBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.PasswordBox.PlaceholderText = "Password"
-        Me.PasswordBox.Size = New System.Drawing.Size(156, 24)
-        Me.PasswordBox.TabIndex = 6
+        Me.ownerButton.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ownerButton.Location = New System.Drawing.Point(110, 433)
+        Me.ownerButton.Name = "ownerButton"
+        Me.ownerButton.Size = New System.Drawing.Size(111, 51)
+        Me.ownerButton.TabIndex = 8
+        Me.ownerButton.Text = "Owner"
+        Me.ownerButton.UseVisualStyleBackColor = True
         '
-        'LoginButton
+        'Label1
         '
-        Me.LoginButton.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.LoginButton.Location = New System.Drawing.Point(109, 470)
-        Me.LoginButton.Name = "LoginButton"
-        Me.LoginButton.Size = New System.Drawing.Size(111, 51)
-        Me.LoginButton.TabIndex = 7
-        Me.LoginButton.Text = "Login"
-        Me.LoginButton.UseVisualStyleBackColor = True
-        '
-        'InvalidLoginLabel
-        '
-        Me.InvalidLoginLabel.AutoSize = True
-        Me.InvalidLoginLabel.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.InvalidLoginLabel.ForeColor = System.Drawing.Color.Red
-        Me.InvalidLoginLabel.Location = New System.Drawing.Point(28, 537)
-        Me.InvalidLoginLabel.Name = "InvalidLoginLabel"
-        Me.InvalidLoginLabel.Size = New System.Drawing.Size(279, 28)
-        Me.InvalidLoginLabel.TabIndex = 8
-        Me.InvalidLoginLabel.Text = "Invalid Username/Password"
-        Me.InvalidLoginLabel.Visible = False
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Sitka Small", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label1.Location = New System.Drawing.Point(139, 388)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(51, 24)
+        Me.Label1.TabIndex = 9
+        Me.Label1.Text = "I'm a"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'InitalScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Controls.Add(Me.InvalidLoginLabel)
-        Me.Controls.Add(Me.LoginButton)
-        Me.Controls.Add(Me.PasswordBox)
-        Me.Controls.Add(Me.UserNameBox)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ownerButton)
+        Me.Controls.Add(Me.riderButton)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.TitleLabel)
         Me.Controls.Add(Me.PictureBox1)
@@ -127,8 +116,7 @@ Partial Class InitalScreen
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TitleLabel As Label
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents UserNameBox As TextBox
-    Friend WithEvents PasswordBox As TextBox
-    Friend WithEvents LoginButton As Button
-    Friend WithEvents InvalidLoginLabel As Label
+    Friend WithEvents riderButton As Button
+    Friend WithEvents ownerButton As Button
+    Friend WithEvents Label1 As Label
 End Class
