@@ -38,6 +38,7 @@ Partial Class BookTripScreen
         Me.StartTimeBox = New System.Windows.Forms.ComboBox()
         Me.EndTimeBox = New System.Windows.Forms.ComboBox()
         Me.BookButton = New System.Windows.Forms.Button()
+        Me.CaptionLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -54,7 +55,7 @@ Partial Class BookTripScreen
         'BackBox
         '
         Me.BackBox.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
-        Me.BackBox.Location = New System.Drawing.Point(29, 39)
+        Me.BackBox.Location = New System.Drawing.Point(50, 62)
         Me.BackBox.Name = "BackBox"
         Me.BackBox.Size = New System.Drawing.Size(40, 40)
         Me.BackBox.TabIndex = 10
@@ -63,47 +64,51 @@ Partial Class BookTripScreen
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(144, 64)
+        Me.Label1.Location = New System.Drawing.Point(124, 62)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(65, 15)
+        Me.Label1.Size = New System.Drawing.Size(143, 35)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "Book a Trip"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(53, 143)
+        Me.Label2.Location = New System.Drawing.Point(50, 164)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(35, 15)
+        Me.Label2.Size = New System.Drawing.Size(67, 28)
         Me.Label2.TabIndex = 12
-        Me.Label2.Text = "From"
+        Me.Label2.Text = "From:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(53, 210)
+        Me.Label3.Location = New System.Drawing.Point(50, 200)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(19, 15)
+        Me.Label3.Size = New System.Drawing.Size(41, 28)
         Me.Label3.TabIndex = 13
-        Me.Label3.Text = "To"
+        Me.Label3.Text = "To:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(38, 273)
+        Me.Label4.Location = New System.Drawing.Point(50, 251)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(107, 15)
+        Me.Label4.Size = New System.Drawing.Size(148, 23)
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "Number of people:"
         '
         'FromLocationBox
         '
         Me.FromLocationBox.FormattingEnabled = True
-        Me.FromLocationBox.Location = New System.Drawing.Point(169, 140)
+        Me.FromLocationBox.Location = New System.Drawing.Point(171, 164)
         Me.FromLocationBox.Name = "FromLocationBox"
         Me.FromLocationBox.Size = New System.Drawing.Size(121, 23)
         Me.FromLocationBox.TabIndex = 15
@@ -111,7 +116,7 @@ Partial Class BookTripScreen
         'ToLocationBox
         '
         Me.ToLocationBox.FormattingEnabled = True
-        Me.ToLocationBox.Location = New System.Drawing.Point(169, 207)
+        Me.ToLocationBox.Location = New System.Drawing.Point(171, 205)
         Me.ToLocationBox.Name = "ToLocationBox"
         Me.ToLocationBox.Size = New System.Drawing.Size(121, 23)
         Me.ToLocationBox.TabIndex = 16
@@ -119,18 +124,19 @@ Partial Class BookTripScreen
         'PeopleComboBox
         '
         Me.PeopleComboBox.FormattingEnabled = True
-        Me.PeopleComboBox.Location = New System.Drawing.Point(169, 273)
+        Me.PeopleComboBox.Location = New System.Drawing.Point(232, 254)
         Me.PeopleComboBox.Name = "PeopleComboBox"
-        Me.PeopleComboBox.Size = New System.Drawing.Size(121, 23)
+        Me.PeopleComboBox.Size = New System.Drawing.Size(60, 23)
         Me.PeopleComboBox.TabIndex = 17
         '
         'NowRadioButton
         '
         Me.NowRadioButton.AutoSize = True
+        Me.NowRadioButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.NowRadioButton.ForeColor = System.Drawing.Color.White
-        Me.NowRadioButton.Location = New System.Drawing.Point(38, 336)
+        Me.NowRadioButton.Location = New System.Drawing.Point(55, 311)
         Me.NowRadioButton.Name = "NowRadioButton"
-        Me.NowRadioButton.Size = New System.Drawing.Size(50, 19)
+        Me.NowRadioButton.Size = New System.Drawing.Size(62, 27)
         Me.NowRadioButton.TabIndex = 18
         Me.NowRadioButton.TabStop = True
         Me.NowRadioButton.Text = "Now"
@@ -139,10 +145,11 @@ Partial Class BookTripScreen
         'LaterRadioButton
         '
         Me.LaterRadioButton.AutoSize = True
+        Me.LaterRadioButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.LaterRadioButton.ForeColor = System.Drawing.Color.White
-        Me.LaterRadioButton.Location = New System.Drawing.Point(183, 336)
+        Me.LaterRadioButton.Location = New System.Drawing.Point(225, 311)
         Me.LaterRadioButton.Name = "LaterRadioButton"
-        Me.LaterRadioButton.Size = New System.Drawing.Size(51, 19)
+        Me.LaterRadioButton.Size = New System.Drawing.Size(67, 27)
         Me.LaterRadioButton.TabIndex = 19
         Me.LaterRadioButton.TabStop = True
         Me.LaterRadioButton.Text = "Later"
@@ -151,27 +158,29 @@ Partial Class BookTripScreen
         'FromTimeLabel
         '
         Me.FromTimeLabel.AutoSize = True
+        Me.FromTimeLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.FromTimeLabel.ForeColor = System.Drawing.Color.White
-        Me.FromTimeLabel.Location = New System.Drawing.Point(31, 392)
+        Me.FromTimeLabel.Location = New System.Drawing.Point(50, 380)
         Me.FromTimeLabel.Name = "FromTimeLabel"
-        Me.FromTimeLabel.Size = New System.Drawing.Size(61, 15)
+        Me.FromTimeLabel.Size = New System.Drawing.Size(91, 23)
         Me.FromTimeLabel.TabIndex = 20
         Me.FromTimeLabel.Text = "Start time:"
         '
         'EndTimeLabel
         '
         Me.EndTimeLabel.AutoSize = True
+        Me.EndTimeLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.EndTimeLabel.ForeColor = System.Drawing.Color.White
-        Me.EndTimeLabel.Location = New System.Drawing.Point(31, 458)
+        Me.EndTimeLabel.Location = New System.Drawing.Point(50, 436)
         Me.EndTimeLabel.Name = "EndTimeLabel"
-        Me.EndTimeLabel.Size = New System.Drawing.Size(57, 15)
+        Me.EndTimeLabel.Size = New System.Drawing.Size(83, 23)
         Me.EndTimeLabel.TabIndex = 21
         Me.EndTimeLabel.Text = "End time:"
         '
         'StartTimeBox
         '
         Me.StartTimeBox.FormattingEnabled = True
-        Me.StartTimeBox.Location = New System.Drawing.Point(169, 392)
+        Me.StartTimeBox.Location = New System.Drawing.Point(171, 380)
         Me.StartTimeBox.Name = "StartTimeBox"
         Me.StartTimeBox.Size = New System.Drawing.Size(121, 23)
         Me.StartTimeBox.TabIndex = 22
@@ -179,25 +188,38 @@ Partial Class BookTripScreen
         'EndTimeBox
         '
         Me.EndTimeBox.FormattingEnabled = True
-        Me.EndTimeBox.Location = New System.Drawing.Point(169, 455)
+        Me.EndTimeBox.Location = New System.Drawing.Point(171, 439)
         Me.EndTimeBox.Name = "EndTimeBox"
         Me.EndTimeBox.Size = New System.Drawing.Size(121, 23)
         Me.EndTimeBox.TabIndex = 23
         '
         'BookButton
         '
-        Me.BookButton.Location = New System.Drawing.Point(118, 514)
+        Me.BookButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BookButton.Location = New System.Drawing.Point(111, 507)
         Me.BookButton.Name = "BookButton"
-        Me.BookButton.Size = New System.Drawing.Size(75, 23)
+        Me.BookButton.Size = New System.Drawing.Size(98, 50)
         Me.BookButton.TabIndex = 24
         Me.BookButton.Text = "Book"
         Me.BookButton.UseVisualStyleBackColor = True
+        '
+        'CaptionLabel
+        '
+        Me.CaptionLabel.AutoSize = True
+        Me.CaptionLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CaptionLabel.ForeColor = System.Drawing.Color.White
+        Me.CaptionLabel.Location = New System.Drawing.Point(55, 121)
+        Me.CaptionLabel.Name = "CaptionLabel"
+        Me.CaptionLabel.Size = New System.Drawing.Size(223, 23)
+        Me.CaptionLabel.TabIndex = 25
+        Me.CaptionLabel.Text = "Today is Thursday, 10:00AM"
         '
         'BookTripScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.CaptionLabel)
         Me.Controls.Add(Me.BookButton)
         Me.Controls.Add(Me.EndTimeBox)
         Me.Controls.Add(Me.StartTimeBox)
@@ -239,4 +261,5 @@ Partial Class BookTripScreen
     Friend WithEvents StartTimeBox As ComboBox
     Friend WithEvents EndTimeBox As ComboBox
     Friend WithEvents BookButton As Button
+    Friend WithEvents CaptionLabel As Label
 End Class

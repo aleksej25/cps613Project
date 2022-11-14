@@ -9,10 +9,13 @@
     Public Shared BookingStatus As Boolean
     Public Shared FromTime As String
     Public Shared ToTime As String
-
+    Public Shared TripModified As Boolean
+    Public Shared OldDestination As String
+    Public Shared NewDestination As String
     Public Sub New()
         RiderName = "Rider"
         BookingStatus = False
+        TripModified = False
     End Sub
 
     Public Sub Reset()
@@ -21,6 +24,7 @@
         NumberOfPeople = ""
         AdditionalDestination = ""
         BookingStatus = False
+        TripModified = False
         FromTime = ""
         ToTime = ""
     End Sub

@@ -4,6 +4,7 @@
         Me.Timer1.Start()
     End Sub
     Private Sub MyCarButton_Click(sender As Object, e As EventArgs) Handles MyCarButton.Click
+        Form1.ECarControls.carBox.Enabled = True
         Me.Hide()
         Form1.ECarControls.Show()
     End Sub
