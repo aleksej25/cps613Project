@@ -32,7 +32,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label3.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -66,7 +66,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label7.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -250,7 +250,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label75.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -283,7 +283,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label76.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -316,7 +316,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label77.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -349,7 +349,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label78.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -382,7 +382,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label79.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -448,7 +448,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label80.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -480,7 +480,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label74.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -513,7 +513,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label72.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -545,7 +545,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label69.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -577,7 +577,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label62.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -610,7 +610,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label63.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -642,7 +642,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label64.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -674,7 +674,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label66.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -706,7 +706,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label67.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -738,7 +738,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label65.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -770,7 +770,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label71.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -802,7 +802,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label70.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -834,7 +834,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label40.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -866,7 +866,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label41.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -898,7 +898,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label43.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -930,7 +930,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label42.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -962,7 +962,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label2.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -995,7 +995,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label4.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1027,7 +1027,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label5.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1059,7 +1059,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label6.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1091,7 +1091,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label18.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1125,7 +1125,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label25.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1157,7 +1157,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label24.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1189,7 +1189,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label23.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1221,7 +1221,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label22.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1253,7 +1253,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label21.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1286,7 +1286,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label20.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1318,7 +1318,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label19.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1350,7 +1350,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label32.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1382,7 +1382,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label31.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1414,7 +1414,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label30.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1446,7 +1446,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label29.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1478,7 +1478,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label28.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1510,7 +1510,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label27.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1542,7 +1542,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label26.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1574,7 +1574,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label39.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1606,7 +1606,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label38.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1638,7 +1638,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label37.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1670,7 +1670,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label36.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1703,7 +1703,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label35.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1735,7 +1735,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label34.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1767,7 +1767,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label33.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1799,7 +1799,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label46.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1831,7 +1831,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label45.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1863,7 +1863,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label44.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1895,7 +1895,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label53.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1927,7 +1927,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label52.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1959,7 +1959,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label51.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -1991,7 +1991,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label50.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -2023,7 +2023,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label49.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -2055,7 +2055,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label48.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -2087,7 +2087,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label47.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -2119,7 +2119,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label60.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -2151,7 +2151,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label59.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -2183,7 +2183,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label58.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -2215,7 +2215,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label57.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -2247,7 +2247,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label56.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -2279,7 +2279,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label55.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -2311,7 +2311,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label54.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -2343,7 +2343,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label73.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -2385,7 +2385,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label61.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)
@@ -2418,7 +2418,7 @@
             Dim line1 As String
             Dim line2 As String
 
-            String1 = Label68.Text
+            String1 = Form1.SchedulerControl1.activityTextBox.Text + " " + Form1.SchedulerControl1.locationTextBox.Text
             String2 = String1.Split(" ")
 
             line1 = String2(0)

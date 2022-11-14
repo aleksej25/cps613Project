@@ -86,3 +86,6 @@ C:\Users\theol\Desktop\Projects\repos\cps613Project\obj\Debug\net6.0-windows\ref
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.BookTripScreen.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.calendarControl.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.schedulerControl.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.CurrentTripControl.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.Resources.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.riderRatingsControl.resources

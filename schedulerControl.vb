@@ -548,6 +548,8 @@ Public Class schedulerControl
                 End If
 
             End If
+            Me.activityTextBox.Text = ""
+            Me.locationTextBox.Text = ""
             Me.Hide()
             Form1.CalendarControl1.Show()
         End If
