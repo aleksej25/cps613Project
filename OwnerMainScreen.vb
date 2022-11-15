@@ -47,15 +47,15 @@
                 Form1.cameraFailureBox.Show()
                 Form1.cameraFailureBox.BringToFront()
                 Me.cameraFailureResolved = True
-            ElseIf Me.timerStatus = 750 And Not Me.breakInResolved Then
-                Form1.breakInBox.Show()
-                Form1.breakInBox.BringToFront()
-                Me.breakInResolved = True
-            ElseIf Me.timerStatus = 1250 And Not Me.colisionResolved Then
-                Form1.collisionBox.Show()
-                Form1.collisionBox.BringToFront()
-                Me.colisionResolved = True
-                Me.Timer1.Stop()
+                'ElseIf Me.timerStatus = 750 And Not Me.breakInResolved Then
+                '    Form1.breakInBox.Show()
+                '    Form1.breakInBox.BringToFront()
+                '    Me.breakInResolved = True
+                'ElseIf Me.timerStatus = 1250 And Not Me.colisionResolved Then
+                '    Form1.collisionBox.Show()
+                '    Form1.collisionBox.BringToFront()
+                '    Me.colisionResolved = True
+                '    Me.Timer1.Stop()
             End If
         End If
     End Sub
