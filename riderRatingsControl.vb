@@ -21,4 +21,14 @@
         Form1.RiderMainScreen1.BringToFront()
         Form1.RiderMainScreen1.Show()
     End Sub
+
+    Private Sub LastCarButton_Click(sender As Object, e As EventArgs) Handles LastCarButton.Click
+        ScoreLabel.Show()
+        ScoreBox.Show()
+        RateButton.Show()
+    End Sub
+
+    Private Sub RateButton_Click(sender As Object, e As EventArgs) Handles RateButton.Click
+        ThanksLabel.Show()
+    End Sub
 End Class

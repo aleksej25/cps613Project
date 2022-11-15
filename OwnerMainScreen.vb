@@ -27,8 +27,10 @@
         Form1.CalendarControl1.Show()
     End Sub
 
-    Private Sub BookingsButton_Click(sender As Object, e As EventArgs) Handles BookingsButton.Click
-
+    Private Sub BookingsButton_Click(sender As Object, e As EventArgs) Handles BookATripButton.Click
+        Me.Hide()
+        Form1.OwnerBookTrip1.BringToFront()
+        Form1.OwnerBookTrip1.Show()
     End Sub
 
     Private Sub RatingsButton_Click(sender As Object, e As EventArgs) Handles RatingsButton.Click
