@@ -1,4 +1,5 @@
 ﻿Public Class CurrentTripControl
+    'Current Trip Control'
 
     Dim countDown As Integer = 0
     Public Sub Book()
@@ -37,8 +38,7 @@
 
             If Form1.riderBooking.RideEnded = True Then
                 StopTripButton.Text = "Leave Car"
-            Else
-                StopTripButton.Text = "Stop Trip"
+
             End If
             ArrivedLabel.Show()
             ContinueTripButton.Enabled = True
@@ -62,9 +62,11 @@
     Private Sub ContinueTripButton_Click(sender As Object, e As EventArgs) Handles ContinueTripButton.Click
         StartDestinationLabel.Text = Form1.riderBooking.OldDestination
         DestinationLabel.Text = Form1.riderBooking.NewDestination
+        Form1.riderBooking.RideEnded = False
         ArrivedLabel.Hide()
         ContinueTripButton.Hide()
         ContinueTripButton.Enabled = False
+        StopTripButton.Text = "Stop Trip"
         Form1.CurrentTripControl1.NextDestIndicator.Hide()
         Form1.CurrentTripControl1.ModifiedDestLabel.Hide()
         Me.TimerReset()

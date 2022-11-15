@@ -259,7 +259,7 @@ Partial Class Form1
         Me.ModifyTripControl1.TabIndex = 26
         'rideupdated
         '
-        Me.rideupdated.Image = Global.RentECar.My.Resources.Resources.updatedrequest
+        Me.rideupdated.Image = Global.RentECar.My.Resources.ProjectResources.updatedrequest
         Me.rideupdated.Location = New System.Drawing.Point(23, 52)
         Me.rideupdated.Name = "rideupdated"
         Me.rideupdated.Size = New System.Drawing.Size(285, 149)
