@@ -63,7 +63,7 @@ Partial Class InitalScreen
         '
         'riderButton
         '
-        Me.riderButton.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.riderButton.Font = New System.Drawing.Font("Sitka Display", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.riderButton.Location = New System.Drawing.Point(110, 504)
         Me.riderButton.Name = "riderButton"
         Me.riderButton.Size = New System.Drawing.Size(111, 51)
@@ -73,7 +73,7 @@ Partial Class InitalScreen
         '
         'ownerButton
         '
-        Me.ownerButton.Font = New System.Drawing.Font("Sitka Display", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ownerButton.Font = New System.Drawing.Font("Sitka Display", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ownerButton.Location = New System.Drawing.Point(110, 433)
         Me.ownerButton.Name = "ownerButton"
         Me.ownerButton.Size = New System.Drawing.Size(111, 51)
@@ -84,11 +84,11 @@ Partial Class InitalScreen
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Sitka Small", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Font = New System.Drawing.Font("Sitka Small", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(134, 387)
+        Me.Label1.Location = New System.Drawing.Point(131, 381)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 28)
+        Me.Label1.Size = New System.Drawing.Size(70, 31)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "I'm a"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter

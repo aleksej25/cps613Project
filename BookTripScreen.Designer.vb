@@ -55,7 +55,7 @@ Partial Class BookTripScreen
         'BackBox
         '
         Me.BackBox.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
-        Me.BackBox.Location = New System.Drawing.Point(50, 62)
+        Me.BackBox.Location = New System.Drawing.Point(39, 36)
         Me.BackBox.Name = "BackBox"
         Me.BackBox.Size = New System.Drawing.Size(40, 40)
         Me.BackBox.TabIndex = 10
@@ -66,7 +66,7 @@ Partial Class BookTripScreen
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(124, 62)
+        Me.Label1.Location = New System.Drawing.Point(91, 62)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(143, 35)
         Me.Label1.TabIndex = 11
@@ -101,7 +101,7 @@ Partial Class BookTripScreen
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(50, 251)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(148, 23)
+        Me.Label4.Size = New System.Drawing.Size(149, 23)
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "Number of people:"
         '
@@ -196,7 +196,7 @@ Partial Class BookTripScreen
         'BookButton
         '
         Me.BookButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.BookButton.Location = New System.Drawing.Point(111, 507)
+        Me.BookButton.Location = New System.Drawing.Point(117, 508)
         Me.BookButton.Name = "BookButton"
         Me.BookButton.Size = New System.Drawing.Size(98, 50)
         Me.BookButton.TabIndex = 24
@@ -210,7 +210,7 @@ Partial Class BookTripScreen
         Me.CaptionLabel.ForeColor = System.Drawing.Color.White
         Me.CaptionLabel.Location = New System.Drawing.Point(55, 121)
         Me.CaptionLabel.Name = "CaptionLabel"
-        Me.CaptionLabel.Size = New System.Drawing.Size(223, 23)
+        Me.CaptionLabel.Size = New System.Drawing.Size(224, 23)
         Me.CaptionLabel.TabIndex = 25
         Me.CaptionLabel.Text = "Today is Thursday, 10:00AM"
         '

@@ -36,7 +36,7 @@ Partial Class riderRatingsControl
         'BackBox
         '
         Me.BackBox.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
-        Me.BackBox.Location = New System.Drawing.Point(35, 66)
+        Me.BackBox.Location = New System.Drawing.Point(35, 36)
         Me.BackBox.Name = "BackBox"
         Me.BackBox.Size = New System.Drawing.Size(40, 40)
         Me.BackBox.TabIndex = 11
@@ -49,7 +49,7 @@ Partial Class riderRatingsControl
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(35, 133)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(268, 35)
+        Me.Label1.Size = New System.Drawing.Size(269, 35)
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Your current rating is:"
         '

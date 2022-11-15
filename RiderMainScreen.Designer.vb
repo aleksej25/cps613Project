@@ -50,26 +50,26 @@ Partial Class RiderMainScreen
         Me.RiderMainTitleLabel.ForeColor = System.Drawing.Color.White
         Me.RiderMainTitleLabel.Location = New System.Drawing.Point(69, 66)
         Me.RiderMainTitleLabel.Name = "RiderMainTitleLabel"
-        Me.RiderMainTitleLabel.Size = New System.Drawing.Size(195, 35)
+        Me.RiderMainTitleLabel.Size = New System.Drawing.Size(196, 35)
         Me.RiderMainTitleLabel.TabIndex = 10
         Me.RiderMainTitleLabel.Text = "Welcome Rider!"
         '
         'BookTripButton
         '
-        Me.BookTripButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.BookTripButton.Location = New System.Drawing.Point(111, 302)
+        Me.BookTripButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BookTripButton.Location = New System.Drawing.Point(101, 358)
         Me.BookTripButton.Name = "BookTripButton"
-        Me.BookTripButton.Size = New System.Drawing.Size(103, 51)
+        Me.BookTripButton.Size = New System.Drawing.Size(134, 42)
         Me.BookTripButton.TabIndex = 11
         Me.BookTripButton.Text = "Book a trip"
         Me.BookTripButton.UseVisualStyleBackColor = True
         '
         'RiderRatingsButton
         '
-        Me.RiderRatingsButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.RiderRatingsButton.Location = New System.Drawing.Point(111, 442)
+        Me.RiderRatingsButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.RiderRatingsButton.Location = New System.Drawing.Point(101, 471)
         Me.RiderRatingsButton.Name = "RiderRatingsButton"
-        Me.RiderRatingsButton.Size = New System.Drawing.Size(103, 51)
+        Me.RiderRatingsButton.Size = New System.Drawing.Size(134, 42)
         Me.RiderRatingsButton.TabIndex = 14
         Me.RiderRatingsButton.Text = "Ratings"
         Me.RiderRatingsButton.UseVisualStyleBackColor = True
@@ -77,41 +77,41 @@ Partial Class RiderMainScreen
         'CurrentStatusLabel
         '
         Me.CurrentStatusLabel.AutoSize = True
-        Me.CurrentStatusLabel.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CurrentStatusLabel.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.CurrentStatusLabel.ForeColor = System.Drawing.Color.White
-        Me.CurrentStatusLabel.Location = New System.Drawing.Point(40, 124)
+        Me.CurrentStatusLabel.Location = New System.Drawing.Point(32, 123)
         Me.CurrentStatusLabel.Name = "CurrentStatusLabel"
-        Me.CurrentStatusLabel.Size = New System.Drawing.Size(146, 28)
+        Me.CurrentStatusLabel.Size = New System.Drawing.Size(155, 28)
         Me.CurrentStatusLabel.TabIndex = 15
         Me.CurrentStatusLabel.Text = "Current status:"
         '
         'StatusLabel
         '
         Me.StatusLabel.AutoSize = True
-        Me.StatusLabel.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.StatusLabel.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.StatusLabel.ForeColor = System.Drawing.Color.Red
         Me.StatusLabel.Location = New System.Drawing.Point(181, 124)
         Me.StatusLabel.Name = "StatusLabel"
-        Me.StatusLabel.Size = New System.Drawing.Size(109, 28)
+        Me.StatusLabel.Size = New System.Drawing.Size(115, 28)
         Me.StatusLabel.TabIndex = 16
         Me.StatusLabel.Text = "Not on trip"
         '
         'ViewHistoryButton
         '
-        Me.ViewHistoryButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ViewHistoryButton.Location = New System.Drawing.Point(111, 372)
+        Me.ViewHistoryButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ViewHistoryButton.Location = New System.Drawing.Point(101, 414)
         Me.ViewHistoryButton.Name = "ViewHistoryButton"
-        Me.ViewHistoryButton.Size = New System.Drawing.Size(103, 51)
+        Me.ViewHistoryButton.Size = New System.Drawing.Size(134, 42)
         Me.ViewHistoryButton.TabIndex = 17
         Me.ViewHistoryButton.Text = "History"
         Me.ViewHistoryButton.UseVisualStyleBackColor = True
         '
         'RiderLogOutButton
         '
-        Me.RiderLogOutButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.RiderLogOutButton.Location = New System.Drawing.Point(111, 512)
+        Me.RiderLogOutButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.RiderLogOutButton.Location = New System.Drawing.Point(101, 528)
         Me.RiderLogOutButton.Name = "RiderLogOutButton"
-        Me.RiderLogOutButton.Size = New System.Drawing.Size(103, 51)
+        Me.RiderLogOutButton.Size = New System.Drawing.Size(134, 42)
         Me.RiderLogOutButton.TabIndex = 18
         Me.RiderLogOutButton.Text = "Log Out"
         Me.RiderLogOutButton.UseVisualStyleBackColor = True
@@ -119,10 +119,10 @@ Partial Class RiderMainScreen
         'CurrentTripButton
         '
         Me.CurrentTripButton.Enabled = False
-        Me.CurrentTripButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CurrentTripButton.Location = New System.Drawing.Point(111, 228)
+        Me.CurrentTripButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CurrentTripButton.Location = New System.Drawing.Point(101, 300)
         Me.CurrentTripButton.Name = "CurrentTripButton"
-        Me.CurrentTripButton.Size = New System.Drawing.Size(103, 51)
+        Me.CurrentTripButton.Size = New System.Drawing.Size(134, 42)
         Me.CurrentTripButton.TabIndex = 19
         Me.CurrentTripButton.Text = "Current trip"
         Me.CurrentTripButton.UseVisualStyleBackColor = True

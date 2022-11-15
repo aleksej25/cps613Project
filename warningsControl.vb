@@ -17,7 +17,7 @@ Public Class warningsControl
             Me.errorDescLabel.Text = "Fixed!"
             Me.errorDescLabel.Font = New Font("Sitka Text", 16, FontStyle.Bold)
             Me.errorDescLabel.ForeColor = Color.LimeGreen
-            Me.errorDescLabel.Left = (Me.errorLabel.Parent.Width \ 2) - (Me.errorLabel.Width \ 2) - 3
+            Me.errorDescLabel.Left = (Me.errorDescLabel.Parent.Width \ 2) - (Me.errorDescLabel.Width \ 2) - 3
             Me.repairingBox.Hide()
             Me.timerTick = 0
             Me.Timer2.Start()
@@ -28,8 +28,8 @@ Public Class warningsControl
     Private Sub notifyPoliceButton_Click(sender As Object, e As EventArgs) Handles notifyPoliceButton.Click
         Me.errorDescLabel.Text = "Police Have" + vbNewLine + "Been Notified!"
         Me.errorDescLabel.Font = New Font("Sitka Text", 16, FontStyle.Bold)
-        Me.errorDescLabel.ForeColor = Color.Red
-        Me.errorDescLabel.Left = (Me.errorLabel.Parent.Width \ 2) - (Me.errorLabel.Width \ 2) - 3
+        Me.errorDescLabel.ForeColor = Color.LimeGreen
+        Me.errorDescLabel.Left = (Me.errorDescLabel.Parent.Width \ 2) - (Me.errorDescLabel.Width \ 2) - 3
         Me.timerTick = 0
         Me.Timer2.Start()
     End Sub
@@ -46,8 +46,8 @@ Public Class warningsControl
     Private Sub insuranceButton_Click(sender As Object, e As EventArgs) Handles insuranceButton.Click
         Me.errorDescLabel.Text = "Insurance Has Been" + vbNewLine + "Been Notified!"
         Me.errorDescLabel.Font = New Font("Sitka Text", 16, FontStyle.Bold)
-        Me.errorDescLabel.ForeColor = Color.Red
-        Me.errorDescLabel.Left = (Me.errorLabel.Parent.Width \ 2) - (Me.errorLabel.Width \ 2) - 3
+        Me.errorDescLabel.ForeColor = Color.LimeGreen
+        Me.errorDescLabel.Left = (Me.errorDescLabel.Parent.Width \ 2) - (Me.errorDescLabel.Width \ 2) - 3
         Me.timerTick = 0
         Me.Timer2.Start()
     End Sub
@@ -55,8 +55,8 @@ Public Class warningsControl
     Private Sub notifyBothButton_Click(sender As Object, e As EventArgs) Handles notifyBothButton.Click
         Me.errorDescLabel.Text = "Insurance and Police" + vbNewLine + "Have Been Notified!"
         Me.errorDescLabel.Font = New Font("Sitka Text", 16, FontStyle.Bold)
-        Me.errorDescLabel.ForeColor = Color.Red
-        Me.errorDescLabel.Left = (Me.errorLabel.Parent.Width \ 2) - (Me.errorLabel.Width \ 2) - 13
+        Me.errorDescLabel.ForeColor = Color.LimeGreen
+        Me.errorDescLabel.Left = (Me.errorDescLabel.Parent.Width \ 2) - (Me.errorDescLabel.Width \ 2) - 3
         Me.timerTick = 0
         Me.Timer2.Start()
     End Sub

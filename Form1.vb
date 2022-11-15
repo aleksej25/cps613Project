@@ -1,7 +1,4 @@
 ﻿Public Class Form1
-
-    'Form 1 Added variables'
-
     Public Shared CarBooked As Boolean = False
     Public Shared riderAccess As Boolean
     Public Shared riderBooking As New Booking
@@ -11,8 +8,9 @@
     End Sub
 
     Private Sub cameraFailureBox_Click(sender As Object, e As EventArgs) Handles cameraFailureBox.Click
+        Me.ErrorFixScreenControl1.TitleLabel.Left = (Me.ErrorFixScreenControl1.TitleLabel.Parent.Width \ 2) - (Me.ErrorFixScreenControl1.TitleLabel.Width \ 2) - 3
         Me.cameraFailureBox.Hide()
-        Me.ErrorFixScreenControl1.errorLabel.Text = "Interior Camera Failure"
+        Me.ErrorFixScreenControl1.errorLabel.Text = "Interior Camera" + vbNewLine + "Failure"
         Me.ErrorFixScreenControl1.errorLabel.Left = (Me.ErrorFixScreenControl1.errorLabel.Parent.Width \ 2) - (Me.ErrorFixScreenControl1.errorLabel.Width \ 2) - 3
 
         Me.ErrorFixScreenControl1.errorDescLabel.Text = "Cannot establish" + vbNewLine + "connection to camera."
@@ -23,7 +21,7 @@
 
     Private Sub breakInBox_Click(sender As Object, e As EventArgs) Handles breakInBox.Click
         Me.breakInBox.Hide()
-        Me.ErrorFixScreenControl1.errorLabel.Text = "Possible Break In"
+        Me.ErrorFixScreenControl1.errorLabel.Text = "Possible" + vbNewLine + "Break In"
         Me.ErrorFixScreenControl1.errorLabel.Left = (Me.ErrorFixScreenControl1.errorLabel.Parent.Width \ 2) - (Me.ErrorFixScreenControl1.errorLabel.Width \ 2) - 3
 
         Me.ErrorFixScreenControl1.errorDescLabel.Text = "Senors are detecting" + vbNewLine + "a possible break-in." + vbNewLine + "Unautherized entry."

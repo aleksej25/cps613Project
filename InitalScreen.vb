@@ -10,6 +10,8 @@
         Me.Hide()
         Form1.OwnerMainScreen1.Show()
         Form1.riderAccess = False
+        'Form1.OwnerMainScreen1.timerStatus = 0
+        Form1.OwnerMainScreen1.Timer1.Start()
     End Sub
 
 End Class

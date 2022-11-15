@@ -44,7 +44,7 @@ Partial Class OwnerMainScreen
         '
         'MyCarButton
         '
-        Me.MyCarButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.MyCarButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.MyCarButton.Location = New System.Drawing.Point(103, 322)
         Me.MyCarButton.Name = "MyCarButton"
         Me.MyCarButton.Size = New System.Drawing.Size(134, 42)
@@ -54,7 +54,7 @@ Partial Class OwnerMainScreen
         '
         'ScheduleButton
         '
-        Me.ScheduleButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ScheduleButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ScheduleButton.Location = New System.Drawing.Point(103, 377)
         Me.ScheduleButton.Name = "ScheduleButton"
         Me.ScheduleButton.Size = New System.Drawing.Size(134, 42)
@@ -64,7 +64,7 @@ Partial Class OwnerMainScreen
         '
         'RatingsButton
         '
-        Me.RatingsButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.RatingsButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RatingsButton.Location = New System.Drawing.Point(103, 482)
         Me.RatingsButton.Name = "RatingsButton"
         Me.RatingsButton.Size = New System.Drawing.Size(134, 42)
@@ -74,7 +74,7 @@ Partial Class OwnerMainScreen
         '
         'BookingsButton
         '
-        Me.BookingsButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BookingsButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.BookingsButton.Location = New System.Drawing.Point(103, 430)
         Me.BookingsButton.Name = "BookingsButton"
         Me.BookingsButton.Size = New System.Drawing.Size(134, 42)
@@ -87,7 +87,7 @@ Partial Class OwnerMainScreen
         '
         'logoutButton
         '
-        Me.logoutButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.logoutButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.logoutButton.Location = New System.Drawing.Point(103, 535)
         Me.logoutButton.Name = "logoutButton"
         Me.logoutButton.Size = New System.Drawing.Size(134, 42)

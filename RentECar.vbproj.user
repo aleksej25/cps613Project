@@ -22,6 +22,9 @@
     <Compile Update="CurrentTripControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ModifyTripControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="MyCarScreen.vb">
       <SubType>UserControl</SubType>
     </Compile>

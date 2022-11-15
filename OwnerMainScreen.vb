@@ -1,12 +1,14 @@
 ﻿Public Class OwnerMainScreen
     Public timerStatus As Integer = 0
+    Public cameraFailureResolved As Boolean = False
+    Public breakInResolved As Boolean = False
+    Public colisionResolved As Boolean = False
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Timer1.Start()
         If Form1.CarBooked = True Then
             Form1.riderequestn.Show()
             Form1.riderequestn.BringToFront()
             Form1.CarBooked = False
-
         End If
         If Booking.TripModified = True Then
             Form1.rideupdated.Show()
@@ -35,16 +37,20 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        System.Diagnostics.Debug.WriteLine(Me.timerStatus)
         Me.timerStatus += 1
-        If Me.timerStatus = 100 Then
+        If Me.timerStatus = 100 And Not Me.cameraFailureResolved Then
             Form1.cameraFailureBox.Show()
             Form1.cameraFailureBox.BringToFront()
-        ElseIf Me.timerStatus = 550 Then
+            Me.cameraFailureResolved = True
+        ElseIf Me.timerStatus = 550 And Not Me.breakInResolved Then
             Form1.breakInBox.Show()
             Form1.breakInBox.BringToFront()
-        ElseIf Me.timerStatus = 960 Then
+            Me.breakInResolved = True
+        ElseIf Me.timerStatus = 1000 And Not Me.colisionResolved Then
             Form1.collisionBox.Show()
             Form1.collisionBox.BringToFront()
+            Me.colisionResolved = True
             Me.Timer1.Stop()
         End If
     End Sub
@@ -54,4 +60,5 @@
         Me.Hide()
         Form1.InitalScreen1.Show()
     End Sub
+
 End Class

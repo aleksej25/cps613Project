@@ -158,7 +158,7 @@ Partial Class MediaControls
         'radioPlayingBox
         '
         Me.radioPlayingBox.Image = Global.RentECar.My.Resources.ProjectResources.radioPlaying
-        Me.radioPlayingBox.Location = New System.Drawing.Point(26, 399)
+        Me.radioPlayingBox.Location = New System.Drawing.Point(35, 399)
         Me.radioPlayingBox.Name = "radioPlayingBox"
         Me.radioPlayingBox.Size = New System.Drawing.Size(65, 65)
         Me.radioPlayingBox.TabIndex = 21

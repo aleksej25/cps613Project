@@ -51,33 +51,34 @@ Partial Class warningsControl
         'TitleLabel
         '
         Me.TitleLabel.AutoSize = True
-        Me.TitleLabel.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.TitleLabel.Font = New System.Drawing.Font("Sitka Text", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.TitleLabel.ForeColor = System.Drawing.Color.White
-        Me.TitleLabel.Location = New System.Drawing.Point(102, 74)
+        Me.TitleLabel.Location = New System.Drawing.Point(95, 48)
         Me.TitleLabel.Name = "TitleLabel"
-        Me.TitleLabel.Size = New System.Drawing.Size(117, 35)
+        Me.TitleLabel.Size = New System.Drawing.Size(131, 39)
         Me.TitleLabel.TabIndex = 10
         Me.TitleLabel.Text = "Warning"
         '
         'errorLabel
         '
         Me.errorLabel.AutoSize = True
-        Me.errorLabel.Font = New System.Drawing.Font("Sitka Text", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.errorLabel.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.errorLabel.ForeColor = System.Drawing.Color.Red
-        Me.errorLabel.Location = New System.Drawing.Point(71, 127)
+        Me.errorLabel.Location = New System.Drawing.Point(71, 102)
         Me.errorLabel.Name = "errorLabel"
-        Me.errorLabel.Size = New System.Drawing.Size(26, 29)
+        Me.errorLabel.Size = New System.Drawing.Size(31, 35)
         Me.errorLabel.TabIndex = 11
         Me.errorLabel.Text = "T"
+        Me.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'errorDescLabel
         '
         Me.errorDescLabel.AutoSize = True
-        Me.errorDescLabel.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.errorDescLabel.Font = New System.Drawing.Font("Sitka Text", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.errorDescLabel.ForeColor = System.Drawing.Color.White
-        Me.errorDescLabel.Location = New System.Drawing.Point(36, 178)
+        Me.errorDescLabel.Location = New System.Drawing.Point(36, 174)
         Me.errorDescLabel.Name = "errorDescLabel"
-        Me.errorDescLabel.Size = New System.Drawing.Size(25, 28)
+        Me.errorDescLabel.Size = New System.Drawing.Size(27, 30)
         Me.errorDescLabel.TabIndex = 12
         Me.errorDescLabel.Text = "T"
         Me.errorDescLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
