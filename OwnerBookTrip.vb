@@ -20,6 +20,11 @@
     End Sub
 
     Private Sub DriveButton_Click(sender As Object, e As EventArgs) Handles DriveButton.Click
-
+        Form1.OwnerCurrentTrip1.StartDestLabel.Text = FromBox.Text
+        Form1.OwnerCurrentTrip1.OwnerDestLabel.Text = ToBox.Text
+        Form1.OwnerCurrentTrip1.OwnerTimer.Start()
+        Me.Hide()
+        Form1.OwnerCurrentTrip1.BringToFront()
+        Form1.OwnerCurrentTrip1.Show()
     End Sub
 End Class

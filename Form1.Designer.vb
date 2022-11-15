@@ -47,6 +47,8 @@ Partial Class Form1
         Me.ModifyTripControl1 = New RentECar.ModifyTripControl()
         Me.rideupdated = New System.Windows.Forms.PictureBox()
         Me.Tripedit1 = New RentECar.tripedit()
+        Me.OwnerBookTrip1 = New RentECar.OwnerBookTrip()
+        Me.OwnerCurrentTrip1 = New RentECar.OwnerCurrentTrip()
         CType(Me.cameraFailureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.breakInBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.collisionBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -257,6 +259,7 @@ Partial Class Form1
         Me.ModifyTripControl1.Name = "ModifyTripControl1"
         Me.ModifyTripControl1.Size = New System.Drawing.Size(339, 642)
         Me.ModifyTripControl1.TabIndex = 26
+        '
         'rideupdated
         '
         Me.rideupdated.Image = Global.RentECar.My.Resources.ProjectResources.updatedrequest
@@ -274,6 +277,22 @@ Partial Class Form1
         Me.Tripedit1.Name = "Tripedit1"
         Me.Tripedit1.Size = New System.Drawing.Size(333, 640)
         Me.Tripedit1.TabIndex = 27
+        '
+        'OwnerBookTrip1
+        '
+        Me.OwnerBookTrip1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.OwnerBookTrip1.Location = New System.Drawing.Point(-3, 3)
+        Me.OwnerBookTrip1.Name = "OwnerBookTrip1"
+        Me.OwnerBookTrip1.Size = New System.Drawing.Size(339, 642)
+        Me.OwnerBookTrip1.TabIndex = 28
+        '
+        'OwnerCurrentTrip1
+        '
+        Me.OwnerCurrentTrip1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.OwnerCurrentTrip1.Location = New System.Drawing.Point(0, 0)
+        Me.OwnerCurrentTrip1.Name = "OwnerCurrentTrip1"
+        Me.OwnerCurrentTrip1.Size = New System.Drawing.Size(339, 642)
+        Me.OwnerCurrentTrip1.TabIndex = 29
         '
         'Form1
         '
@@ -306,6 +325,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Requestdetails1)
         Me.Controls.Add(Me.ModifyTripControl1)
         Me.Controls.Add(Me.Tripedit1)
+        Me.Controls.Add(Me.OwnerBookTrip1)
+        Me.Controls.Add(Me.OwnerCurrentTrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
@@ -344,4 +365,6 @@ Partial Class Form1
     Friend WithEvents ModifyTripControl1 As ModifyTripControl
     Friend WithEvents rideupdated As PictureBox
     Friend WithEvents Tripedit1 As tripedit
+    Friend WithEvents OwnerBookTrip1 As OwnerBookTrip
+    Friend WithEvents OwnerCurrentTrip1 As OwnerCurrentTrip
 End Class
