@@ -27,7 +27,7 @@ Partial Class OwnerMainScreen
         Me.MyCarButton = New System.Windows.Forms.Button()
         Me.ScheduleButton = New System.Windows.Forms.Button()
         Me.RatingsButton = New System.Windows.Forms.Button()
-        Me.BookingsButton = New System.Windows.Forms.Button()
+        Me.BookATripButton = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.logoutButton = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,15 +72,15 @@ Partial Class OwnerMainScreen
         Me.RatingsButton.Text = "Ratings"
         Me.RatingsButton.UseVisualStyleBackColor = True
         '
-        'BookingsButton
+        'BookATripButton
         '
-        Me.BookingsButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.BookingsButton.Location = New System.Drawing.Point(103, 430)
-        Me.BookingsButton.Name = "BookingsButton"
-        Me.BookingsButton.Size = New System.Drawing.Size(134, 42)
-        Me.BookingsButton.TabIndex = 7
-        Me.BookingsButton.Text = "Bookings"
-        Me.BookingsButton.UseVisualStyleBackColor = True
+        Me.BookATripButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BookATripButton.Location = New System.Drawing.Point(103, 430)
+        Me.BookATripButton.Name = "BookATripButton"
+        Me.BookATripButton.Size = New System.Drawing.Size(134, 42)
+        Me.BookATripButton.TabIndex = 7
+        Me.BookATripButton.Text = "Book a trip"
+        Me.BookATripButton.UseVisualStyleBackColor = True
         '
         'Timer1
         '
@@ -101,7 +101,7 @@ Partial Class OwnerMainScreen
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Controls.Add(Me.logoutButton)
-        Me.Controls.Add(Me.BookingsButton)
+        Me.Controls.Add(Me.BookATripButton)
         Me.Controls.Add(Me.RatingsButton)
         Me.Controls.Add(Me.ScheduleButton)
         Me.Controls.Add(Me.MyCarButton)
@@ -117,7 +117,7 @@ Partial Class OwnerMainScreen
     Friend WithEvents MyCarButton As Button
     Friend WithEvents ScheduleButton As Button
     Friend WithEvents RatingsButton As Button
-    Friend WithEvents BookingsButton As Button
+    Friend WithEvents BookATripButton As Button
     Friend WithEvents Timer1 As Timer
     Friend WithEvents logoutButton As Button
 End Class
