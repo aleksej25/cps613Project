@@ -58,4 +58,10 @@
         Me.Requestdetails1.BringToFront()
 
     End Sub
+
+    Private Sub rideupdated_Click(sender As Object, e As EventArgs) Handles rideupdated.Click
+        Me.rideupdated.Hide()
+        Me.Tripedit1.Show()
+        Me.Tripedit1.BringToFront()
+    End Sub
 End Class

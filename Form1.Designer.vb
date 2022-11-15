@@ -45,10 +45,13 @@ Partial Class Form1
         Me.riderequestn = New System.Windows.Forms.PictureBox()
         Me.Requestdetails1 = New RentECar.requestdetails()
         Me.ModifyTripControl1 = New RentECar.ModifyTripControl()
+        Me.rideupdated = New System.Windows.Forms.PictureBox()
+        Me.Tripedit1 = New RentECar.tripedit()
         CType(Me.cameraFailureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.breakInBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.collisionBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.riderequestn, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.rideupdated, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'InitalScreen1
@@ -254,6 +257,23 @@ Partial Class Form1
         Me.ModifyTripControl1.Name = "ModifyTripControl1"
         Me.ModifyTripControl1.Size = New System.Drawing.Size(339, 642)
         Me.ModifyTripControl1.TabIndex = 26
+        'rideupdated
+        '
+        Me.rideupdated.Image = Global.RentECar.My.Resources.Resources.updatedrequest
+        Me.rideupdated.Location = New System.Drawing.Point(23, 52)
+        Me.rideupdated.Name = "rideupdated"
+        Me.rideupdated.Size = New System.Drawing.Size(285, 149)
+        Me.rideupdated.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.rideupdated.TabIndex = 26
+        Me.rideupdated.TabStop = False
+        Me.rideupdated.Visible = False
+        '
+        'Tripedit1
+        '
+        Me.Tripedit1.Location = New System.Drawing.Point(0, 1)
+        Me.Tripedit1.Name = "Tripedit1"
+        Me.Tripedit1.Size = New System.Drawing.Size(333, 640)
+        Me.Tripedit1.TabIndex = 27
         '
         'Form1
         '
@@ -261,6 +281,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.ClientSize = New System.Drawing.Size(332, 644)
+        Me.Controls.Add(Me.rideupdated)
         Me.Controls.Add(Me.riderequestn)
         Me.Controls.Add(Me.collisionBox)
         Me.Controls.Add(Me.cameraFailureBox)
@@ -284,6 +305,7 @@ Partial Class Form1
         Me.Controls.Add(Me.CurrentTripControl1)
         Me.Controls.Add(Me.Requestdetails1)
         Me.Controls.Add(Me.ModifyTripControl1)
+        Me.Controls.Add(Me.Tripedit1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
@@ -292,6 +314,7 @@ Partial Class Form1
         CType(Me.breakInBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.collisionBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.riderequestn, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.rideupdated, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -319,4 +342,6 @@ Partial Class Form1
     Friend WithEvents riderequestn As PictureBox
     Friend WithEvents Requestdetails1 As requestdetails
     Friend WithEvents ModifyTripControl1 As ModifyTripControl
+    Friend WithEvents rideupdated As PictureBox
+    Friend WithEvents Tripedit1 As tripedit
 End Class
