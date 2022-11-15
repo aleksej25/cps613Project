@@ -44,6 +44,7 @@ Partial Class Form1
         Me.CurrentTripControl1 = New RentECar.CurrentTripControl()
         Me.riderequestn = New System.Windows.Forms.PictureBox()
         Me.Requestdetails1 = New RentECar.requestdetails()
+        Me.ModifyTripControl1 = New RentECar.ModifyTripControl()
         CType(Me.cameraFailureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.breakInBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.collisionBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -230,7 +231,7 @@ Partial Class Form1
         '
         'riderequestn
         '
-        Me.riderequestn.Image = Global.RentECar.My.Resources.Resources.newrequest
+        Me.riderequestn.Image = Global.RentECar.My.Resources.ProjectResources.newrequest
         Me.riderequestn.Location = New System.Drawing.Point(23, 52)
         Me.riderequestn.Name = "riderequestn"
         Me.riderequestn.Size = New System.Drawing.Size(285, 149)
@@ -245,6 +246,14 @@ Partial Class Form1
         Me.Requestdetails1.Name = "Requestdetails1"
         Me.Requestdetails1.Size = New System.Drawing.Size(333, 640)
         Me.Requestdetails1.TabIndex = 25
+        '
+        'ModifyTripControl1
+        '
+        Me.ModifyTripControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ModifyTripControl1.Location = New System.Drawing.Point(-3, 0)
+        Me.ModifyTripControl1.Name = "ModifyTripControl1"
+        Me.ModifyTripControl1.Size = New System.Drawing.Size(339, 642)
+        Me.ModifyTripControl1.TabIndex = 26
         '
         'Form1
         '
@@ -274,6 +283,7 @@ Partial Class Form1
         Me.Controls.Add(Me.RiderRatingsControl1)
         Me.Controls.Add(Me.CurrentTripControl1)
         Me.Controls.Add(Me.Requestdetails1)
+        Me.Controls.Add(Me.ModifyTripControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
@@ -308,4 +318,5 @@ Partial Class Form1
     Friend WithEvents CurrentTripControl1 As CurrentTripControl
     Friend WithEvents riderequestn As PictureBox
     Friend WithEvents Requestdetails1 As requestdetails
+    Friend WithEvents ModifyTripControl1 As ModifyTripControl
 End Class
