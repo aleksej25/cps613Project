@@ -25,9 +25,8 @@ Partial Class requestdetails
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.tripdetails = New System.Windows.Forms.TextBox()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Goback = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -59,38 +58,13 @@ Partial Class requestdetails
         '
         Me.RichTextBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.RichTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox2.Font = New System.Drawing.Font("Sitka Banner", 14.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.RichTextBox2.Font = New System.Drawing.Font("Sitka Heading", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.RichTextBox2.ForeColor = System.Drawing.Color.DarkRed
         Me.RichTextBox2.Location = New System.Drawing.Point(29, 355)
         Me.RichTextBox2.Name = "RichTextBox2"
         Me.RichTextBox2.Size = New System.Drawing.Size(265, 115)
         Me.RichTextBox2.TabIndex = 16
-        Me.RichTextBox2.Text = "This request wasn't automatically accepted as one of the destinations is outside " &
-    "of Downtown Toronto"
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Green
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button1.Location = New System.Drawing.Point(113, 476)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(90, 40)
-        Me.Button1.TabIndex = 17
-        Me.Button1.Text = "Approve"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.DarkRed
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button2.Location = New System.Drawing.Point(113, 524)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(90, 40)
-        Me.Button2.TabIndex = 18
-        Me.Button2.Text = "Deny"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.RichTextBox2.Text = "This trip was approved by the system"
         '
         'PictureBox1
         '
@@ -102,12 +76,21 @@ Partial Class requestdetails
         Me.PictureBox1.TabIndex = 19
         Me.PictureBox1.TabStop = False
         '
+        'Goback
+        '
+        Me.Goback.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Goback.Location = New System.Drawing.Point(95, 497)
+        Me.Goback.Name = "Goback"
+        Me.Goback.Size = New System.Drawing.Size(134, 42)
+        Me.Goback.TabIndex = 20
+        Me.Goback.Text = "Go Back"
+        Me.Goback.UseVisualStyleBackColor = True
+        '
         'requestdetails
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Goback)
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.tripdetails)
         Me.Controls.Add(Me.RichTextBox1)
@@ -122,7 +105,6 @@ Partial Class requestdetails
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents tripdetails As TextBox
     Friend WithEvents RichTextBox2 As RichTextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Goback As Button
 End Class
