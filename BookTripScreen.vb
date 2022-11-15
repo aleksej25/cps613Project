@@ -66,6 +66,7 @@
         Form1.riderBooking.FromLocation = FromLocationBox.Text
         Form1.riderBooking.ToLocation = ToLocationBox.Text
         Form1.riderBooking.NumberOfPeople = Integer.Parse(PeopleComboBox.Text)
+        Form1.CarBooked = True
 
         If NowRadioButton.Checked = True Then
             Form1.riderBooking.FromTime = "10:00AM"
@@ -88,6 +89,11 @@
         Me.Hide()
         Form1.CurrentTripControl1.BringToFront()
         Form1.CurrentTripControl1.Show()
+        Form1.Requestdetails1.tripdetails.Text = "Name: " + Form1.riderBooking.RiderName + vbCrLf + "From: " + Form1.riderBooking.FromLocation + vbCrLf + "To: " + Form1.riderBooking.ToLocation + vbCrLf + "Number of people: " + Form1.riderBooking.NumberOfPeople.ToString() + vbCrLf + "Start time: " + Form1.riderBooking.FromTime + vbCrLf + "End time: " + Form1.riderBooking.ToTime
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
 End Class
