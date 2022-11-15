@@ -295,4 +295,10 @@
   <data name="smallPlus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\smallPlus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="newrequest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\newrequest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="updatedrequest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\updatedrequest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

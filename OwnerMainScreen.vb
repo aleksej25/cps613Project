@@ -6,9 +6,12 @@
             Form1.riderequestn.Show()
             Form1.riderequestn.BringToFront()
             Form1.CarBooked = False
+
         End If
         If Booking.TripModified = True Then
-
+            Form1.rideupdated.Show()
+            Form1.rideupdated.BringToFront()
+            Booking.TripModified = False
         End If
     End Sub
     Private Sub MyCarButton_Click(sender As Object, e As EventArgs) Handles MyCarButton.Click
@@ -35,10 +38,13 @@
         Me.timerStatus += 1
         If Me.timerStatus = 100 Then
             Form1.cameraFailureBox.Show()
+            Form1.cameraFailureBox.BringToFront()
         ElseIf Me.timerStatus = 550 Then
             Form1.breakInBox.Show()
+            Form1.breakInBox.BringToFront()
         ElseIf Me.timerStatus = 960 Then
             Form1.collisionBox.Show()
+            Form1.collisionBox.BringToFront()
             Me.Timer1.Stop()
         End If
     End Sub
