@@ -46,11 +46,11 @@ Partial Class RiderMainScreen
         'RiderMainTitleLabel
         '
         Me.RiderMainTitleLabel.AutoSize = True
-        Me.RiderMainTitleLabel.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.RiderMainTitleLabel.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RiderMainTitleLabel.ForeColor = System.Drawing.Color.White
-        Me.RiderMainTitleLabel.Location = New System.Drawing.Point(69, 66)
+        Me.RiderMainTitleLabel.Location = New System.Drawing.Point(62, 64)
         Me.RiderMainTitleLabel.Name = "RiderMainTitleLabel"
-        Me.RiderMainTitleLabel.Size = New System.Drawing.Size(196, 35)
+        Me.RiderMainTitleLabel.Size = New System.Drawing.Size(203, 35)
         Me.RiderMainTitleLabel.TabIndex = 10
         Me.RiderMainTitleLabel.Text = "Welcome Rider!"
         '

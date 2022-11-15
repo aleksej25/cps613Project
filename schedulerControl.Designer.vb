@@ -46,6 +46,7 @@ Partial Class schedulerControl
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.backButton = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TitleLabel = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.backButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,7 +56,7 @@ Partial Class schedulerControl
         'activityTextBox
         '
         Me.activityTextBox.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.activityTextBox.Location = New System.Drawing.Point(112, 99)
+        Me.activityTextBox.Location = New System.Drawing.Point(112, 106)
         Me.activityTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.activityTextBox.Name = "activityTextBox"
         Me.activityTextBox.PlaceholderText = "Activity"
@@ -76,7 +77,7 @@ Partial Class schedulerControl
         'locationTextBox
         '
         Me.locationTextBox.Font = New System.Drawing.Font("Sitka Small", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.locationTextBox.Location = New System.Drawing.Point(112, 126)
+        Me.locationTextBox.Location = New System.Drawing.Point(112, 133)
         Me.locationTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.locationTextBox.Name = "locationTextBox"
         Me.locationTextBox.PlaceholderText = "Location"
@@ -339,7 +340,7 @@ Partial Class schedulerControl
         Me.backButton.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
         Me.backButton.Location = New System.Drawing.Point(35, 26)
         Me.backButton.Name = "backButton"
-        Me.backButton.Size = New System.Drawing.Size(47, 41)
+        Me.backButton.Size = New System.Drawing.Size(47, 43)
         Me.backButton.TabIndex = 26
         Me.backButton.TabStop = False
         '
@@ -353,17 +354,29 @@ Partial Class schedulerControl
         Me.PictureBox1.TabIndex = 25
         Me.PictureBox1.TabStop = False
         '
+        'TitleLabel
+        '
+        Me.TitleLabel.AutoSize = True
+        Me.TitleLabel.Font = New System.Drawing.Font("Sitka Text", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.TitleLabel.ForeColor = System.Drawing.Color.Transparent
+        Me.TitleLabel.Location = New System.Drawing.Point(74, 59)
+        Me.TitleLabel.Name = "TitleLabel"
+        Me.TitleLabel.Size = New System.Drawing.Size(200, 30)
+        Me.TitleLabel.TabIndex = 27
+        Me.TitleLabel.Text = "Schedule Modifier"
+        '
         'schedulerControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.backButton)
+        Me.Controls.Add(Me.TitleLabel)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.locationTextBox)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.activityTextBox)
-        Me.Controls.Add(Me.backButton)
         Me.Controls.Add(Me.PictureBox1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "schedulerControl"
@@ -402,4 +415,5 @@ Partial Class schedulerControl
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents backButton As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents TitleLabel As Label
 End Class

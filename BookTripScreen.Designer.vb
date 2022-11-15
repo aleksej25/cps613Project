@@ -64,11 +64,11 @@ Partial Class BookTripScreen
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(91, 62)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(143, 35)
+        Me.Label1.Size = New System.Drawing.Size(152, 35)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "Book a Trip"
         '
@@ -195,7 +195,7 @@ Partial Class BookTripScreen
         '
         'BookButton
         '
-        Me.BookButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BookButton.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.BookButton.Location = New System.Drawing.Point(117, 508)
         Me.BookButton.Name = "BookButton"
         Me.BookButton.Size = New System.Drawing.Size(98, 50)

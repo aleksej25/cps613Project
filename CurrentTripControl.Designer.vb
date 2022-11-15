@@ -25,9 +25,9 @@ Partial Class CurrentTripControl
         Me.components = New System.ComponentModel.Container()
         Me.BackBox = New System.Windows.Forms.PictureBox()
         Me.TitleLabel = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.startLabel = New System.Windows.Forms.Label()
         Me.StartDestinationLabel = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.endLabel = New System.Windows.Forms.Label()
         Me.DestinationLabel = New System.Windows.Forms.Label()
         Me.ModifyTripButton = New System.Windows.Forms.Button()
         Me.CarControlButton = New System.Windows.Forms.Button()
@@ -46,7 +46,7 @@ Partial Class CurrentTripControl
         'BackBox
         '
         Me.BackBox.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
-        Me.BackBox.Location = New System.Drawing.Point(40, 56)
+        Me.BackBox.Location = New System.Drawing.Point(34, 29)
         Me.BackBox.Name = "BackBox"
         Me.BackBox.Size = New System.Drawing.Size(40, 40)
         Me.BackBox.TabIndex = 12
@@ -55,96 +55,96 @@ Partial Class CurrentTripControl
         'TitleLabel
         '
         Me.TitleLabel.AutoSize = True
-        Me.TitleLabel.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.TitleLabel.Font = New System.Drawing.Font("Sitka Text", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.TitleLabel.ForeColor = System.Drawing.Color.White
-        Me.TitleLabel.Location = New System.Drawing.Point(86, 68)
+        Me.TitleLabel.Location = New System.Drawing.Point(55, 61)
         Me.TitleLabel.Name = "TitleLabel"
-        Me.TitleLabel.Size = New System.Drawing.Size(200, 28)
+        Me.TitleLabel.Size = New System.Drawing.Size(231, 30)
         Me.TitleLabel.TabIndex = 13
         Me.TitleLabel.Text = "You are on your way!"
         '
-        'Label1
+        'startLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(86, 114)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(142, 23)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Start destination:"
+        Me.startLabel.AutoSize = True
+        Me.startLabel.Font = New System.Drawing.Font("Sitka Text", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.startLabel.ForeColor = System.Drawing.Color.White
+        Me.startLabel.Location = New System.Drawing.Point(71, 97)
+        Me.startLabel.Name = "startLabel"
+        Me.startLabel.Size = New System.Drawing.Size(188, 29)
+        Me.startLabel.TabIndex = 14
+        Me.startLabel.Text = "Start destination:"
         '
         'StartDestinationLabel
         '
         Me.StartDestinationLabel.AutoSize = True
-        Me.StartDestinationLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.StartDestinationLabel.ForeColor = System.Drawing.Color.White
-        Me.StartDestinationLabel.Location = New System.Drawing.Point(88, 152)
+        Me.StartDestinationLabel.Font = New System.Drawing.Font("Sitka Text", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.StartDestinationLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.StartDestinationLabel.Location = New System.Drawing.Point(95, 137)
         Me.StartDestinationLabel.Name = "StartDestinationLabel"
-        Me.StartDestinationLabel.Size = New System.Drawing.Size(110, 23)
+        Me.StartDestinationLabel.Size = New System.Drawing.Size(141, 29)
         Me.StartDestinationLabel.TabIndex = 15
         Me.StartDestinationLabel.Text = "TemplateText"
         '
-        'Label2
+        'endLabel
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(88, 190)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(85, 23)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Riding to:"
+        Me.endLabel.AutoSize = True
+        Me.endLabel.Font = New System.Drawing.Font("Sitka Text", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.endLabel.ForeColor = System.Drawing.Color.White
+        Me.endLabel.Location = New System.Drawing.Point(71, 178)
+        Me.endLabel.Name = "endLabel"
+        Me.endLabel.Size = New System.Drawing.Size(112, 29)
+        Me.endLabel.TabIndex = 16
+        Me.endLabel.Text = "Riding to:"
         '
         'DestinationLabel
         '
         Me.DestinationLabel.AutoSize = True
-        Me.DestinationLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.DestinationLabel.ForeColor = System.Drawing.Color.White
-        Me.DestinationLabel.Location = New System.Drawing.Point(88, 231)
+        Me.DestinationLabel.Font = New System.Drawing.Font("Sitka Text", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.DestinationLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.DestinationLabel.Location = New System.Drawing.Point(104, 216)
         Me.DestinationLabel.Name = "DestinationLabel"
-        Me.DestinationLabel.Size = New System.Drawing.Size(110, 23)
+        Me.DestinationLabel.Size = New System.Drawing.Size(141, 29)
         Me.DestinationLabel.TabIndex = 17
         Me.DestinationLabel.Text = "TemplateText"
         '
         'ModifyTripButton
         '
-        Me.ModifyTripButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ModifyTripButton.Location = New System.Drawing.Point(59, 427)
+        Me.ModifyTripButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ModifyTripButton.Location = New System.Drawing.Point(71, 446)
         Me.ModifyTripButton.Name = "ModifyTripButton"
-        Me.ModifyTripButton.Size = New System.Drawing.Size(96, 51)
+        Me.ModifyTripButton.Size = New System.Drawing.Size(90, 60)
         Me.ModifyTripButton.TabIndex = 18
-        Me.ModifyTripButton.Text = "Modify trip"
+        Me.ModifyTripButton.Text = "Modify Trip"
         Me.ModifyTripButton.UseVisualStyleBackColor = True
         '
         'CarControlButton
         '
-        Me.CarControlButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CarControlButton.Location = New System.Drawing.Point(59, 509)
+        Me.CarControlButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CarControlButton.Location = New System.Drawing.Point(71, 522)
         Me.CarControlButton.Name = "CarControlButton"
-        Me.CarControlButton.Size = New System.Drawing.Size(96, 51)
+        Me.CarControlButton.Size = New System.Drawing.Size(90, 60)
         Me.CarControlButton.TabIndex = 19
-        Me.CarControlButton.Text = "Car controls"
+        Me.CarControlButton.Text = "Car Controls"
         Me.CarControlButton.UseVisualStyleBackColor = True
         '
         'StopTripButton
         '
-        Me.StopTripButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.StopTripButton.Location = New System.Drawing.Point(190, 509)
+        Me.StopTripButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.StopTripButton.Location = New System.Drawing.Point(186, 522)
         Me.StopTripButton.Name = "StopTripButton"
-        Me.StopTripButton.Size = New System.Drawing.Size(96, 51)
+        Me.StopTripButton.Size = New System.Drawing.Size(90, 60)
         Me.StopTripButton.TabIndex = 20
-        Me.StopTripButton.Text = "Stop trip"
+        Me.StopTripButton.Text = "Stop Trip"
         Me.StopTripButton.UseVisualStyleBackColor = True
         '
         'ContactOwnerButton
         '
-        Me.ContactOwnerButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ContactOwnerButton.Location = New System.Drawing.Point(190, 427)
+        Me.ContactOwnerButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ContactOwnerButton.Location = New System.Drawing.Point(186, 446)
         Me.ContactOwnerButton.Name = "ContactOwnerButton"
-        Me.ContactOwnerButton.Size = New System.Drawing.Size(96, 51)
+        Me.ContactOwnerButton.Size = New System.Drawing.Size(90, 60)
         Me.ContactOwnerButton.TabIndex = 21
-        Me.ContactOwnerButton.Text = "Contact owner"
+        Me.ContactOwnerButton.Text = "Contact Owner"
         Me.ContactOwnerButton.UseVisualStyleBackColor = True
         '
         'PictureBox1
@@ -159,11 +159,11 @@ Partial Class CurrentTripControl
         'ArrivedLabel
         '
         Me.ArrivedLabel.AutoSize = True
-        Me.ArrivedLabel.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ArrivedLabel.ForeColor = System.Drawing.Color.White
-        Me.ArrivedLabel.Location = New System.Drawing.Point(86, 274)
+        Me.ArrivedLabel.Font = New System.Drawing.Font("Sitka Text", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ArrivedLabel.ForeColor = System.Drawing.Color.LimeGreen
+        Me.ArrivedLabel.Location = New System.Drawing.Point(71, 261)
         Me.ArrivedLabel.Name = "ArrivedLabel"
-        Me.ArrivedLabel.Size = New System.Drawing.Size(168, 28)
+        Me.ArrivedLabel.Size = New System.Drawing.Size(195, 30)
         Me.ArrivedLabel.TabIndex = 23
         Me.ArrivedLabel.Text = "You have arrived!"
         Me.ArrivedLabel.Visible = False
@@ -171,11 +171,11 @@ Partial Class CurrentTripControl
         'NextDestIndicator
         '
         Me.NextDestIndicator.AutoSize = True
-        Me.NextDestIndicator.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.NextDestIndicator.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.NextDestIndicator.ForeColor = System.Drawing.Color.White
-        Me.NextDestIndicator.Location = New System.Drawing.Point(40, 320)
+        Me.NextDestIndicator.Location = New System.Drawing.Point(32, 320)
         Me.NextDestIndicator.Name = "NextDestIndicator"
-        Me.NextDestIndicator.Size = New System.Drawing.Size(140, 23)
+        Me.NextDestIndicator.Size = New System.Drawing.Size(149, 23)
         Me.NextDestIndicator.TabIndex = 24
         Me.NextDestIndicator.Text = "Next destination:"
         Me.NextDestIndicator.Visible = False
@@ -184,7 +184,7 @@ Partial Class CurrentTripControl
         '
         Me.ModifiedDestLabel.AutoSize = True
         Me.ModifiedDestLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ModifiedDestLabel.ForeColor = System.Drawing.Color.White
+        Me.ModifiedDestLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ModifiedDestLabel.Location = New System.Drawing.Point(186, 320)
         Me.ModifiedDestLabel.Name = "ModifiedDestLabel"
         Me.ModifiedDestLabel.Size = New System.Drawing.Size(110, 23)
@@ -195,12 +195,12 @@ Partial Class CurrentTripControl
         'ContinueTripButton
         '
         Me.ContinueTripButton.Enabled = False
-        Me.ContinueTripButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ContinueTripButton.Location = New System.Drawing.Point(118, 359)
+        Me.ContinueTripButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ContinueTripButton.Location = New System.Drawing.Point(126, 379)
         Me.ContinueTripButton.Name = "ContinueTripButton"
-        Me.ContinueTripButton.Size = New System.Drawing.Size(96, 51)
+        Me.ContinueTripButton.Size = New System.Drawing.Size(90, 60)
         Me.ContinueTripButton.TabIndex = 26
-        Me.ContinueTripButton.Text = "Continue trip"
+        Me.ContinueTripButton.Text = "Continue Trip"
         Me.ContinueTripButton.UseVisualStyleBackColor = True
         Me.ContinueTripButton.Visible = False
         '
@@ -213,6 +213,7 @@ Partial Class CurrentTripControl
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Controls.Add(Me.BackBox)
         Me.Controls.Add(Me.ContinueTripButton)
         Me.Controls.Add(Me.ModifiedDestLabel)
         Me.Controls.Add(Me.NextDestIndicator)
@@ -222,11 +223,10 @@ Partial Class CurrentTripControl
         Me.Controls.Add(Me.CarControlButton)
         Me.Controls.Add(Me.ModifyTripButton)
         Me.Controls.Add(Me.DestinationLabel)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.endLabel)
         Me.Controls.Add(Me.StartDestinationLabel)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.startLabel)
         Me.Controls.Add(Me.TitleLabel)
-        Me.Controls.Add(Me.BackBox)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "CurrentTripControl"
         Me.Size = New System.Drawing.Size(339, 642)
@@ -239,9 +239,9 @@ Partial Class CurrentTripControl
 
     Friend WithEvents BackBox As PictureBox
     Friend WithEvents TitleLabel As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents startLabel As Label
     Friend WithEvents StartDestinationLabel As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents endLabel As Label
     Friend WithEvents DestinationLabel As Label
     Friend WithEvents ModifyTripButton As Button
     Friend WithEvents CarControlButton As Button

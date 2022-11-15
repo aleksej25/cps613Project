@@ -47,7 +47,6 @@ E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.carDiagnosticControl.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.cameraViewControl.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.warningsControl.resources
-E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.MyCarScreen.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.windowControl.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.ratingsControl.resources
 C:\Users\theol\Desktop\Projects\repos\cps613Project\bin\Debug\net6.0-windows\RentECar.exe
@@ -92,3 +91,5 @@ E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.ModifyTripControl.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.requestdetails.resources
 E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.tripedit.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.OwnerBookTrip.resources
+E:\Uni\4th Year\F2022\CPS613\Project1\RentECar\obj\Debug\net6.0-windows\RentECar.OwnerCurrentTrip.resources

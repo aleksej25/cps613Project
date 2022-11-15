@@ -43,7 +43,7 @@ Partial Class OwnerBookTrip
         'BackBox
         '
         Me.BackBox.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
-        Me.BackBox.Location = New System.Drawing.Point(35, 58)
+        Me.BackBox.Location = New System.Drawing.Point(35, 32)
         Me.BackBox.Name = "BackBox"
         Me.BackBox.Size = New System.Drawing.Size(40, 40)
         Me.BackBox.TabIndex = 11
@@ -52,13 +52,13 @@ Partial Class OwnerBookTrip
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(124, 58)
+        Me.Label1.Location = New System.Drawing.Point(91, 57)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(138, 35)
+        Me.Label1.Size = New System.Drawing.Size(152, 35)
         Me.Label1.TabIndex = 12
-        Me.Label1.Text = "Book a trip"
+        Me.Label1.Text = "Book a Trip"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'FromLabel
@@ -66,7 +66,7 @@ Partial Class OwnerBookTrip
         Me.FromLabel.AutoSize = True
         Me.FromLabel.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.FromLabel.ForeColor = System.Drawing.Color.White
-        Me.FromLabel.Location = New System.Drawing.Point(56, 155)
+        Me.FromLabel.Location = New System.Drawing.Point(56, 137)
         Me.FromLabel.Name = "FromLabel"
         Me.FromLabel.Size = New System.Drawing.Size(67, 28)
         Me.FromLabel.TabIndex = 13
@@ -77,7 +77,7 @@ Partial Class OwnerBookTrip
         Me.ToLabel.AutoSize = True
         Me.ToLabel.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ToLabel.ForeColor = System.Drawing.Color.White
-        Me.ToLabel.Location = New System.Drawing.Point(56, 221)
+        Me.ToLabel.Location = New System.Drawing.Point(56, 203)
         Me.ToLabel.Name = "ToLabel"
         Me.ToLabel.Size = New System.Drawing.Size(41, 28)
         Me.ToLabel.TabIndex = 14
@@ -87,7 +87,7 @@ Partial Class OwnerBookTrip
         '
         Me.FromBox.FormattingEnabled = True
         Me.FromBox.Items.AddRange(New Object() {"Your House", "Supermarket", "Work"})
-        Me.FromBox.Location = New System.Drawing.Point(141, 162)
+        Me.FromBox.Location = New System.Drawing.Point(141, 144)
         Me.FromBox.Name = "FromBox"
         Me.FromBox.Size = New System.Drawing.Size(121, 23)
         Me.FromBox.TabIndex = 15
@@ -96,7 +96,7 @@ Partial Class OwnerBookTrip
         '
         Me.ToBox.FormattingEnabled = True
         Me.ToBox.Items.AddRange(New Object() {"Your House", "Supermarket", "Work"})
-        Me.ToBox.Location = New System.Drawing.Point(141, 228)
+        Me.ToBox.Location = New System.Drawing.Point(141, 210)
         Me.ToBox.Name = "ToBox"
         Me.ToBox.Size = New System.Drawing.Size(121, 23)
         Me.ToBox.TabIndex = 16
@@ -106,9 +106,9 @@ Partial Class OwnerBookTrip
         Me.NowButton.AutoSize = True
         Me.NowButton.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.NowButton.ForeColor = System.Drawing.Color.White
-        Me.NowButton.Location = New System.Drawing.Point(56, 299)
+        Me.NowButton.Location = New System.Drawing.Point(56, 281)
         Me.NowButton.Name = "NowButton"
-        Me.NowButton.Size = New System.Drawing.Size(71, 32)
+        Me.NowButton.Size = New System.Drawing.Size(72, 32)
         Me.NowButton.TabIndex = 17
         Me.NowButton.TabStop = True
         Me.NowButton.Text = "Now"
@@ -119,7 +119,7 @@ Partial Class OwnerBookTrip
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.RadioButton2.ForeColor = System.Drawing.Color.White
-        Me.RadioButton2.Location = New System.Drawing.Point(185, 299)
+        Me.RadioButton2.Location = New System.Drawing.Point(185, 281)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(77, 32)
         Me.RadioButton2.TabIndex = 18
@@ -132,7 +132,7 @@ Partial Class OwnerBookTrip
         Me.StartLabel.AutoSize = True
         Me.StartLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.StartLabel.ForeColor = System.Drawing.Color.White
-        Me.StartLabel.Location = New System.Drawing.Point(52, 383)
+        Me.StartLabel.Location = New System.Drawing.Point(52, 365)
         Me.StartLabel.Name = "StartLabel"
         Me.StartLabel.Size = New System.Drawing.Size(91, 23)
         Me.StartLabel.TabIndex = 19
@@ -144,7 +144,7 @@ Partial Class OwnerBookTrip
         Me.EndLabel.AutoSize = True
         Me.EndLabel.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.EndLabel.ForeColor = System.Drawing.Color.White
-        Me.EndLabel.Location = New System.Drawing.Point(52, 459)
+        Me.EndLabel.Location = New System.Drawing.Point(52, 441)
         Me.EndLabel.Name = "EndLabel"
         Me.EndLabel.Size = New System.Drawing.Size(83, 23)
         Me.EndLabel.TabIndex = 20
@@ -154,7 +154,7 @@ Partial Class OwnerBookTrip
         'StartBox
         '
         Me.StartBox.FormattingEnabled = True
-        Me.StartBox.Location = New System.Drawing.Point(156, 386)
+        Me.StartBox.Location = New System.Drawing.Point(156, 368)
         Me.StartBox.Name = "StartBox"
         Me.StartBox.Size = New System.Drawing.Size(121, 23)
         Me.StartBox.TabIndex = 21
@@ -163,7 +163,7 @@ Partial Class OwnerBookTrip
         'EndBox
         '
         Me.EndBox.FormattingEnabled = True
-        Me.EndBox.Location = New System.Drawing.Point(156, 462)
+        Me.EndBox.Location = New System.Drawing.Point(156, 444)
         Me.EndBox.Name = "EndBox"
         Me.EndBox.Size = New System.Drawing.Size(121, 23)
         Me.EndBox.TabIndex = 22
@@ -171,8 +171,8 @@ Partial Class OwnerBookTrip
         '
         'DriveButton
         '
-        Me.DriveButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.DriveButton.Location = New System.Drawing.Point(115, 523)
+        Me.DriveButton.Font = New System.Drawing.Font("Sitka Text", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.DriveButton.Location = New System.Drawing.Point(118, 516)
         Me.DriveButton.Name = "DriveButton"
         Me.DriveButton.Size = New System.Drawing.Size(88, 50)
         Me.DriveButton.TabIndex = 23

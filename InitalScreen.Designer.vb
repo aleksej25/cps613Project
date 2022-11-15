@@ -86,7 +86,7 @@ Partial Class InitalScreen
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Sitka Small", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(131, 381)
+        Me.Label1.Location = New System.Drawing.Point(129, 381)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(70, 31)
         Me.Label1.TabIndex = 9

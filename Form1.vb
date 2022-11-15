@@ -16,6 +16,7 @@
         Me.ErrorFixScreenControl1.errorDescLabel.Text = "Cannot establish" + vbNewLine + "connection to camera."
         Me.ErrorFixScreenControl1.errorDescLabel.Left = (Me.ErrorFixScreenControl1.errorDescLabel.Parent.Width \ 2) - (Me.ErrorFixScreenControl1.errorDescLabel.Width \ 2) - 3
         Me.ErrorFixScreenControl1.fixButton.Show()
+        Me.ErrorFixScreenControl1.BringToFront()
         Me.ErrorFixScreenControl1.Show()
     End Sub
 
@@ -30,6 +31,7 @@
 
         Me.ErrorFixScreenControl1.fixButton.Hide()
         Me.ErrorFixScreenControl1.notifyPoliceButton.Show()
+        Me.ErrorFixScreenControl1.BringToFront()
         Me.ErrorFixScreenControl1.Show()
     End Sub
 
@@ -47,6 +49,7 @@
         Me.ErrorFixScreenControl1.notifyPoliceButton.Location = New System.Drawing.Point(92, 415)
         Me.ErrorFixScreenControl1.insuranceButton.Show()
         Me.ErrorFixScreenControl1.notifyBothButton.Show()
+        Me.ErrorFixScreenControl1.BringToFront()
         Me.ErrorFixScreenControl1.Show()
     End Sub
 

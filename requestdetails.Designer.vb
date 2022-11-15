@@ -26,8 +26,9 @@ Partial Class requestdetails
         Me.tripdetails = New System.Windows.Forms.TextBox()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Goback = New System.Windows.Forms.Button()
+        Me.Goback = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Goback, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RichTextBox1
@@ -35,7 +36,8 @@ Partial Class requestdetails
         Me.RichTextBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox1.Font = New System.Drawing.Font("Sitka Banner", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.RichTextBox1.Location = New System.Drawing.Point(33, 82)
+        Me.RichTextBox1.ForeColor = System.Drawing.Color.White
+        Me.RichTextBox1.Location = New System.Drawing.Point(46, 89)
         Me.RichTextBox1.Multiline = False
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(254, 46)
@@ -59,7 +61,7 @@ Partial Class requestdetails
         Me.RichTextBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.RichTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox2.Font = New System.Drawing.Font("Sitka Heading", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.RichTextBox2.ForeColor = System.Drawing.Color.DarkRed
+        Me.RichTextBox2.ForeColor = System.Drawing.Color.Lime
         Me.RichTextBox2.Location = New System.Drawing.Point(29, 355)
         Me.RichTextBox2.Name = "RichTextBox2"
         Me.RichTextBox2.Size = New System.Drawing.Size(265, 115)
@@ -78,13 +80,13 @@ Partial Class requestdetails
         '
         'Goback
         '
-        Me.Goback.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Goback.Location = New System.Drawing.Point(95, 497)
+        Me.Goback.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Goback.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
+        Me.Goback.Location = New System.Drawing.Point(30, 30)
         Me.Goback.Name = "Goback"
-        Me.Goback.Size = New System.Drawing.Size(134, 42)
-        Me.Goback.TabIndex = 20
-        Me.Goback.Text = "Go Back"
-        Me.Goback.UseVisualStyleBackColor = True
+        Me.Goback.Size = New System.Drawing.Size(40, 40)
+        Me.Goback.TabIndex = 21
+        Me.Goback.TabStop = False
         '
         'requestdetails
         '
@@ -98,6 +100,7 @@ Partial Class requestdetails
         Me.Name = "requestdetails"
         Me.Size = New System.Drawing.Size(333, 640)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Goback, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -106,5 +109,5 @@ Partial Class requestdetails
     Friend WithEvents tripdetails As TextBox
     Friend WithEvents RichTextBox2 As RichTextBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Goback As Button
+    Friend WithEvents Goback As PictureBox
 End Class

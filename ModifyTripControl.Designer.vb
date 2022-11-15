@@ -37,7 +37,7 @@ Partial Class ModifyTripControl
         'BackBox
         '
         Me.BackBox.Image = Global.RentECar.My.Resources.ProjectResources.backArrow
-        Me.BackBox.Location = New System.Drawing.Point(50, 57)
+        Me.BackBox.Location = New System.Drawing.Point(35, 34)
         Me.BackBox.Name = "BackBox"
         Me.BackBox.Size = New System.Drawing.Size(40, 40)
         Me.BackBox.TabIndex = 13
@@ -46,11 +46,11 @@ Partial Class ModifyTripControl
         'TitleLabel
         '
         Me.TitleLabel.AutoSize = True
-        Me.TitleLabel.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.TitleLabel.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.TitleLabel.ForeColor = System.Drawing.Color.White
-        Me.TitleLabel.Location = New System.Drawing.Point(110, 57)
+        Me.TitleLabel.Location = New System.Drawing.Point(91, 59)
         Me.TitleLabel.Name = "TitleLabel"
-        Me.TitleLabel.Size = New System.Drawing.Size(143, 35)
+        Me.TitleLabel.Size = New System.Drawing.Size(153, 35)
         Me.TitleLabel.TabIndex = 14
         Me.TitleLabel.Text = "Modify trip"
         '
@@ -94,12 +94,12 @@ Partial Class ModifyTripControl
         '
         'ChangeButton
         '
-        Me.ChangeButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.ChangeButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ChangeButton.Location = New System.Drawing.Point(110, 290)
         Me.ChangeButton.Name = "ChangeButton"
         Me.ChangeButton.Size = New System.Drawing.Size(122, 66)
         Me.ChangeButton.TabIndex = 19
-        Me.ChangeButton.Text = "Confirm change"
+        Me.ChangeButton.Text = "Confirm Change"
         Me.ChangeButton.UseVisualStyleBackColor = True
         '
         'PictureBox1

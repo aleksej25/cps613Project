@@ -1,17 +1,6 @@
 ﻿Public Class requestdetails
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
-    Private Sub requestdetail_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-    Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles tripdetails.TextChanged
-
+    Private Sub requestdetails_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Me.RichTextBox2.SelectionAlignment = HorizontalAlignment.Center
     End Sub
 
     Private Sub Goback_Click(sender As Object, e As EventArgs) Handles Goback.Click
