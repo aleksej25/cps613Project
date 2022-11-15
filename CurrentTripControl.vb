@@ -30,16 +30,27 @@
     Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
 
         countDown = countDown + 1000
+
         If countDown = 30000 Then
+
+            Form1.riderBooking.RideEnded = True
+
+            If Form1.riderBooking.RideEnded = True Then
+                StopTripButton.Text = "Leave Car"
+            Else
+                StopTripButton.Text = "Stop Trip"
+            End If
             ArrivedLabel.Show()
             ContinueTripButton.Enabled = True
             Timer.Stop()
         End If
 
+
     End Sub
 
     Private Sub TimerReset()
         countDown = 0
+        Form1.riderBooking.RideEnded = False
         Timer.Start()
     End Sub
     Private Sub ModifyTripButton_Click(sender As Object, e As EventArgs) Handles ModifyTripButton.Click
@@ -54,6 +65,8 @@
         ArrivedLabel.Hide()
         ContinueTripButton.Hide()
         ContinueTripButton.Enabled = False
+        Form1.CurrentTripControl1.NextDestIndicator.Hide()
+        Form1.CurrentTripControl1.ModifiedDestLabel.Hide()
         Me.TimerReset()
 
     End Sub

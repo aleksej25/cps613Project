@@ -190,6 +190,7 @@ Partial Class CurrentTripControl
         Me.ModifiedDestLabel.Size = New System.Drawing.Size(110, 23)
         Me.ModifiedDestLabel.TabIndex = 25
         Me.ModifiedDestLabel.Text = "TemplateText"
+        Me.ModifiedDestLabel.Visible = False
         '
         'ContinueTripButton
         '

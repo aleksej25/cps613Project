@@ -12,20 +12,23 @@
     Public Shared TripModified As Boolean
     Public Shared OldDestination As String
     Public Shared NewDestination As String
+    Public Shared RideEnded As Boolean
     Public Sub New()
         RiderName = "Rider"
         BookingStatus = False
         TripModified = False
+        RideEnded = False
     End Sub
 
     Public Sub Reset()
         FromLocation = ""
         ToLocation = ""
-        NumberOfPeople = ""
+        NumberOfPeople = 0
         AdditionalDestination = ""
         BookingStatus = False
         TripModified = False
         FromTime = ""
         ToTime = ""
+        RideEnded = False
     End Sub
 End Class
