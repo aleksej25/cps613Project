@@ -42,9 +42,12 @@ Partial Class Form1
         Me.SchedulerControl1 = New RentECar.schedulerControl()
         Me.RiderRatingsControl1 = New RentECar.riderRatingsControl()
         Me.CurrentTripControl1 = New RentECar.CurrentTripControl()
+        Me.riderequestn = New System.Windows.Forms.PictureBox()
+        Me.Requestdetails1 = New RentECar.requestdetails()
         CType(Me.cameraFailureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.breakInBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.collisionBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.riderequestn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'InitalScreen1
@@ -225,12 +228,31 @@ Partial Class Form1
         Me.CurrentTripControl1.Size = New System.Drawing.Size(339, 642)
         Me.CurrentTripControl1.TabIndex = 23
         '
+        'riderequestn
+        '
+        Me.riderequestn.Image = Global.RentECar.My.Resources.Resources.newrequest
+        Me.riderequestn.Location = New System.Drawing.Point(23, 52)
+        Me.riderequestn.Name = "riderequestn"
+        Me.riderequestn.Size = New System.Drawing.Size(285, 149)
+        Me.riderequestn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.riderequestn.TabIndex = 24
+        Me.riderequestn.TabStop = False
+        Me.riderequestn.Visible = False
+        '
+        'Requestdetails1
+        '
+        Me.Requestdetails1.Location = New System.Drawing.Point(-2, 1)
+        Me.Requestdetails1.Name = "Requestdetails1"
+        Me.Requestdetails1.Size = New System.Drawing.Size(333, 640)
+        Me.Requestdetails1.TabIndex = 25
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.ClientSize = New System.Drawing.Size(332, 644)
+        Me.Controls.Add(Me.riderequestn)
         Me.Controls.Add(Me.collisionBox)
         Me.Controls.Add(Me.cameraFailureBox)
         Me.Controls.Add(Me.breakInBox)
@@ -251,6 +273,7 @@ Partial Class Form1
         Me.Controls.Add(Me.SchedulerControl1)
         Me.Controls.Add(Me.RiderRatingsControl1)
         Me.Controls.Add(Me.CurrentTripControl1)
+        Me.Controls.Add(Me.Requestdetails1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximumSize = New System.Drawing.Size(348, 683)
         Me.Name = "Form1"
@@ -258,6 +281,7 @@ Partial Class Form1
         CType(Me.cameraFailureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.breakInBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.collisionBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.riderequestn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -282,4 +306,6 @@ Partial Class Form1
     Friend WithEvents SchedulerControl1 As schedulerControl
     Friend WithEvents RiderRatingsControl1 As riderRatingsControl
     Friend WithEvents CurrentTripControl1 As CurrentTripControl
+    Friend WithEvents riderequestn As PictureBox
+    Friend WithEvents Requestdetails1 As requestdetails
 End Class

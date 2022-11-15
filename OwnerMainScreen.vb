@@ -2,6 +2,14 @@
     Public timerStatus As Integer = 0
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Timer1.Start()
+        If Form1.CarBooked = True Then
+            Form1.riderequestn.Show()
+            Form1.riderequestn.BringToFront()
+            Form1.CarBooked = False
+        End If
+        If Booking.TripModified = True Then
+
+        End If
     End Sub
     Private Sub MyCarButton_Click(sender As Object, e As EventArgs) Handles MyCarButton.Click
         Form1.ECarControls.carBox.Enabled = True

@@ -51,4 +51,11 @@
         Me.ErrorFixScreenControl1.notifyBothButton.Show()
         Me.ErrorFixScreenControl1.Show()
     End Sub
+
+    Private Sub riderequestn_Click(sender As Object, e As EventArgs) Handles riderequestn.Click
+        Me.riderequestn.Hide()
+        Me.Requestdetails1.Show()
+        Me.Requestdetails1.BringToFront()
+
+    End Sub
 End Class
