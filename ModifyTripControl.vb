@@ -36,5 +36,6 @@
         Me.Hide()
         Form1.CurrentTripControl1.BringToFront()
         Form1.CurrentTripControl1.Show()
+        Form1.Tripedit1.tripdetails.Text = "New destination: " + Form1.riderBooking.NewDestination + vbCrLf + "New end time: " + Me.EndTimeBox.Text
     End Sub
 End Class
