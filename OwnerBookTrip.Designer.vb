@@ -32,9 +32,9 @@ Partial Class OwnerBookTrip
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.StartLabel = New System.Windows.Forms.Label()
         Me.EndLabel = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.StartBox = New System.Windows.Forms.ComboBox()
+        Me.EndBox = New System.Windows.Forms.ComboBox()
+        Me.DriveButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.BackBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -151,33 +151,33 @@ Partial Class OwnerBookTrip
         Me.EndLabel.Text = "End time:"
         Me.EndLabel.Visible = False
         '
-        'ComboBox3
+        'StartBox
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(156, 386)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(121, 23)
-        Me.ComboBox3.TabIndex = 21
-        Me.ComboBox3.Visible = False
+        Me.StartBox.FormattingEnabled = True
+        Me.StartBox.Location = New System.Drawing.Point(156, 386)
+        Me.StartBox.Name = "StartBox"
+        Me.StartBox.Size = New System.Drawing.Size(121, 23)
+        Me.StartBox.TabIndex = 21
+        Me.StartBox.Visible = False
         '
-        'ComboBox4
+        'EndBox
         '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(156, 462)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(121, 23)
-        Me.ComboBox4.TabIndex = 22
-        Me.ComboBox4.Visible = False
+        Me.EndBox.FormattingEnabled = True
+        Me.EndBox.Location = New System.Drawing.Point(156, 462)
+        Me.EndBox.Name = "EndBox"
+        Me.EndBox.Size = New System.Drawing.Size(121, 23)
+        Me.EndBox.TabIndex = 22
+        Me.EndBox.Visible = False
         '
-        'Button1
+        'DriveButton
         '
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(115, 523)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(88, 50)
-        Me.Button1.TabIndex = 23
-        Me.Button1.Text = "Drive"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.DriveButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.DriveButton.Location = New System.Drawing.Point(115, 523)
+        Me.DriveButton.Name = "DriveButton"
+        Me.DriveButton.Size = New System.Drawing.Size(88, 50)
+        Me.DriveButton.TabIndex = 23
+        Me.DriveButton.Text = "Drive"
+        Me.DriveButton.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -193,9 +193,9 @@ Partial Class OwnerBookTrip
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ComboBox4)
-        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.DriveButton)
+        Me.Controls.Add(Me.EndBox)
+        Me.Controls.Add(Me.StartBox)
         Me.Controls.Add(Me.EndLabel)
         Me.Controls.Add(Me.StartLabel)
         Me.Controls.Add(Me.RadioButton2)
@@ -226,8 +226,8 @@ Partial Class OwnerBookTrip
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents StartLabel As Label
     Friend WithEvents EndLabel As Label
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents StartBox As ComboBox
+    Friend WithEvents EndBox As ComboBox
+    Friend WithEvents DriveButton As Button
     Friend WithEvents PictureBox1 As PictureBox
 End Class
