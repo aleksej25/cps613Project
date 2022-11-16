@@ -74,12 +74,13 @@ Partial Class OwnerMainScreen
         '
         'BookATripButton
         '
-        Me.BookATripButton.Font = New System.Drawing.Font("Sitka Text", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BookATripButton.Font = New System.Drawing.Font("Sitka Text", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BookATripButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BookATripButton.Location = New System.Drawing.Point(103, 430)
         Me.BookATripButton.Name = "BookATripButton"
         Me.BookATripButton.Size = New System.Drawing.Size(134, 42)
         Me.BookATripButton.TabIndex = 7
-        Me.BookATripButton.Text = "Book a trip"
+        Me.BookATripButton.Text = "Drive your Car"
         Me.BookATripButton.UseVisualStyleBackColor = True
         '
         'Timer1

@@ -17,9 +17,9 @@
         FromLocationBox.Items.Add("Yonge Dundas Square")
         FromLocationBox.Items.Add("TMU")
 
-        ToLocationBox.Items.Add("Japanese Restaurant")
-        ToLocationBox.Items.Add("Greek Restaurant")
-        ToLocationBox.Items.Add("Bar")
+        ToLocationBox.Items.Add("123 Queen Street")
+        ToLocationBox.Items.Add("123 Yonge Street")
+        ToLocationBox.Items.Add("123 King Street")
 
         PeopleComboBox.Items.Add(1)
         PeopleComboBox.Items.Add(2)

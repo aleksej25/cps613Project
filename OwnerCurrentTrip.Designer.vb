@@ -111,7 +111,7 @@ Partial Class OwnerCurrentTrip
         Me.OwnerModifyTripButton.Name = "OwnerModifyTripButton"
         Me.OwnerModifyTripButton.Size = New System.Drawing.Size(105, 60)
         Me.OwnerModifyTripButton.TabIndex = 18
-        Me.OwnerModifyTripButton.Text = "Modify Trip"
+        Me.OwnerModifyTripButton.Text = "Change Route"
         Me.OwnerModifyTripButton.UseVisualStyleBackColor = True
         '
         'OwnerCarControlsBtn
@@ -160,7 +160,7 @@ Partial Class OwnerCurrentTrip
         Me.OwnerArrivedLabel.ForeColor = System.Drawing.Color.LimeGreen
         Me.OwnerArrivedLabel.Location = New System.Drawing.Point(66, 319)
         Me.OwnerArrivedLabel.Name = "OwnerArrivedLabel"
-        Me.OwnerArrivedLabel.Size = New System.Drawing.Size(195, 30)
+        Me.OwnerArrivedLabel.Size = New System.Drawing.Size(194, 30)
         Me.OwnerArrivedLabel.TabIndex = 23
         Me.OwnerArrivedLabel.Text = "You have arrived!"
         Me.OwnerArrivedLabel.Visible = False
