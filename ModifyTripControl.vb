@@ -6,9 +6,9 @@
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        ToLocationBox.Items.Add("Japanese Restaurant")
+        ToLocationBox.Items.Add("123 Queen St")
         ToLocationBox.Items.Add("Greek Restaurant")
-        ToLocationBox.Items.Add("Bar")
+        ToLocationBox.Items.Add("123 King St")
 
         EndTimeBox.Items.Add("11:00AM")
         EndTimeBox.Items.Add("12:00PM")
