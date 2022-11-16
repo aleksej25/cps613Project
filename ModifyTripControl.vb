@@ -1,5 +1,5 @@
 ﻿Public Class ModifyTripControl
-
+    'Modify Trip'
     Public Sub New()
 
         ' This call is required by the designer.
