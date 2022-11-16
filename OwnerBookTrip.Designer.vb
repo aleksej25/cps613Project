@@ -52,13 +52,13 @@ Partial Class OwnerBookTrip
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Sitka Text", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Font = New System.Drawing.Font("Sitka Text", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(91, 57)
+        Me.Label1.Location = New System.Drawing.Point(81, 74)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(152, 35)
+        Me.Label1.Size = New System.Drawing.Size(207, 28)
         Me.Label1.TabIndex = 12
-        Me.Label1.Text = "Book a Trip"
+        Me.Label1.Text = "Choose a destination"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'FromLabel
@@ -108,7 +108,7 @@ Partial Class OwnerBookTrip
         Me.NowButton.ForeColor = System.Drawing.Color.White
         Me.NowButton.Location = New System.Drawing.Point(56, 281)
         Me.NowButton.Name = "NowButton"
-        Me.NowButton.Size = New System.Drawing.Size(72, 32)
+        Me.NowButton.Size = New System.Drawing.Size(71, 32)
         Me.NowButton.TabIndex = 17
         Me.NowButton.TabStop = True
         Me.NowButton.Text = "Now"
