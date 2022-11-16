@@ -43,10 +43,11 @@
         System.Diagnostics.Debug.WriteLine(Me.timerStatus)
         If Not Me.isDriving Then
             Me.timerStatus += 1
-            If Me.timerStatus = 300 And Not Me.cameraFailureResolved Then
+            If Me.timerStatus = 25 And Not Me.cameraFailureResolved Then
                 Form1.cameraFailureBox.Show()
                 Form1.cameraFailureBox.BringToFront()
                 Me.cameraFailureResolved = True
+                Me.Timer1.Stop()
                 'ElseIf Me.timerStatus = 750 And Not Me.breakInResolved Then
                 '    Form1.breakInBox.Show()
                 '    Form1.breakInBox.BringToFront()

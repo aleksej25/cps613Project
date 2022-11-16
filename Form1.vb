@@ -57,7 +57,6 @@
         Me.riderequestn.Hide()
         Me.Requestdetails1.Show()
         Me.Requestdetails1.BringToFront()
-
     End Sub
 
     Private Sub rideupdated_Click(sender As Object, e As EventArgs) Handles rideupdated.Click
